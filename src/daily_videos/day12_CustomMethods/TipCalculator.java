@@ -33,11 +33,15 @@ public class TipCalculator {
                 System.out.println("Enter the number of People: ");
                 int numberOfPeople = scanner.nextInt();
 
-                totalToPay = (amount + totalTip)/numberOfPeople;
-                message = "Total for each person: " + totalToPay;
+                message = "Number of people entered: "+ numberOfPeople+
+                            "\nTotal to pay: "+ totalToPay+
+                            "\nTotal tip: " + totalTip +
+                            "\nTotal for each person: " + totalToPay/numberOfPeople +
+                            "\nTip per person: " + totalTip/numberOfPeople;
                 break;
             default:
-                message = "Total amount: " + totalToPay;
+                message = "Total amount: " + totalToPay+
+                        "\nTotal tip: " + totalTip;
         }
 
         System.out.println(message);
