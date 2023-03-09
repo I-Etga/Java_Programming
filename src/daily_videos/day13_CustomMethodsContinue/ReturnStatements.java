@@ -37,5 +37,7 @@ public class ReturnStatements {
     public static int multiplication(int n1, int n2){
         int result = n1 * n2;
         return result;
+        //void or any data types methods ends with return !!
+        // the codes come after return won't be executed.
     }
 }
