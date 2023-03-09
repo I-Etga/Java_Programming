@@ -24,7 +24,7 @@ public class ReturnStatementPractice2 {
          */
         System.out.println((number == 1) ? "Monday" : (number == 2) ? "Tuesday" :
                 (number == 3) ? "Wednesday" : (number == 4) ? "Thursday" :
-                        (number == 5) ? "Friday" : (number == 6) ? "Saturday" : "Sunday";
+                        (number == 5) ? "Friday" : (number == 6) ? "Saturday" : "Sunday");
     }
 
 
