@@ -12,7 +12,7 @@ public class CustomMethodIntro {
         displayMessage();
     }
 
-    public static void greetings(){
+    public static void greetings() {
 
         System.out.println("Hello Cydeo");
         System.out.println("How are you today?");
@@ -20,7 +20,7 @@ public class CustomMethodIntro {
 
     }
 
-    public static void displayMessage(){
+    public static void displayMessage() {
 
         // If the body is empty you won't get anything
 

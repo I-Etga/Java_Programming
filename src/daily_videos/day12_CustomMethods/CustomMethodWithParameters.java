@@ -7,7 +7,7 @@ public class CustomMethodWithParameters {
         int num1 = 4;
         int num2 = 37;
 
-        int age1=54;
+        int age1 = 54;
         int age2 = 17;
 
         oddOrEven(10);
@@ -30,28 +30,30 @@ public class CustomMethodWithParameters {
  */
 
     }
-    public static void oddOrEven(int number){
+
+    public static void oddOrEven(int number) {
 
         String message = "";
 
-        if(number %2== 0){
+        if (number % 2 == 0) {
             message = number + " is even number";
-        }else{
-            message = number+ " is odd number";
+        } else {
+            message = number + " is odd number";
         }
         System.out.println(message);
     }
 
-    public static void isEligibleToBuyAlcohol(int age){
+    public static void isEligibleToBuyAlcohol(int age) {
         String message = "";
 
-        if(age >0 && age< 120)
-            if(age <18){
-            message = "Not eligible to buy alcohol";
-            }else{
-            message = "eligible to buy alcohol";
-        }else{
-            message =  "invalid";
+        if (age > 0 && age < 120)
+            if (age < 18) {
+                message = "Not eligible to buy alcohol";
+            } else {
+                message = "eligible to buy alcohol";
+            }
+        else {
+            message = "invalid";
         }
         System.out.println(message);
 

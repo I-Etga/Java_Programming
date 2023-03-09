@@ -7,11 +7,11 @@ public class EmailTask {
 
         String email = "mike_tyson@gmail.com";
 
-        String first = email.substring(0,email.indexOf("_"));
-        String last =email.substring(email.indexOf("_")+1 ,email.indexOf("@"));
-        String domain = email.substring(email.indexOf("@")+1 );
+        String first = email.substring(0, email.indexOf("_"));
+        String last = email.substring(email.indexOf("_") + 1, email.indexOf("@"));
+        String domain = email.substring(email.indexOf("@") + 1);
 
-        System.out.println(last + "_" + first+ "@"+ domain);
+        System.out.println(last + "_" + first + "@" + domain);
 
 
     }

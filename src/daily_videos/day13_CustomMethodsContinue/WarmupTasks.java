@@ -5,15 +5,24 @@ import java.util.Scanner;
 public class WarmupTasks {
     public static void main(String[] args) {
 
+        /*
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your two numbers and a math operator");
         double n1 = scanner.nextDouble(), n2 = scanner.nextDouble();
         char operator = scanner.next().charAt(0);
 
         basicCalculator(n1,n2,operator);
+        System.out.println("*************");
+
+        ageGroup(9);
+
+
+         */
+        eligibleToVote(43, false);
 
     }
 
+    // the area of custom methods \\
     public static void basicCalculator(double n1, double n2, char operator) {
         String result = "";
 
@@ -54,7 +63,33 @@ public class WarmupTasks {
             default:
                 System.err.println("Invalid Operator"); // print error message in red colour
         }
-            System.out.println(result);
-        }
+        System.out.println(result);
     }
+
+    public static void ageGroup(int age) {
+        String message = "";
+        if (age < 21) {
+            message = "Teenager";
+        } else if (age >= 21 && age < 55) {
+            message = "Adult";
+        } else {
+            message = "Senior";
+        }
+        System.out.println(message);
+    }
+
+    public static void eligibleToVote(int age, boolean isAmerican) {
+        String message = "";
+        if (age >= 21 && isAmerican) {
+            message = "You are eligible to vote";
+        } else {
+            message = "You are not eligible to vote";
+        }
+        System.out.println(message);
+    }
+
+
+}
+
+
 

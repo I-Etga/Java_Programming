@@ -23,11 +23,11 @@ public class FormatFullName {
                                         we have to use .replace() method !!
          */
 
-        first = first.substring(0,1).toUpperCase()+ first.substring(1).toLowerCase();
-                    // getting the first char(in upper case)  + the remaining characters of the first name in lower case
-        last = last.substring(0,1).toUpperCase() + last.substring(1).toLowerCase();
+        first = first.substring(0, 1).toUpperCase() + first.substring(1).toLowerCase();
+        // getting the first char(in upper case)  + the remaining characters of the first name in lower case
+        last = last.substring(0, 1).toUpperCase() + last.substring(1).toLowerCase();
 
-        String fullName = first + " " +last;
+        String fullName = first + " " + last;
         System.out.println(fullName);
 
     }
