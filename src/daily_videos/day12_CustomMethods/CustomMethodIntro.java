@@ -1,9 +1,11 @@
 package daily_videos.day12_CustomMethods;
+import studyGroup.*;
 
 public class CustomMethodIntro {
     public static void main(String[] args) {
 
         System.out.println("Test Started");
+
 
         greetings();
 
