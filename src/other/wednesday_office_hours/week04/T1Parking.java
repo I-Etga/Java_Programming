@@ -1,4 +1,4 @@
-package wednesday_office_hours.week04;
+package other.wednesday_office_hours.week04;
 
 public class T1Parking {
     public static void main(String[] args) {

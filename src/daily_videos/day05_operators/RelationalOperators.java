@@ -78,13 +78,5 @@ public class RelationalOperators {
         //System.out.println("Java" < "C#"); // I get compiler error
         // Because >, <, =<, => CAN ONLY BE APPLICABLE ON NUMBERS.
 
-
-
-
-
-
-
-
-
     }
 }

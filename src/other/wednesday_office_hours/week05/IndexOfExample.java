@@ -1,4 +1,4 @@
-package wednesday_office_hours.week05;
+package other.wednesday_office_hours.week05;
 
 public class IndexOfExample {
     public static void main(String[] args) {
