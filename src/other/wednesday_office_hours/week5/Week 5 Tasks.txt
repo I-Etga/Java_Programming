@@ -1,0 +1,98 @@
+Office Hours Topics:
+		
+	reviewing week 4:
+	Scanner
+	String
+
+----------------------------------------------------------------------------------------
+	
+T1GoodString [String, indexes]
+	
+	Create a program that will check a given String. If the word "good" starts at index 1 or 2 print true otherwise print false
+
+	ex: 
+		goodday --> false
+		agoodmovie --> true
+		nogoodtoday -> true
+		notgoodfornow -> false
+
+----------------------------------------------------------------------------------------
+
+T2BeginningAtEnd [String, indexes]
+
+	Create a program that will check if the first two characters of a given String are also the last two characters of the String. Print true if they are the same and false if they are not the same
+
+	ex:
+		educated -> true
+		java -> false
+		eraser for the computer -> true
+		panda giftwrap -> false
+
+----------------------------------------------------------------------------------------
+
+T3SearchResults [String, dynamic index]
+
+	Create a program that will have a String in a fixed format showing the results of a search. Based on that given format find the total number of search results and print them.
+
+	Note: make the program as dynamic as possible for different sizes(it could be a number of 10 which is only 2 number digits or 100000 which is 6 number digits)
+
+	Fixed format of the String: 
+		Total results found: $results. Sort, Filter, Ratings
+
+	ex:
+		"Total results found:3012. Sort, Filter, Ratings"
+		-> 3012
+
+		"Total results found:25. Sort, Filter, Ratings"
+		-> 25
+
+	Q: what is the datatype of the number we are getting in the end? 
+		Follow up, we will learn how to get this as an integer number in the future
+----------------------------------------------------------------------------------------
+
+T4Reverse [String, index]
+
+	Create a program that will have a String that is always 5 characters long. Reverse that given String and print the reverse version
+
+	ex:
+		input: hello
+		output: olleh
+
+		input: javaa
+		output: aavaj
+
+----------------------------------------------------------------------------------------
+
+T5Angles [Scanner, conditional]
+
+	Create a program that will ask the user to enter 3 angles. Add to sum of the angles and print what type of shape is made from the angles. 
+		If the angles add up to 180 print triangle.
+		If the angles add up to 360 print circle
+		For any other angle print: Cannot determine
+
+----------------------------------------------------------------------------------------
+
+T6LongestWithA [Scanner, String, conditional, logical]
+
+	Create a program that will ask the user to enter 3 words. Find the word that contains 'a' and is the longest out of the others
+	
+	ex:
+		java
+		mouse
+		computer
+
+	Output: java
+
+	Extra: Instead of just checking for "a" ask the enter to enter the character that should be used to determine the result
+
+----------------------------------------------------------------------------------------
+
+extra notes:
+
+== vs .equals
+== comparison operator that checks if the two primitive types are the same
+
+-> when you use == with object types it compares their memory address
+
+"hello" == "hello" -> this doesn't check the values, it checks the memory
+"hello" == new String("hello") -> false
