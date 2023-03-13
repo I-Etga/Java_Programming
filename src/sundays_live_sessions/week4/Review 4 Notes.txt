@@ -1,0 +1,107 @@
+03/05/2023
+
+Week 4
+
+Day09 - Switch Statement Continue, Scanner Intro
+Day10 - Scanner Continue, String Intro
+Day11 - String Continue
+__________________________________________________________________
+
+Package & Imports
+Scanner
+String
+__________________________________________________________________
+
+Variables Short Quiz Notes
+
+	- variables cannot start with a number. only special characters allowed in variables are _ $
+
+	- can create a char like this:
+		char ch = 95;
+
+	- what is the result
+		int num1 = 50;
+		int num2 = 200;
+		num2 = num1;
+		print both
+
+	- what is this number:
+		float a = 100.450_524f  --> print a: 100.450524
+		byte b = (byte) a;
+		double c = b;
+__________________________________________________________________
+
+Package & imports
+
+	importing allows us to use files/classes that are in different packages 
+
+	 the order of java file
+
+	 	P - package
+	 	I - imports
+	 	C - class
+
+	import packageName.className; 
+	import java.util.Scanner;  --> this allows me to access the Scanner class
+
+	the java.lang package is automatically imported
+	import java.lang.String;
+
+auto importing in intellij:
+	open settings
+		mac: IntellIJ -> settings
+		windows: File -> settings
+
+	- optional: search for auto import
+	or just:
+
+	navigate to Editor -> General -> Auto Import
+
+	select 
+	Add unambiguous imports on the fly
+	you can select the optimize if you want too
+	apply and okay
+__________________________________________________________________
+
+Scanner 
+
+	Scanner is a CLASS that has some METHODS that allow us to read information from the console
+
+	class is a java file
+	method are a block of code
+
+	why to use Scanner
+		to avoid hard coding
+			hard coding: the value is fixed in the code
+
+	next(): reads a single word
+	nextLine(): reads multiple words
+		accepts the enter input
+
+__________________________________________________________________
+
+String
+
+	String is a class, so it defines some methods. They represent sequence of characters.
+	non primitive type - object type
+
+	class is defined in the java.lang package
+
+	2 ways to create String object
+
+		* literal: creating with double quotations 
+			""
+
+		* new: new String("");
+
+	stack: variable name (reference)
+	heap: where objects are stored
+		-> String pool: part of the heap, it holds the String literals 
+
+	Strings are immutable	
+		the object cannot be changed after creation
+
+	charAt(): return a char based on the index given
+
+	indexOf(): return an int(index) based on the given char
+

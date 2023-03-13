@@ -1,0 +1,118 @@
+Practice Tasks
+
+Diving [multibranch]
+
+	Declare and assign a oxygen tank level. This level will be a whole number percentage, so 80 would represent 80% oxygen
+
+	Check how much oxygen is left in the tank and output a corresponding message
+
+		use these ranges:
+			100 - 90: Your tank is full
+			89 - 80: A lot left to use
+			79 - 70: Don't go too far
+			69 - 60: Start to head back
+			59 - 50: Be careful now you at at 50%
+			Less than 50: Critical
+
+	------------------------------------------------------------------------
+
+{IQ} Finra [multibranch, operators]
+
+	Create a program that will print the given number. But if the number is a multiple of 3 print "FIN" instead of the number. If the number is a multiple of 5 print "RA" instead of the number. And if the number is a multiple of 3 and 5 print "FINRA" instead of the number
+
+		ex:
+			number: 3
+			output: FIN
+
+			number: 10
+			output: RA
+
+			number: 15
+			output: FINRA
+
+			number: 7
+			output: 7
+
+	Hint: you will be checking for divisibility so you will need to use the % operator		
+
+	------------------------------------------------------------------------
+
+Language [switch]
+
+	Declare and assign a language variable
+	Based on the language selected print the related message:
+
+	English: hello, thank for your call
+	Spanish: hola, gracias para llamar
+	Turkish: merhaba, aradiginiz icin tesekkurler
+	Russian: privet, spasibo za vash zvonok
+	French: Merci, pour votre appel
+	Any other input: sorry, $given_language not supported
+
+	Extra: add more languages support
+
+	------------------------------------------------------------------------
+
+Books [switch, variables]
+
+You are an author writing a new book and want to figure out some information related to the genre
+
+Given the genre name figure out: average page length, average profit, average number of sequels, average number of countries published in. Find and print the information based on the genre.
+
+Use the following format to print the information:
+	The $genre genre usually has profits of $profit_amount being sold in $countries_number different countries. The $genre books often have $sequels_number squeals with each book roughly being around $page_length pages.
+
+	if the given genre is not defined print: Sorry we don't have information for the $genre genre
+
+Hint: Use variables for the information rather than printing in each genre
+
+    Sample data for genres:
+
+        genre - Fantasy
+        page length - 500
+        profit - 1,000,000
+        sequels - 5
+        countries - 50
+
+        genre - Detective 
+        page length - 350
+        profit - 700,000
+        sequels - 3
+        countries - 45
+
+        genre - Science Fiction
+        page length - 720
+        profit - 900,500
+        sequels - 4
+        countries - 30
+
+        genre - Short Story
+        page length - 150
+        profit - 300,000
+        sequels - 1
+        countries - 40
+
+	------------------------------------------------------------------------
+
+Pandemic Checker [nested if, operator]
+
+	Create a program that will define a year. Determine if there was a pandemic in that year. Before checking for pandemics also verify the given year is a valid year value.
+		a valid year is a year in the range of: 0 > year < 2023
+			-> if the given year is not valid do not check anything else and print:
+					sorry $given_year is not a valid year
+
+		if a valid year is given check the ranges and output the pandemic if there was any
+
+	Use this data for years that had a pandemic:
+        1346-1353: The Black Death
+        1665-1666: Great Plague of London
+        1770-1772: Russian plague
+        1889-1890: Flu pandemic
+        1916: American polio epidemic
+        1918-1920: Spanish Flu 
+        2009-2010: H1N1 Swine Flu pandemic
+        2014-2016: West African Ebola epidemic
+        2020-2021: COVID-19
+        Any year not in those ranges: No Pandemic in $given_year
+
+	------------------------------------------------------------------------

@@ -1,0 +1,88 @@
+Office Hours Topics:
+
+    reviewing week 5:
+    methods
+    method overloading
+    loops (for loop)
+
+----------------------------------------------------------------------------------------
+
+T1Army [methods, conditional]
+
+    Create a method that will determine if you are eligible to join the army. It will be a void method that accepts 3 parameters: age, has a high school diploma, and is a citizen
+
+    to be eligible to join you must be between the age of 18-35, have a diploma, and must be a citizen
+        if you are eligible print: You are qualified to join the Army
+
+        if you are not eligible print all the reasons why you cannot join
+            (it can be any combination of conditions, even all of them could not be met)
+
+    Ex:
+        (25, true, true) -> You are qualified to join the Army
+
+        (45, true, true) -> You are NOT qualified to join the Army:
+                            45 is more than our maximum age
+
+        (16, false, false) ->   You are NOT qualified to join the Army:
+                                16 is less than our minimum age
+                                You must have a high school diploma
+                                You must be a citizen
+
+----------------------------------------------------------------------------------------
+
+T2SwapFirstLast [methods, String]
+
+    Create a method that has a String parameter and returns a String with the first and last character swapped
+
+    Ex:
+        code -> eodc
+        ab -> ba
+        fa -> a
+
+----------------------------------------------------------------------------------------
+
+T3Syllables [methods, String, loops]
+
+    Create a method that has a String parameter and returns how many syllables the given word has
+        > the String given will have a "-" to separate the different syllables
+
+    Ex:
+        ja-va -> 2
+        apple -> 1
+        ham-bur-ger -> 3
+        de-liv-ery-y -> 4
+
+----------------------------------------------------------------------------------------
+
+T4CharacterSet [methods, loops]
+
+    Create a method that has a String parameter and returns a String.
+    Based on the given String a different set of characters will be returned
+    use these to determine which set of characters is returned:
+
+    based on the defined parameter return a String will all of the characters in the range
+
+    uppercase -> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    lowercase -> abcdefghijklmnopqrstuvwxyz
+    digit -> 123456789
+    special -> !"#$%&'()*+,-.
+
+----------------------------------------------------------------------------------------
+
+T5CharacterOverloaded [methods, loops, overloading]
+
+    Overload the previous Character Set method by having these parameters:
+        char, char
+
+    instead of a fixed set of characters this method will return a String of all the characters between the two defined char parameters
+
+        the first char will determine the starting point and the second character will determine the ending point
+
+    Note: Be careful, if you give characters that cannot be within a range based on the ascii table your method will not work
+
+    Ex:
+        ('7', 'P') -> 789:;<=>?@ABCDEFGHIJKLMNOP
+        ('X', '}') -> XYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}
+
+----------------------------------------------------------------------------------------
+

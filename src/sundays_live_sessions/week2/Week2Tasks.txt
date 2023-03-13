@@ -1,0 +1,80 @@
+
+Practice Tasks:
+
+CellPhone [variables, concatenation]
+
+	Declare and assign the following variables:
+		brand, model, color, price, storage, has camera, sim type (A, B, or C)
+
+	Print out an advertisement post about the phone in this format:
+		-> For extra practice also create this advertisement in a reusable way
+
+		ex: if the given data was this: Apple, IPhone X, Black, 1200.99, 128, true, A
+		the output would be:
+
+		We have an brand new IPhone X from Apple
+		It comes in the color Black and has 128GB memory
+		It has a camera and operates with the "A" type sim
+		Get your very own IPhone X for only $1200.99
+
+	------------------------------------------------------------------------
+
+Pizza [variables, operators, concatenation]
+
+	Declare and assign the following variables
+		type (type of pizza), slices (how many slices the pizza has), and people (the number of people eating this pizza)
+
+	Calculate how many slices each person will get and how many are left over. Print the output in this format:
+
+		We ordered a $type pizza with $slices slices. $number_of_people people ate $each_share slices each, so there was $remainder slices left
+
+		Ex: We ordered a cheese pizza with 8 slices. 3 people ate 2 slices each, so there was 2 slices left
+
+	------------------------------------------------------------------------
+
+Lockdown [if else]	
+
+	Declare and assign a year variable
+
+	Using the year determine if we were on lockdown and we did on a daily basis
+
+		if the year was 2020 or 2021 print:
+			Stay at home
+			Practice java
+			Wear a mask
+
+		if the year was any other year print:
+			Party
+			Practice Java
+			Travel
+
+	------------------------------------------------------------------------
+
+Balance [single if, operators, variables]
+
+	Declare and assign the following variables
+		amount balance & withdraw amount
+
+    Check the balance after the withdrawal
+        if you withdrew more money that you had in the account add a overdraft fee to the balance by subtracting 100
+
+    In both cases print the remaining balance after withdrawing
+
+	------------------------------------------------------------------------
+
+Overtime [if else, operators, variables]
+
+	Declare and assign the following variables
+		hourly rate & number of hours worked
+
+	Calculate your total net pay for the week. Also consider if any overtime should be paid. Overtime will be 1.5 times the normal rate and should be paid for every hour over 40.
+	(if you worked 43 hours total, you will get 40 hours normal pay and 3 hours overtime pay)
+
+	Output different messages based on overtime
+		if normal hours were worked (40 hours or less):
+			You worked $hours hours, so your total net pay is: $netPay
+
+		if you worked overtime (more than 40 hours):
+			Wow you worked $hours hours so you will get $overtime_hours of overtime. Your net pay is $netPay
+
+--------------------------------------------------------------------

@@ -1,0 +1,112 @@
+03/12/2023
+
+Week 4
+Day12 - Custom Methods Intro
+Day13 - Custom Methods Continue
+Day14 - Method Overloading, Loops Intro
+__________________________________________________________________
+
+methods
+return type
+parameters/arguments
+method overloading
+loops
+
+Morning: Java
+Afternoon: Soft Skills
+
+You can now start practicing on codingbat.com
+	String-1, Logic-1
+	tasks with loops after week 6
+__________________________________________________________________
+
+Methods
+
+	- methods are important for programming. They help you create reusable code
+
+	- We have used methods from some classes already:
+		String methods, Scanner methods
+
+	- We can also make our own custom methods
+		We can write some code/ some action one time and call it anywhere in the project
+
+    - to understand a method:
+        what is the method (name)
+        what are the parameters
+        what is the return
+__________________________________________________________________
+
+Return type
+
+	void: runs some code and nothing is returned from the method
+	return type: runs some code and return a single value back
+
+	if a method defines a return type instead of void, then there MUST be a return value.
+		-> The return value is given using the 'return' keyword
+
+	 return method work with and without parameters
+__________________________________________________________________
+
+Parameters/arguments
+
+        parameters are information needed for a method to run. That information is used in the method
+
+        you can define as many parameters as needed
+
+    -> What is the difference between parameter and argument
+            parameter: when you declare the method you define which parameters the method should have
+
+            argument: when calling the method, the actual value given into the method call is the argument
+
+                Ex:
+                    charAt(int index){}
+                    int index -> parameter
+                    charAt(0)
+                    0 -> argument
+__________________________________________________________________
+
+Method overloading
+
+	method has the same name, but different parameters
+
+		-> allow us to have different methods that share a similar idea and work with different inputs
+
+		+ readability
+		+ re usability
+
+        - parameter datatypes can be changed or the number of parameters
+
+        one example we have seen:
+
+            substring(num)
+            substring(num, num)
+
+            We use substring two ways, with one number parameter, or with two number parameters
+            This method is overloaded so it means it has the same name but differnt ways to use the method
+
+        return type DOES NOT overload your method
+
+        you need to overload the method by changing the parameters
+            -> BUT IF the method is overloaded then you can change the return type
+                -> Return type can be the same or different if overloaded
+
+IQ: Can you overload a main method?
+Yes, we can add a new method with name main, and have different parameters, but it will not act as the normal main method
+__________________________________________________________________
+
+loops
+
+    Loops in programming are used to repeat statements multiple times
+
+        You can define some action/code that you want to execute repeatedly
+
+    iteration: each cycle of the code, each time the statements execute
+
+    infinite loop: a loop that continues execute without stopping. A loop will be infinite if the boolean expression is always true and never changes to false
+
+	For loop: when there is a fixed number of iterations
+
+        for(initialization; boolean condition; update){
+            // statements
+        }
+__________________________________________________________________

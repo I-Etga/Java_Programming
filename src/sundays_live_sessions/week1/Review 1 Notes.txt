@@ -1,0 +1,319 @@
+2/12/2023
+
+Week 1
+Day01 - Intro To Programming
+Day02 - Escape Sequences, Comments
+Day03 - Variables
+
+42 Days of Java
+__________________________________________________________________
+
+Introduction
+Basic Programming
+Java
+IntelliJ
+Main Method
+Print Statements
+Comments
+Escape Sequences
+Datatypes
+Variables
+
+Next week Replit
+	Replit next week will include something called Scanner
+	We will learn about how to use Scanner in week 4, but it is being used in replit to be able to test your code.
+	It gives dynamic values instead of hardcoded one. You don't need to do anything with the Scanner itself. That part is predefined. You will just use a variable as you normally would to print. Think that the value of the variable can be anything and focus on how that dynamic variable can be printed.
+__________________________________________________________________
+
+Shortcuts
+
+	copy: command/control + c
+	paste: command/control + v
+	cut: command/control + x
+	undo: command/control + z
+	save: command/control + s
+
+	screenshot: 
+		mac: command + shift + 5
+		windows: windows key + shift + s
+
+	search:
+		control/command + f
+
+	main method: main
+	print statement: sout
+	print for variable: soutv
+
+	Comments
+	Select line/s that you want to comment then use the shortcut
+		windows: control + /
+		mac: command + /
+
+	Formatting the code
+		windows: ctrl + alt + L
+		mac: command + option + L
+
+	How to rename something
+		right click -> Refactor -> rename		
+__________________________________________________________________
+
+Saim (dime)
+
+* This program for text is called Sublime
+
+class flow: (EST)
+	45/50 - class
+	15 min breaks
+	45/50 - class
+	15 min breaks
+	45/50 - class
+	lunch -> ~ 1:10 
+	45/50 - class
+	15 min breaks
+	45/50 - class
+	15 min breaks
+	45/50 - class
+
+What should you do if you have a questions: google -> mentor/group channel -> question-answer channel
+
+Discord
+	
+	announcements: important announcements will be shared here
+	* weekly-recordings: Every weeks plan will be shared here
+	general: anything off topic
+	class-chat: during live classes this is the main channel
+	question-answer: ask questions
+	code: where any code from live classes can be shared
+	saim_only: where I will share things
+
+GitHub: for now this is where the code and notes will be shared
+
+Replit: For each topic I will share more practice. No due date
+
+Office Hours: Live sessions - review / practice
+	starts week 3
+
+__________________________________________________________________
+
+Basic Programming
+
+	binary:
+		language computer understand
+		0s and 1s
+
+	programming language: more understandable to us -> high level
+		closer to English than binary
+
+	To go from a high level to a low level (machine under stable) we can compile/translate
+
+Where does a programmer write code
+	any text editor
+
+	IDE: integrated development environment
+		tool to help write code
+		IntelliJ
+
+File: stores data
+
+	extension:
+		type of file
+		.txt
+		.png
+		.mp3
+		.doc
+		.pdf
+
+Java
+
+	java programming is used for many purposes
+	we are learning java for testing, for automation
+
+	how does java work
+
+		high level 			-> compile/translate 	-> low level
+
+		HelloWorld.java		->   compile			-> HelloWorld.class(bytecode)
+
+	JVM: java virtual machine
+		translates the bytecode to binary
+
+	JRE: java runtime environment
+		contains jvm, libraries(files) -> allows us to run java code
+
+	JDK: java development kit
+		allows us to write java code
+		contains JRE & JVM, other tools to help write, for example compiler
+
+__________________________________________________________________
+
+main method
+
+	where we can run the code
+
+	public static void main(String [] args){
+
+	}
+
+	-> create a main method in a class
+
+	code executes top to bottom in the main method
+
+java classes
+
+	where java code is written
+	name of the class matches the file name
+
+	java is case sensitive
+	java is not space sensitive
+
+comments
+	
+	comments are just text in a program file. This text is NOT executed
+		compiler ignore these
+
+	commenting is a good practice to describe how the code works. 
+	allows for good documentation
+
+	single line:
+		// comments in one line
+
+	multi line:
+		/*
+			type 
+			over multiple
+			lines
+		*/
+
+	use todo: in comments as a reminder
+	intellij has a todo window
+		bottom left todo tab
+		View -> Tool Windows
+
+Settings to change for editor:
+	Open settings
+		Mac: IntelliJ -> Settings/Preferences
+		Windows: File -> Settings
+
+	Click Editor on the left
+	Click General
+	Under Mouse Control select the checkbox for: Change font size...
+	Under Soft Wraps, in first box add: *.java;
+	Apply and OK	
+
+printing
+	
+	System.out.println() -> output to the console and the break the line
+	System.out.print()	-> output to the console in the same line. It DOESN't break the line
+
+	System.err.println() -> used for printing error messages
+		-> don't use it
+
+escape sequence 
+
+	allows specific characters, which are used in java syntax, so to be printed
+
+		use a backslash \ to print those characters
+
+	\ --> \\
+	" --> \"
+	new line --> \n
+	tab --> \t
+
+	I like "Java" programming
+
+__________________________________________________________________
+
+Variable
+
+	container that holds some information
+	allows us to use that information multiple times
+		re-usability
+
+	declaring a variable: makes a container so it can hold some information
+
+		datatype variableName
+		int age;
+
+	assigning a variable: store some information to a variable
+
+		variableName = value
+		age = 20;
+
+		-> not datatype for just assigning
+
+	declaring & assigning: creates a variable and assigns the value at the time
+
+		datatype variableName = value
+		int age = 20;
+
+Datatype
+
+	In java there is two type of data
+
+	primitive datatypes: byte, short, int, long, float, double, boolean, char
+
+	(non-primitive)object types: 
+		String: sequence of characters
+
+	whole numbers:
+		byte
+		short
+		int --> the default for the compiler
+		long
+	floating numbers:
+		float
+		double	--> the default for the compiler
+	characters:
+		char: a single character
+	boolean:
+		boolean: true or false
+
+	using the L with a number told the compiler to read it as a long type
+	using the F with a number told the compiler to read it as a float type
+
+__________________________________________________________________
+
+Naming Convention
+
+	convention: what everyone follows
+
+	Example: today is sunday
+
+	package: lowercase, no spaces, use underscore for multiple words
+		-> in recordings camel case
+
+		ex: today_is_sunday
+
+	classes: first letter is uppercase and the rest lowercase
+		Pascal Case: Every word starts with an uppercase
+
+		ex: TodayIsSunday
+
+	variables: camel case
+		-> first word is lowercase, then any following word is upper case
+
+		ex: todayIsSunday
+__________________________________________________________________
+
+Variable naming rules
+
+	- make the variable names are clear as possible
+		dont do:
+
+			int x;
+			int a;
+
+	- We cannot use reserved keywords, which are already used by Java as a programming language.
+	public, static, package, void, for, if,  etc.
+
+	- Variables can contains these:
+		- any letter (A-Z, or a-z)
+		- any number (0-9)
+				Cannot start with numbers, but it can contain numbers.
+
+		- only special characters allowed are dollar sign $ and underscore _
+
+	- for multiple words: use camel case.
+
+__________________________________________________________________
+
