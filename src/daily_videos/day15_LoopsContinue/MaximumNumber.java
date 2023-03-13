@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MaximumNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int max = -324567890;
+        int max = -2147483647; // this is the smallest integer.
         /* if we use 0 , it won't work properly, when I enter all the number negative.
                   In this case it works positive and negative numbers !!
                          */
