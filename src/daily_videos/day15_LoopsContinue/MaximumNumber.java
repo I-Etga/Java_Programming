@@ -1,4 +1,4 @@
-package day15_LoopsContinue;
+package daily_videos.day15_LoopsContinue;
 
 import java.util.Scanner;
 
