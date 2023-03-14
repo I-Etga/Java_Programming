@@ -1,4 +1,4 @@
-package other.studyGroup;
+package studyGroup.march14;
 
 import java.util.Scanner;
 

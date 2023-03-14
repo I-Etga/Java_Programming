@@ -1,6 +1,4 @@
-package other.studyGroup;
-
-import java.util.Scanner;
+package studyGroup.march14;
 
 public class Divided3AndOrFive {
     public static void main(String[] args) {
