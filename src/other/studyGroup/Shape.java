@@ -19,5 +19,7 @@ public class Shape {
             System.out.println(str.repeat(6));
         }
 
+        System.out.println(Divided3AndOrFive.finra(15));
+
     }
 }
