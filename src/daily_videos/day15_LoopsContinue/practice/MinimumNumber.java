@@ -8,9 +8,7 @@ public class MinimumNumber {
         int min = 2147483647;
         /*This is the largest integer.
             That means any integer has to be less than 2147483647 !!
-
          */
-
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter a number: ");
             int num = scanner.nextInt();

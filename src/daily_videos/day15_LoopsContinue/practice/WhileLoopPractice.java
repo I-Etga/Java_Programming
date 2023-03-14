@@ -7,11 +7,9 @@ public class WhileLoopPractice {
 
         Scanner scanner = new Scanner(System.in);
         int age = scanner.nextInt();
-
         /* As long as age is invalid, while loop runs !
             If I enter an age which is invalid, then while loop stop running
          */
-
         while (!(age >= 1 && age <= 150)) {
             System.out.println("Invalid entry! Please re-enter your age:");
             age = scanner.nextInt();

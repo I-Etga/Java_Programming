@@ -4,7 +4,6 @@ public class Finra {
     public static void main(String[] args) {
 
         divededEqualsfiveAndOrThree();
-
     }
 
     public static void divededEqualsfiveAndOrThree(){
@@ -19,7 +18,6 @@ public class Finra {
             }else{
                 result +=  i + " ";
             }
-
         }
         System.out.print(result );
 
