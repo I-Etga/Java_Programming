@@ -18,9 +18,16 @@ public class CydeoLogIn {
         if (userName.equals(userNameInput) && password.equals(passwordInput)) {
             System.out.println("Logged in ");
         } else {
-            int i = 2;
-            for (i = 1; i >= 0; i--) {
-                System.out.println("username or password is not correct!!\nRemaining attempts:" + i + "\nPlease re-enter your username: ");
+            for (int i = 2; i > 0; i--) {
+
+                System.err.println("username or password is not correct!!");
+                System.out.println("Remaining attempts:" + i);
+
+                if (i == 1) {
+                    System.out.println("This is your last chance. Be careful!");
+                }
+
+                System.out.println("Please re-enter your username: ");
                 userNameInput = scanner.next();
                 System.out.println("Please re-enter your password: ");
                 passwordInput = scanner.next();
@@ -47,9 +54,11 @@ public class CydeoLogIn {
                  */
                 if (userName.equals(userNameInput) && password.equals(passwordInput)) {
                     System.out.println("Logged in ");
-                    break;}
-                if (i == 0) {
-                    System.out.println("You account now is locked.Please contact with the support team");
+                    break;
+                }
+
+                if (i == 1) {
+                    System.err.println("You account now is locked.Please contact with the support team");
                 }
             }
         }
