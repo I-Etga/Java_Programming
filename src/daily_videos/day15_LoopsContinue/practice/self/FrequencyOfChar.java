@@ -9,8 +9,8 @@ public class FrequencyOfChar {
         int i = 0;
         int charSequences = 0;
 
-        while(i<str.length()){
-            if(str.charAt(i) == ch){
+        while (i < str.length()) {
+            if (str.charAt(i) == ch) {
                 charSequences++;
             }
             i++;
