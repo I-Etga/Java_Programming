@@ -6,7 +6,7 @@ public class LogIn {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String u ,p;
+        String u, p;
 
         int attempt = 3;
 
@@ -18,14 +18,15 @@ public class LogIn {
             p = scanner.next();
             attempt--;
 
-            if(attempt ==0){
+            if (attempt == 0) {
                 break;
             }
 
-        }while (!(u.equals("Cydeo") && p.equals("WoodenSpoon")));
+        } while (!(u.equals("Cydeo") && p.equals("WoodenSpoon")));
 
         /*
         In this case do will run for the first time regardless while !!
          */
+        scanner.close();
     }
 }

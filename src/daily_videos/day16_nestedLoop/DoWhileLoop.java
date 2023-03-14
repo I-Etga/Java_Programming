@@ -5,13 +5,13 @@ public class DoWhileLoop {
 
         boolean condition = false;
 
-        for (; condition;){
+        for (; condition; ) {
             System.out.println("Hello Cydeo --- For Loop");
         }
 
         System.out.println("----------\n");
 
-        while (condition){
+        while (condition) {
             System.out.println("Hello Cydeo --- While Loop");
         }
 
@@ -21,7 +21,7 @@ public class DoWhileLoop {
 
         do {
             System.out.println("Hello Cydeo --- DoWhile Loop*While condition is false\n");
-        }while (condition);
+        } while (condition);
 
         System.out.println(" ***DoWhile true at least once****\n");
 
@@ -29,7 +29,7 @@ public class DoWhileLoop {
         do {
             System.out.println("Hello Cydeo --- DoWhile Loop*While ");
             i--;
-        }while (i>0);
+        } while (i > 0);
 
         /*
                 As you can see, unlike for and while loops;
@@ -39,11 +39,6 @@ public class DoWhileLoop {
        It runs until while condition is false. Then DoWhile loop stops running !!
 
          */
-
-
-
-
-
 
     }
 }

@@ -10,10 +10,11 @@ public class FrequenceOfWord {
         word = word.toLowerCase();
 
         int count = 0;
-        while(sentence.contains(word)){
+        while (sentence.contains(word)) {
             count++;
-            sentence = sentence.replaceFirst(word,"");
+            sentence = sentence.replaceFirst(word, "");
         }
         System.out.println(count);
+
     }
 }
