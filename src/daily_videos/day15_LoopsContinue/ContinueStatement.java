@@ -60,6 +60,35 @@ public class ContinueStatement {
 
              */
 
+        System.out.println("**********");
+
+        // find the SUM of all the ODD number between 50-100
+
+        int sum = 0;
+        for (int i = 50; i <101 ; i++) {
+            if ((i % 2 )!= 0) {
+                sum += i;
+            }
+           /*   #2 approach !! W-continue
+            if(i %2 == 0){
+                continue;
+            }
+            sum+=i;
+            */
+            //System.out.println( i +" "+  sum);// [to see how it works]
+        }
+        System.out.println(sum);
+
+        //              #2 Approach-- Super easy (same task-same result with a litte trick!!
+        int sum2=0;               //**
+        for (int i = 51; i < 101; i+=2) {
+            sum2+=i;
+        }
+        System.out.println(sum2);
+
+
+
+
 
     }
 }
