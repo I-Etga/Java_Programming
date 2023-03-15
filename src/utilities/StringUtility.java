@@ -10,4 +10,26 @@ public class StringUtility {
         return reverse;
     }
 
+
+    public static String charSet(String str) {
+        String upperCase = "";
+        String lowerCase = "";
+        String digits = "";
+        String specialsChar = "";
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
+                upperCase += str.charAt(i);
+            } else if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
+                lowerCase += str.charAt(i);
+            } else if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+                digits += str.charAt(i);
+            } else {
+                specialsChar += str.charAt(i);
+            }
+        }
+        return ("Uppercase: " + upperCase + "\nLowercase: " + lowerCase + "\nDigits: " + digits + "\nSpeacial Characters: " + specialsChar);
+    }
 }
+
