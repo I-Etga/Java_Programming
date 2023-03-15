@@ -1,4 +1,4 @@
-package daily_videos.day16_nestedLoop;
+package daily_videos.day16_nestedLoop.practice;
 
 import java.util.Scanner;
 
