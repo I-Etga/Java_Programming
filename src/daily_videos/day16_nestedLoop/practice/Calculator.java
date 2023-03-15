@@ -9,7 +9,7 @@ public class Calculator {
 
         String answer = "yes";
 
-        while (answer.equals("yes")) {
+        while (answer.equals("yes")) {                              // outer while stars !!
 
             System.out.println("Enter your first number:");
             double num1 = scanner.nextDouble();
@@ -34,10 +34,19 @@ public class Calculator {
             while (!(answer.equals("yes") || answer.equals("no"))) {
                 System.err.println("Invalid Answer! Would you like to continue?Yes/no");
                 answer = scanner.next().toLowerCase();
+
+                /*
+                    look at the line10  answer String.
+                    so I this is nested while.
+                    The last while runs in a cycle until its false.(if we enter valid value (yes or no), then it's false)
+                    if I enter yes last while(line34) STOP RUNNING and the first while(line12) STARTS OVER running !! (HOW NESTED LOOP WORKS)
+                 */
+
+                                                                        // outer while ends !!
             }
 
-
-        }
+        } // this is the ending braces of the first while line12
+        System.out.println("Calculator is closing...");
     }
 }
 
