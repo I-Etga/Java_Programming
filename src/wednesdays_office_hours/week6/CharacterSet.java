@@ -1,20 +1,28 @@
 package wednesdays_office_hours.week6;
 
+import java.util.Scanner;
+
 public class CharacterSet {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(charSet("esurditfoygpu[hio'nkbv43iCXOYTVYBCFPG6879Y"));
+        System.out.println("Please enter a String:");
+        String str = scanner.next();
+        System.out.println("Please enter a group:");
+        String group = scanner.next();
+
+        System.out.println(charSet(str,group));
 
     }
+    public static String charSet(String str , String group) {
+        String result = "";
 
-    public static String charSet(String str) {
         String upperCase = "";
         String lowerCase = "";
         String digits = "";
         String specialsChar = "";
 
         for (int i = 0; i < str.length(); i++) {
-
             if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
                 upperCase += str.charAt(i);
             } else if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
@@ -24,24 +32,19 @@ public class CharacterSet {
             } else {
                 specialsChar += str.charAt(i);
             }
-
         }
-        return ("Uppercase: "+upperCase + "\nLowercase: " + lowerCase + "\nDigits: " + digits + "\nSpeacial Characters: " + specialsChar);
+
+        if(group.equalsIgnoreCase("uppercase")){
+            result = upperCase;
+        } else if (group.equalsIgnoreCase("lowercase")){
+            result =lowerCase;
+        }else if(group.equalsIgnoreCase("digits") || group.equalsIgnoreCase("numbers")){
+            result = digits;
+        }else if(group.equalsIgnoreCase("special character")){
+            result = specialsChar;
+        }else{
+            result = "Invalid entry";
+        }
+        return result;
     }
-
 }
-
-/*
-T4CharacterSet [methods, loops]
-
-    Create a method that has a String parameter and returns a String.
-    Based on the given String a different set of characters will be returned
-    use these to determine which set of characters is returned:
-
-    based on the defined parameter return a String will all of the characters in the range
-
-    uppercase -> ABCDEFGHIJKLMNOPQRSTUVWXYZ
-    lowercase -> abcdefghijklmnopqrstuvwxyz
-    digit -> 123456789
-    special -> !"#$%&'()*+,-.
- */
