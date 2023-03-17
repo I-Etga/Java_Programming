@@ -1,4 +1,4 @@
-package daily_videos.day17_customClass;
+package daily_videos.day17_customClass.practice;
 
 public class FrequencyOfChars {
     public static void main(String[] args) {
