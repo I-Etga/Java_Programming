@@ -25,14 +25,14 @@ public class Bot {
         while (!firstQ.equals("shutdown")) {
             while (!(firstQ.equals("what is your age ?")
                     || firstQ.equals("who created you ?") || firstQ.equals("what can we talk about ?")
-                    || firstQ.equals("off") || firstQ.equals("shutdown") || firstQ.equals("when did Steve Jobs die ?") || firstQ.equals("how much Jeff Bezos has ?")|| firstQ.equals("what temperatur does water boil at ?"))) {
+                    || firstQ.equals("off") || firstQ.equals("shutdown") || firstQ.equals("when did Steve Jobs die ?") || firstQ.equals("how much Jeff Bezos has ?")|| firstQ.equals("what temperature does water boil at ?"))) {
                 System.out.println("But we talked about it. I am basic talking bot. Ask questions I can answer");
                 firstQ = scanner.nextLine();
             }
 
             while (firstQ.equals("what is your age ?")
                     || firstQ.equals("who created you ?") || firstQ.equals("what can we talk about ?")
-                    || firstQ.equals("off") || firstQ.equals("when did steve jobs die ?") || firstQ.equals("how much jeff bezos has ?") || firstQ.equals("what temperatur does water boil at ?")) {
+                    || firstQ.equals("off") || firstQ.equals("when did steve jobs die ?") || firstQ.equals("how much jeff bezos has ?") || firstQ.equals("what temperature does water boil at ?")) {
 
                 switch (firstQ) {
                     case "what is your age ?":
@@ -53,7 +53,7 @@ public class Bot {
                     case "how much jeff bezos has ?":
                             System.out.println("With a net worth of US$128 billion as of February 2023, Bezos is the third-wealthiest person in the world and was the wealthiest from 2017 to 2021 according to both Bloomberg's Billionaires Index and Forbes.");
                             break;
-                    case "what temperatur does water boil at ?":
+                    case "what temperature does water boil at ?":
                         System.out.println("Water boils at 100 degree celcius at see level");
                         break;
                 }
