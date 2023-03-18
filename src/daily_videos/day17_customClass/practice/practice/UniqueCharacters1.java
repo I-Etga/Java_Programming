@@ -1,4 +1,4 @@
-package daily_videos.day17_customClass.practice;
+package daily_videos.day17_customClass.practice.practice;
 
 public class UniqueCharacters1 {
     public static void main(String[] args) {
