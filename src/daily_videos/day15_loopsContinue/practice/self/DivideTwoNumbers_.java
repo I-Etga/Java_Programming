@@ -13,13 +13,13 @@ public class DivideTwoNumbers_ {
         System.out.println("Please enter your second number: ");
         int b = scanner.nextInt();
 
-        int count = 0;
+        int division = 0;
 
         while (a >= b) {
             a -= b;
-            count++;
+            division++;
         }
 
-        System.out.println("Number1 / number2 = " + count + " remainder 5= " + a);
+        System.out.println("Number1 / number2 = " + division + " remainder = " + a);
     }
 }
