@@ -16,12 +16,12 @@ public class UniqueCharacters2 {
                                     j =0
                     I have selected the first number of my String.
                     Then in the inner for loop;
-                            I am gonna check if my char is the same another.
-                            LEFT to RIGHT all of the characters of String.
+                            I am going to check if my char is the same another.
+                            LEFT to RIGHT all the characters of String.
 
                             İNNER loops runs until and then reset itself.
                         then outer loops runs once more and of course inner loop .
-                                    UNTIL all of char is checked.
+                                    UNTIL all char is checked.
              */
 
             for (int i = 0; i < str.length(); i++) {
