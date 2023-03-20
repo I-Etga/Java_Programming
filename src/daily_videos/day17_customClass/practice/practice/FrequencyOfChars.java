@@ -21,7 +21,6 @@ public class FrequencyOfChars {
                     then it ignores it. Because already counted !!
                     Otherwise, result will be duplicated which is wrong.
              */
-
             if (result.contains("" + ch)) { // if the character is already included in the result.
                 continue;
             }
