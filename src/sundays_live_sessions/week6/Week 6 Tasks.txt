@@ -1,0 +1,86 @@
+
+We will start by going through the Palindrome and CountHi tasks from last week
+
+	------------------------------------------------------------------------
+
+Bot [while, Scanner, conditional]
+
+	create a program that will make a simple bot that can talk with the user. when the program runs the user will be able to continue typing to the bot. Based on what the user says the bot will say something back. Use the following sample set up, but be creative and add more to the bot
+
+	user says | >bot responds
+
+	hello | > world
+	what is your age | > I was programmed in March
+	who created you | > I was created by Saim (use your name)
+	what can we talk about | > print a menu of the options the bot can respond to
+
+	off | > haha you cannot turn me off I am invincible
+	shutdown | > SHUTTING DOWN (program ends, user cannot type anymore)
+
+	------------------------------------------------------------------------
+
+Shopping List [do while, String] [Simpler Version of the advance replit task]
+
+	create a program that create a shopping list for the user. The program will ask the user to enter the items one by one.
+
+	the flow:
+		ask the user for the item
+		add item to the shopping list
+		ask user if they want to add more items
+
+	when the user is done creating the list print it
+
+	------------------------------------------------------------------------
+
+[IQ] Prime in range [nested loop, methods, conditional]
+
+	create a method that will accept a number. Print out all the prime numbers in the range between 2 and the given number
+
+	a number is a prime number when it is only divisible by 1 and itself
+
+	ex:
+		Input:
+			50
+		Output:
+			2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
+
+	------------------------------------------------------------------------
+
+Address [object type]
+
+	create a class called Address
+	declare these instance variables:
+		street, city, state, zipcode, country
+
+	create a setInfo() method to initialize these variables
+
+	create a toString() that shows the full address in the following format
+		$street
+		$city, $state $zipcode
+		$country
+
+	create a different class and create some Address objects
+
+	------------------------------------------------------------------------
+
+Item [object type]
+
+	create a class called Item
+	declare these instance variables:
+		name, quantity, unitPrice
+
+	create a setInfo() method to initialize these variables
+
+	create a sellItem method that will accept an argument for how many items you want to buy
+		first check if there is enough quantity left of the item
+			if there is enough print:
+				Selling: $quantity $name for $totalPrice
+					- calculate the totalPrice by doing the quantity being bought and unitPrice
+					- afterward reduce the quantity of the item from how many were sold
+
+	create a toString() that shows the item information in the following format:
+		ITEM: $name | $quantity | $unitPrice
+
+	create a different class and create some Item objects
+
+	------------------------------------------------------------------------
