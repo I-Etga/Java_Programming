@@ -31,7 +31,7 @@ public class Circle {
                 isTrue = true;
             } else if (lastAnswer.equals("no")) {
                 System.out.println("Program is closing ...");
-                return;
+                System.exit(1); // return also works
             }
         }
     }
