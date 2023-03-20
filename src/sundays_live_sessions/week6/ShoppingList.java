@@ -4,27 +4,29 @@ import java.util.Scanner;
 
 public class ShoppingList {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        String shoppingList = "";
-        String answer = "yes";
-        while (answer.equalsIgnoreCase("yes")) {
-            System.out.println("What would you like to add your shopping List");
-            answer = scanner.nextLine();
+        String add = "";
+        String list = "";
+        int attempts = 3;
 
-            shoppingList += answer + "\n";
+        do {
+            System.out.println("What item do you want to add to the list");
 
-            System.out.println("Would you like to add another item to your shopping list?");
+            list += "\n\t* " + input.nextLine();
 
-            answer = scanner.nextLine();
+            System.out.println("Do you want to add more items?");
+            add = input.nextLine();
 
-            while (!(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("no"))) {
-                System.out.println("Invalid Entr. Please enter yes/no:");
-                answer = scanner.nextLine();
+            // this loop is for the invalid responses, allows for trying to ask
+            while (attempts > 0 && (!add.equalsIgnoreCase("yes") && !add.equalsIgnoreCase("no"))) {
+                System.out.println("Sorry did you want to add more items, yes or no");
+                add = input.nextLine();
+                attempts--;
             }
 
-        }
-        System.out.println("Shopping List:\n"+ shoppingList);
+        } while (add.equalsIgnoreCase("yes"));
 
+        System.out.println(list);
     }
 }

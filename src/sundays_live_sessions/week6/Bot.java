@@ -13,24 +13,25 @@ public class Bot {
 
         while (!(firstQ.equals("hello") || firstQ.equals("hi") || firstQ.equals("hey"))) {
             System.out.println("Why don't you start by greeting me?");
-            firstQ = scanner.nextLine().toLowerCase();
+            firstQ = scanner.nextLine().toLowerCase().trim();
         }
 
         System.out.println("World :) what a joke ha lol");
 
+        boolean isTrue = true;
 
-        System.out.println("You can ask me the following questions:\nwhat is your age ?\nwho created you ?\nwhat can we talk about ?\nor if you think I'm boring just say \"off\" or \"shutdown\" ");
-        firstQ = scanner.nextLine().toLowerCase();
+        while (isTrue) {
+            System.out.println("You can ask me the following questions:\nwhat is your age ?\nwho created you ?\nwhat can we talk about ?\nor if you think I'm boring just say \"off\" or \"shutdown\" ");
+            firstQ = scanner.nextLine().toLowerCase().trim();
 
-        while (!firstQ.equals("shutdown")) {
-            while (!(firstQ.equals("what is your age ?") || firstQ.equals("what is your age")
+            while (!( firstQ.equals("what is your age ?") || firstQ.equals("what is your age")
                     || firstQ.equals("who created you ?") || firstQ.equals("who created you") || firstQ.equals("what can we talk about ?") || firstQ.equals("what can we talk about")
                     || firstQ.equals("off") || firstQ.equals("shutdown") || firstQ.equals("when did steve jobs die ?") || firstQ.equals("when did steve jobs die") || firstQ.equals("how much Jeff Bezos has ?") || firstQ.equals("how much Jeff Bezos has") || firstQ.equals("what temperature does water boil at ?") || firstQ.equals("what temperature does water boil at"))) {
-                System.out.println("I am basic talking bot. Ask questions I can answer please");
-                firstQ = scanner.nextLine();
+                System.out.println("Ask questions I can answer please");
+                firstQ = scanner.nextLine().trim();
             }
 
-            while (firstQ.equals("what is your age ?") || firstQ.equals("what is your age")
+            while (firstQ.equals("shutdown") || firstQ.equals("what is your age ?") || firstQ.equals("what is your age")
                     || firstQ.equals("who created you ?") || firstQ.equals("who created you") || firstQ.equals("what can we talk about ?") || firstQ.equals("what can we talk about")
                     || firstQ.equals("off") || firstQ.equals("when did steve jobs die ?") || firstQ.equals("how much jeff bezos has ?") || firstQ.equals("what temperature does water boil at ?") || firstQ.equals("when did steve jobs die") || firstQ.equals("how much jeff bezos has") || firstQ.equals("what temperature does water boil at")) {
 
@@ -62,14 +63,15 @@ public class Bot {
                     case "what temperature does water boil at":
                         System.out.println("Water boils at 100 degrees Celsius at see level");
                         break;
+                    case "shutdown":
+                        isTrue = false;
                 }
                 System.out.println("What is your next question?");
-                firstQ = scanner.nextLine().toLowerCase();
+                firstQ = scanner.nextLine().toLowerCase().trim();
             }
         }
         System.out.println("Shutting down ...");
         scanner.close();
-        return;
     }
 }
 
