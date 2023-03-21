@@ -2,6 +2,9 @@ package daily_videos.day18_garbageCollection;
 
 public class BankAccount {
 
+    /*
+    these are instances and every object have own instances values
+     */
    public String accountHolder ;
    public long accountNumber;
    public double balance;
