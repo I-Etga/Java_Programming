@@ -2,6 +2,7 @@ package studyGroup;
 
 public class Army {
     public static void main(String[] args) {
+
         eligibleForArmy(30, true, true);
     }
 

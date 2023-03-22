@@ -7,6 +7,7 @@ public class Rectangle {
         Scanner scanner = new Scanner(System.in);
 
         boolean isTrue = true;
+
         while (isTrue) {
 
             System.out.println("Enter the length of the Rectangle:");
@@ -33,15 +34,13 @@ public class Rectangle {
             System.out.println("Perimeter of the perimeter is : " + (2 * (length + width)));
 
             System.out.println("Would you like to calculate another Rectangle? Yes/No");
-            String answer = scanner.next().toLowerCase().trim();
+             String answer = scanner.next().toLowerCase().trim();
 
             while (!(answer.equals("yes") || answer.equals("no"))) {
                 System.err.println("Invalid Entry");
                 System.out.println("Please enter Yes/No");
                 answer = scanner.next();
             }
-
-            // isTrue = true
 
             if (answer.equals("no")) {
                 System.exit(1); // 2.- isTrue = false , 3- return .

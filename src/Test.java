@@ -15,5 +15,7 @@ public class Test {
             }
             System.out.println("Ankaras"); // codes after return wont get executed.
         }
+
+
     }
 }
