@@ -1,0 +1,120 @@
+Office Hours Topics:
+
+    reviewing week 6:
+    loops (while, do while)
+    class & objects
+
+----------------------------------------------------------------------------------------
+
+T1ColorPicker [loop, Scanner, String]
+
+    Create a program that will allow the user to select three unique colors.
+    Ask the user to enter their colors one at a time. Verify the color hasn't been selected already. If the color is unique add it to the final selection otherwise tell the user the colors should be unique and allow them to reenter a different color. The number of iterations is not fixed
+
+    Ex flow:
+        Enter color 1:
+            > red
+        red added
+        Enter color 2:
+            > red
+        red is already selected
+        Enter color 2:
+            > green
+        green added
+        Enter color 3:
+            > red
+        red is already selected
+        Enter color 3:
+            > green
+        green is already selected
+        Enter color 3:
+            > orange
+        orange added
+
+        Here are the colors you picked: red, green, orange
+
+----------------------------------------------------------------------------------------
+
+T2CountWords [String, loop]
+
+    Create a method that accepts a String and returns an int
+        find how many words are in the given String and return that count
+        a word is separated by a space
+
+    Ex:
+        input: "today is monday"
+        output: 3
+
+----------------------------------------------------------------------------------------
+
+T3SortedOrder [loop, String]
+
+    Create a method that accepts a String and returns a boolean.
+        return true if the given String is sorted meaning the characters are in alphabetically order
+        return false if the given String is not sorted
+
+    Ex:
+        input: "abcd"
+        output: true
+
+        input: "abzy"
+        output: false
+
+----------------------------------------------------------------------------------------
+
+T4Recipe [object type]
+
+    Create a class called Recipe
+    declare these instance variables:
+        name, ingredients, serving size, cost
+
+    create a setInfo() method to initialize these variables
+
+    create a method called costPerPerson that will return a double. Calculate the amount each person would need to pay to make this recipe - use the serving size and cost values
+
+    create a toString() that shows the information in the following format:
+        Recipe for $name will require these ingredients:
+                $all_ingredients
+        This dish will serve $serving_size and cost a total of $ $cost to make
+
+    create a class called ObjectTester and create some Recipe objects
+
+----------------------------------------------------------------------------------------
+
+T5SportsTeam [object type]
+
+    Create a class called SportsTeam
+    declare these instance variables:
+        name, number of players, coach, win/loss record, country, number of fans
+
+    create a setInfo() method to initialize these variables
+
+    create a method joinFanclub
+        it is a void method with no parameters, but whenever it is run the number of fans increases by one
+
+    create a toString() that shows the information in the following format:
+        The $name sports team is based out of $country. A total of $player players are led by $coach and currently hold a $record record of wins and losses. They have $fans fans.
+
+    use the ObjectTester class and create some SportsTeam objects
+
+----------------------------------------------------------------------------------------
+
+T6MusicPlaylist [object type]
+
+    Create a class called MusicPlaylist
+    declare these instance variables:
+        name, number of songs, runtime length, current track (int)
+
+    create a setInfo() method to initialize these variables
+
+    create a method next()
+        it is a void method with no parameters, but whenever it is run the current track number is updated by one
+
+    create a method removeSong()
+        it is a void method with no parameters, but whenever it it run a song is removed from the playlist so reduce the number of songs by one
+
+    create a toString() that shows the information in the following format:
+        The $name playlist is currently on track $track_number
+        It has $num_of_songs which runs for a total of $runtime_length
+
+    use the ObjectTester class and create some MusicPlaylist objects

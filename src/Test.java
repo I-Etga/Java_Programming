@@ -13,7 +13,7 @@ public class Test {
                 }
                 System.out.println(ch + ""+ i); //AO A1 A2 A3 B0 B1 B2 B3
             }
-            System.out.println("Ankaras"); // codes after return wont get executed.
+            System.out.println("Ankaras"); // codes after return won't get executed.
         }
 
 
