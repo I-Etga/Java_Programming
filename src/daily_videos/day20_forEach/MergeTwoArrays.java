@@ -49,5 +49,14 @@ public class MergeTwoArrays {
 
         System.out.println(Arrays.toString(ch3));
 
+        System.out.println("***********");
+
+        String[] c1 = {"Java","Python","JavaScript","Ruby"};
+        String[] c2 = {"C#","C++","Swift"};
+
+        String[] c3 = ArraysUtility.merge(c1,c2);
+
+        System.out.println(Arrays.toString(c3));
+
     }
 }
