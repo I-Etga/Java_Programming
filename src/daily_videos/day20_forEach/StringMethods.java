@@ -14,6 +14,7 @@ public class StringMethods {
         System.out.println(Arrays.toString(ch1));
 
         ch1 = str.replace(" ", "").toCharArray();
+                        // every char of array convert to char array[]
 
         System.out.println(Arrays.toString(ch1));
 
@@ -22,7 +23,7 @@ public class StringMethods {
         String str2 = "Today is a great day to learn java";
 
         String[] str3 = str2.split(" "); // reference value to split !!
-
+        //
         System.out.println(Arrays.toString(str3));
 
         System.out.println("--------------");
