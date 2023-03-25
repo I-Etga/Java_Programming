@@ -14,16 +14,9 @@ public class UniqueElements {
                     count++;
                 }
             }
-            if (count == 2) {
-                continue;
-            } else if (count == 1) {
+            if (count == 1) {
                 System.out.print(number + " ");
             }
         }
     }
 }
-/*
-4. Write a program that can display the unique elements of an array
-
-MUST use for each loops
- */

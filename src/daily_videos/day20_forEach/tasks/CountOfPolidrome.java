@@ -15,8 +15,7 @@ public class CountOfPolidrome {
                 reverse += word.charAt(i);
             }
 
-            boolean isPalindrome = word.equalsIgnoreCase(reverse);
-            if (isPalindrome) {
+            if (word.equalsIgnoreCase(reverse)) {
                 count++;
             } else {
                 nonPalidrome++;
