@@ -6,26 +6,36 @@ public class FrequencyString {
 
         String str = "aaabbccccddeeee";
 
-        String result = "";
+        int highestFrequency = 0;
 
-        for (int j = 0; j < str.length(); j++) {
-            char ch = str.charAt(j);
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
             int count = 0;
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == ch) {
+            for (int j = 0; j < str.length(); j++) {
+                if (ch == str.charAt(j)) {
                     count++;
                 }
             }
-            /*
-            this is actually prevent repetition.
-            if in the first loop, there comes already counted char;
-                    then it ignores it. Because already counted !!
-                    Otherwise, result will be duplicated which is wrong.
-             */
-            if (result.contains("" + ch)) { // if the character is already included in the result.
-                continue;
+
+            if (count > highestFrequency) {
+                highestFrequency = count;
             }
-            result += ch + "" + count;
+
+        }
+
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            int count = 0;
+            for (int j = 0; j < str.length(); j++) {
+                if (ch == str.charAt(j)) {
+                    count++;
+                }
+            }
+            if (count == highestFrequency && !result.contains(ch + "")) {
+                result += "\n"+ch;
+            }
         }
         System.out.println(result);
     }
