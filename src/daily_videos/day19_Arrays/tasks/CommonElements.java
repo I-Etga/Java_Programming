@@ -14,10 +14,8 @@ public class CommonElements {
 
             for (int j = 0; j < arr2.length; j++) {
 
-                if (a1 == arr2[j]) {
-                    if (!commonInt.contains("" + arr2[j])) {
+                if (a1 == arr2[j] && !commonInt.contains("" + arr2[j])) {
                         commonInt += a1 + " ";
-                    }
                 }
             }
         }
