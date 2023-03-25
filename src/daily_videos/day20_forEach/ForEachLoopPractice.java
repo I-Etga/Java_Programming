@@ -68,7 +68,7 @@ public class ForEachLoopPractice {
 
         String [] names = {"Mohammad Karimi", "Vasyl Dobrianski", "Gadir Imrahimov", "Abidullah Rahimi"};
 
-        for (String each : names) {
+        for (String each : names) {                     // in case of having first and middle name
             System.out.println(each.charAt(0) + "." + each.charAt(each.lastIndexOf(" ")+1));
         }
 
