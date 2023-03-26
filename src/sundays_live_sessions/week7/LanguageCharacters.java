@@ -1,25 +1,52 @@
 package sundays_live_sessions.week7;
 
-public class LanguageCharacters {
-    public static void main(String[] args) {
+import java.util.Arrays;
 
+public class LanguageCharacters {
+    public static char[] languageChar(String language) {
+
+        int start = 0;
+        int end = 0;
+
+        switch (language) {
+            case "English":
+                start = 33;
+                end = 126;
+                break;
+            case "Greek":
+                start = 884;
+                end = 1011;
+                break;
+            case "Arabic":
+                start = 1548;
+                end = 1790;
+                break;
+            case "Japanese":
+            case "Chinese":
+            case "Korean":
+            case "Vietnamese":
+                start = 63744;
+                end = 64045;
+                break;
+            case "Braille":
+                start = 10240;
+                end = 10495;
+                break;
+        }
+
+        char[] charLanguage = new char[(end - start) + 1];
+
+        for (int i = start, k = 0; i <= end; i++, k++) {
+            charLanguage[k] = (char) i;
+        }
+        return charLanguage;
+    }
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(languageChar("English")));
+        System.out.println(Arrays.toString(languageChar("Greek")));
+        System.out.println(Arrays.toString(languageChar("Arabic")));
+        System.out.println(Arrays.toString(languageChar("Japanese")));
+        System.out.println(Arrays.toString(languageChar("Chinese")));
+        System.out.println(Arrays.toString(languageChar("Braille")));
     }
 }
-/*
-LanguageCharacters [array, char, loop, method]
-
-    Create a method that will accept a String for the language name. Based on the given language name return a char array of the characters that are used in that language. We will use ascii numbers
-
-    Use the following ranges:
-
-    English: 33 - 126
-
-    Greek: 884 - 1011
-
-    Arabic: 1548 - 1790
-
-    Chinese, Japanese, Korean or Vietnamese:  63744 - 64045
-        (this group of characters are the: CJK Compatibility Ideographs)
-
-    Braille: 10240 - 10495
- */
