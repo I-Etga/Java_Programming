@@ -7,7 +7,6 @@ public class RemoveExtraSpaces {
 
         String str = "  Hello world      I      love      Java    ";
 
-        str = str.trim();
         System.out.println(str);
 
         String[] words = str.split(" "); // split is a String method !!
@@ -21,6 +20,7 @@ public class RemoveExtraSpaces {
                 str += each + " ";
             }
         }
+        str = str.trim(); // to remove the last space
         System.out.println(str);
     }
 }
