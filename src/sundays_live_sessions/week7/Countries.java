@@ -39,8 +39,25 @@ public class Countries {
                 shortestCountry = country;
             }
         }
-        System.out.println("shortestCountry = " + shortestCountry);
-        System.out.println("longestCountry = " + longestCountry);
+        System.out.println("shortest Country = " + shortestCountry);
+        System.out.println("longest Country = " + longestCountry);
+
+
+        // #2 approach !! shortest-largest(shorter and easier way)
+
+        String small = countries[0];
+        String large = countries[0];
+
+        for(String each : countries){
+            if(each.length() < small.length()){
+                small = each;
+            } else if(each.length() > large.length()){
+                large = each;
+            }
+        }
+
+        System.out.println("smallest: " + small);
+        System.out.println("largest: " + large);
 
         System.out.println("-----------");
         // #3 starts with 'C'
@@ -65,6 +82,10 @@ public class Countries {
 
         Arrays.sort(countries); // this is a void method. So we can't assign it to itself of to another array by using sort method!
         System.out.println(Arrays.toString(countries));
+
+        // test
+
+        
 
     }
 }
