@@ -46,6 +46,14 @@ public class MultiDimensionArrayPractice {
             }
         }
 
+        System.out.println(Arrays.toString(groups));
+            // toString() method is only for single dimension arrays.
+            // If you write inside multi dimensional array, you'll get hashcode.
+
+
+        //here comes to print multi dimensional arrays !
+
+        System.out.println(Arrays.deepToString(groups));
     }
 
 
