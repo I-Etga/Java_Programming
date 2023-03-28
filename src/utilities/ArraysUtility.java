@@ -18,6 +18,7 @@ public class ArraysUtility {
         }
         return arr3;
     }
+
     public static double[] merge(double[] arr1, double arr2[]) {
 
         double[] arr3 = new double[arr1.length + arr2.length];
@@ -34,6 +35,7 @@ public class ArraysUtility {
 
         return arr3;
     }
+
     public static char[] merge(char[] arr1, char arr2[]) {
 
         char[] arr3 = new char[arr1.length + arr2.length];
@@ -50,6 +52,7 @@ public class ArraysUtility {
 
         return arr3;
     }
+
     public static String[] merge(String[] arr1, String arr2[]) {
 
         String[] arr3 = new String[arr1.length + arr2.length];
@@ -67,32 +70,101 @@ public class ArraysUtility {
         return arr3;
     }
 
-    public static int[] reverse(int [] array){
+    public static int[] reverse(int[] array) {
         int[] reverse = new int[array.length];
-        for (int i = array.length - 1,  k=0; i >= 0; i--,k++) {
+        for (int i = array.length - 1, k = 0; i >= 0; i--, k++) {
             reverse[k] = array[i];
         }
         return reverse;
     }
-    public static double[] reverse(double [] array){
+
+    public static double[] reverse(double[] array) {
         double[] reverse = new double[array.length];
-        for (int i = array.length - 1,  k=0; i >= 0; i--,k++) {
+        for (int i = array.length - 1, k = 0; i >= 0; i--, k++) {
             reverse[k] = array[i];
         }
         return reverse;
     }
-    public static char[] reverse(char [] array){
+
+    public static char[] reverse(char[] array) {
         char[] reverse = new char[array.length];
-        for (int i = array.length - 1,  k=0; i >= 0; i--,k++) {
+        for (int i = array.length - 1, k = 0; i >= 0; i--, k++) {
             reverse[k] = array[i];
         }
         return reverse;
     }
-    public static String[] reverse(String [] array){
+
+    public static String[] reverse(String[] array) {
         String[] reverse = new String[array.length];
-        for (int i = array.length - 1,  k=0; i >= 0; i--,k++) {
+        for (int i = array.length - 1, k = 0; i >= 0; i--, k++) {
             reverse[k] = array[i];
         }
         return reverse;
     }
+
+    public static int[] addElement(int[] array, int element) {
+        int[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element; // basically assignment
+        return newArray;
+    }
+
+    public static double[] addElement(double[] array, double element) {
+        double[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element; // basically assignment
+        return newArray;
+    }
+
+    public static char[] addElement(char[] array, char element) {
+        char[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element; // basically assignment
+        return newArray;
+    }
+
+    public static String[] addElement(String[] array, String element) {
+        String[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element; // basically assignment
+        return newArray;
+    }
+
+    public static boolean contains(int[] array, int element) {
+        boolean contains = false;
+        for (int i : array) {
+            if (i == element) {
+                contains = true;
+            }
+        }
+        return contains;
+    }
+
+    public static boolean contains(char[] array, char element) {
+        boolean contains = false;
+        for (char i : array) {
+            if (i == element) {
+                contains = true;
+            }
+        }
+        return contains;
+    }
+
+    public static boolean contains(double[] array, double element) {
+        boolean contains = false;
+        for (double i : array) {
+            if (i == element) {
+                contains = true;
+            }
+        }
+        return contains;
+    }
+
+    public static boolean contains(String[] array, String element) {
+        boolean contains = false;
+        for (String i : array) {
+            if (i.equalsIgnoreCase(element)) {
+                contains = true;
+            }
+        }
+        return contains;
+    }
+
+
 }
