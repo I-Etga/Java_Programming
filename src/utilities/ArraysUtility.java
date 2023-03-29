@@ -162,5 +162,14 @@ public class ArraysUtility {
         return false;
     }
 
+/*
+    public static int[] remove(int[] array , int index){
+        int [] newArray = new int[array.length-1];
 
+    }
+
+
+    public static int[] removeDuplicate(int[] array){
+
+    }*/
 }
