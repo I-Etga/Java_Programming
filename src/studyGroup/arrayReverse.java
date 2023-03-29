@@ -1,7 +1,8 @@
 package studyGroup;
 
 public class arrayReverse {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         String[] classMates = {"Akif", "Zainab", "Ziya", "Sabah", "Marah", "Husametin", "Yevgeniy", "Aynur", "Rachel", "Ross"};
 
@@ -13,4 +14,6 @@ public class arrayReverse {
             System.out.println(str);
         }
     }
+
+
 }

@@ -31,9 +31,7 @@ public class ArrayIntro1 {
 }
 
 
-
-
-        /*
+/*
         3. Given the following arrays:
         String[] items  = {"Shoes", "Jacket",  "Gloves", "AirPods", "iPad", "iPhone 12 case" };
         double[] prices = {99.99,      150.0,  9.99,     250.0 ,    439.50,  39.99};
@@ -45,5 +43,4 @@ public class ArrayIntro1 {
         2. find out if "iPad" is contained in the item list
 
         3. Print the report of each shopping item
-            name - price - #ID
-         */
+            name - price - #ID*/
