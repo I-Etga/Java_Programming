@@ -127,43 +127,39 @@ public class ArraysUtility {
     }
 
     public static boolean contains(int[] array, int element) {
-        boolean contains = false;
         for (int i : array) {
             if (i == element) {
-                contains = true;
+                return true;
             }
         }
-        return contains;
+        return false;
     }
 
     public static boolean contains(char[] array, char element) {
-        boolean contains = false;
         for (char i : array) {
             if (i == element) {
-                contains = true;
+                return true;
             }
         }
-        return contains;
+        return false;
     }
 
     public static boolean contains(double[] array, double element) {
-        boolean contains = false;
         for (double i : array) {
             if (i == element) {
-                contains = true;
+                return true;
             }
         }
-        return contains;
+        return false;
     }
 
     public static boolean contains(String[] array, String element) {
-        boolean contains = false;
         for (String i : array) {
             if (i.equalsIgnoreCase(element)) {
-                contains = true;
+                return true; // Once it's true , method ends and returns true !!
             }
         }
-        return contains;
+        return false;
     }
 
 
