@@ -10,10 +10,8 @@ public class T2BeginningEnd {
             name = name.toLowerCase();
             if (name.charAt(0) == name.charAt(name.length() - 1)) {
                 count++;
-
             }
         }
         System.out.println(count);
-
     }
 }

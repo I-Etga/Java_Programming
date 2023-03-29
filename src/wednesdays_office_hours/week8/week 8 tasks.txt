@@ -32,7 +32,9 @@ Analysis the code to determine which parts are in the stack & heap memory
 
 T1ShiftLeft [array, loop]
 
-    Create a program that will define an int array with any number of elements. Print out the array with all the elements shifted one position to the left. The first element would be moved to the end
+    Create a program that will define an int array with any number of elements.
+    Print out the array with all the elements shifted one position to the left.
+    The first element would be moved to the end
 
     Ex:
         {1, 2, 3} -> [2, 3, 1]
@@ -43,7 +45,8 @@ T1ShiftLeft [array, loop]
 
 T2BeginningEnd [array, loop, String]
 
-    Create a program that will define a String array with some name values. Determine how many of the names begin with and end with the same character.
+    Create a program that will define a String array with some name values.
+    Determine how many of the names begin with and end with the same character.
 
     Ex:
         {Anna, Mike, Aliya, Remus, Gina, Hannah, Nathan, Otto, Kevin, Kelly}
@@ -56,7 +59,8 @@ T2BeginningEnd [array, loop, String]
 
 T3ReverseEach [array, loop, String]
 
-    Create a program that will define a String array with some words. Reverse each given element and assign them to a new array for all the reverse words
+    Create a program that will define a String array with some words.
+    Reverse each given element and assign them to a new array for all the reverse words
 
     Ex:
         {can, you, join, the, team} -> [nac, uoy, nioj, eht, meat]

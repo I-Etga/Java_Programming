@@ -2,6 +2,7 @@ package utilities;
 
 import java.util.Arrays;
 
+
 public class ArraysUtility {
 
     public static int[] merge(int[] arr1, int arr2[]) {

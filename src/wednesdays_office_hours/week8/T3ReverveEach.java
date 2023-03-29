@@ -10,19 +10,20 @@ public class T3ReverveEach {
         String [] reverseWords = reverse(words);
 
         System.out.println(Arrays.toString(reverseWords));
-
     }
     public static String[] reverse(String[] array) {
+
         String[] reverseWords = new String[array.length];
         /*
         I've used here the outer loop as for each loop.
         That would be easier, if I used regular for loop.
         However, inner loop MUST be for loop. Because for each loop has no index an order is completely fixed.
          */
-
         int k = 0;
+
         for (String word : array) {
-            String reverse = "";
+            //can // you
+            String reverse = ""; //nac // uoy
             for (int i = word.length() - 1; i >= 0; i--) {
                 reverse += "" + word.charAt(i);
             }
