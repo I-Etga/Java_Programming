@@ -5,12 +5,13 @@ import java.util.Arrays;
 public class T3ReverveEach {
     public static void main(String[] args) {
 
-        String[] words = {"can", "you", "join", "the", "team" };
+        String[] words = {"can", "you", "join", "the", "team"};
 
-        String [] reverseWords = reverse(words);
+        String[] reverseWords = reverse(words);
 
         System.out.println(Arrays.toString(reverseWords));
     }
+
     public static String[] reverse(String[] array) {
 
         String[] reverseWords = new String[array.length];
@@ -27,9 +28,9 @@ public class T3ReverveEach {
             for (int i = word.length() - 1; i >= 0; i--) {
                 reverse += "" + word.charAt(i);
             }
-           // System.out.println(reverse); // shows how it works. After each! inner loop turn, we get a reverse word.
+            // System.out.println(reverse); // shows how it works. After each! inner loop turn, we get a reverse word.
             reverseWords[k++] = reverse; // usage of k++ is important-increment !!
         }
-       return reverseWords;
+        return reverseWords;
     }
 }
