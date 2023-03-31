@@ -101,7 +101,57 @@ public class ArrayListMethod {
         System.out.println(studentsList.lastIndexOf("Rachel")); //6
 
 
+        boolean hasRachel = studentsList.contains("Rachel");
+        boolean hasAli = studentsList.contains("Ali");
 
+        System.out.println(hasAli);
+        System.out.println(hasRachel);
 
+        System.out.println("************");
+
+        ArrayList<Integer> list1= new ArrayList<>();
+
+        ArrayList<Integer> list2 = list1; // reference to the same object
+
+        list1.add(10); // change affects both of them(because the same object !!)
+
+        System.out.println(list1);
+        System.out.println(list2);
+
+        System.out.println(list1 == list2); //true
+
+        ArrayList<Integer> l1 = new ArrayList<>();
+        ArrayList<Integer> l2 = new ArrayList<>();
+
+        l1.add(10);
+        l2.add(10);
+
+        // l1 and l2 are two different object.
+        System.out.println(l1); //[10]
+        System.out.println(l2); // [0]
+
+        System.out.println(l1==l2); // false
+        System.out.println(list1.equals(l2)); // true
+
+        System.out.println("*******************");
+
+        ArrayList<Integer> n1 = new ArrayList<>();
+        n1.add(10);
+        n1.add(20);
+        n1.add(30);
+
+        ArrayList<Integer> n2 = new ArrayList<>();
+        n2.add(30);
+        n2.add(20);
+        n2.add(10);
+
+        System.out.println("n1 = " + n1);
+        System.out.println("n2 = " + n2);
+
+        System.out.println(n1.equals(n2)); // because they are not in the same order (So order matters for equals method[order sensitive])
+
+        n1.clear(); //[]
+        System.out.println(n1.isEmpty()); // true
+        System.out.println(n2.isEmpty()); // false
     }
 }
