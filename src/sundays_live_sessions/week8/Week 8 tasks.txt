@@ -1,0 +1,91 @@
+	------------------------------------------------------------------------
+
+AverageEach [multidimensional, loop]
+
+	Create a program that will define a 2D int array with some numbers. Go through and calculate the average of each inner array and the average of the whole 2D array
+
+	Ex:
+       int [][] nums = {
+                {3, 4, 5, 6},
+                {5, 2, 6},
+                {10, 40, 20}
+        };
+
+        output:
+        	average of: [3, 4, 5, 6] is 4.5
+        	average of: [5, 2, 6] is 4.3
+        	average of: [10, 40, 25] is 25.0
+        	average of all is 10.6
+
+	------------------------------------------------------------------------
+
+CommonElements [multidimensional, loop]
+
+	Create a program that will define a 2D int array with some numbers. Go through and find which elements can be found in all of the inner arrays
+
+	Ex:
+	       int[][] arr {
+	              {4, 1, 24, 5},
+	              {24, 1, 5, 2},
+	              {4, 1, 5, 1}
+	       }
+
+	       common elements are: 1, 5
+
+	       -> 4 is missing from the 2nd array & 24 is missing from the 3rd array so those aren't common elements
+
+	------------------------------------------------------------------------
+
+GoogleSearch [Wrapper class, String, testing/automation idea]
+
+	Create a program that will define a String that is given in a fixed format based on how google search results are displayed.
+
+	format: About 3,940,000,000 results (0.39 seconds)
+
+	Scenario: check if your search results are under 100 Million
+		if the results are under print: Good Search
+		if the results are over print: Narrow your search, too many results
+
+	AC: User should be able to search in google and get results back in under 0.85 seconds or less
+	Test Case:
+		Given user opens the browser and navigates to google.com
+		Then searches for {data}
+		Verify if the time is less than or equal to 0.85 seconds
+
+			> check the number of seconds it took for the results to see if the functionality is working properly
+	------------------------------------------------------------------------
+
+SumDigits [Wrapper class, ArrayList, loop]
+
+	Create a program that will define an ArrayList of String. The elements in this ArrayList will be number digits like: "123". Calculate the sum of the digits and store them into a new ArrayList of Integers. Print all the sums of the digits at the end.
+
+		Ex:
+			Input:
+			["123, "52", "513"]
+			Output:
+			[6, 7, 9]
+
+	------------------------------------------------------------------------
+
+[IQ] Second Biggest Number [ArrayList, loop, conditional]
+
+	Create a program that will have an ArrayList of Integers. Find the second biggest number in the list.
+	Note: the 2nd biggest should be unique meaning it should be different from the max number
+
+Example:
+	Input:
+		[4,3,1,4,5,2,4,8,4,8]
+	Output:
+
+	------------------------------------------------------------------------
+
+CountChar [ArrayList, String, loop]
+
+	Create a program that defines an ArrayList of Strings and a char letter. Find how many times the given char letter is found in the words defined in the ArrayList
+
+		Ex:
+		Input:
+			"java", "html", "css", "java", "javascript", "selenium"
+			letter: ‘a’
+		Output:
+			6
