@@ -15,7 +15,6 @@ public class MinMaxNumberMultiDArray {
         int min = numbers[0][0];
 
 
-
         for (int[] numbers1D : numbers) {
             for (int num : numbers1D) {
                 if(num > max) {
