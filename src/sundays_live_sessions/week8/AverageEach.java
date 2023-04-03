@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class AverageEach {
     public static void main(String[] args) {
-        DecimalFormat df = new DecimalFormat("0.0");
-        // We can print how many decimal number we want with this class !! (more 0 after period(.), more decimal number)
+        DecimalFormat df = new DecimalFormat("#.##");
+        // We can print how many decimal number we want with this class !! (more #/0 after period(.), more decimal number)
 
         int[][] numbers = {{3, 4, 5, 6}, {5, 2, 6}, {10, 40, 20}};
 
