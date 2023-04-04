@@ -14,6 +14,7 @@ public class FrequencyCharacters {
                 result += each + "" + frequency;
             }
         }
+
         System.out.println(result);
     }
 }
