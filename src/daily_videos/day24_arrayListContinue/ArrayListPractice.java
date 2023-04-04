@@ -63,7 +63,10 @@ public class ArrayListPractice {
         }
 
         System.out.println("maleEmployees = " + maleEmployees);
+        System.out.println("Total number of male employees: " + maleEmployees.size());
+        System.out.println();
         System.out.println("femaleEmployees = " + femaleEmployees);
+        System.out.println("Total number of female employees: " + femaleEmployees.size());
 
     }
 }
