@@ -9,13 +9,13 @@ public class CharCatagory {
 
         String str = "Wooden Spoon!";
 
-        char[] chars = str.toCharArray();
+        char[] chars = str.toCharArray(); // String to char[]
 
-        System.out.println(chars);
+        //System.out.println(chars);
 
-        System.out.println(Arrays.toString(chars)); //[W, o, o, d, e, n,  , S, p, o, o, n]
+        System.out.println(Arrays.toString(chars)); //[W, o, o, d, e, n,  , S, p, o, o, n,!]
 
-        String letter = "";
+        String letter = ""; //Woo
         String digits = "";
         String specialChars = "";
 /*
@@ -33,7 +33,7 @@ public class CharCatagory {
 
         //    #2 New Version ( Wrapper classes methods (Character))
 
-        for (char ch : chars) {
+        for (char ch : chars) { //W
             if (Character.isLetter(ch)) {
                 letter += ch;
             } else if (Character.isDigit(ch)) {
@@ -48,4 +48,3 @@ public class CharCatagory {
         System.out.println("specialChars = \"" + specialChars + "\"");
     }
 }
-
