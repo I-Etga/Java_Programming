@@ -16,7 +16,7 @@ public class Dog {
         System.out.println(name + " is drinking water. ");
     }
 
-    public void setInfo(String name, String breed, char gender, String size, int age, String color) {
+    public void setInfo(String name, String breed, char gender, int age,String size, String color) {
         this.name = name;
         this.breed = breed;
         this.gender = gender;

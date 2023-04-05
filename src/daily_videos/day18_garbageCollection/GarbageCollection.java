@@ -38,11 +38,11 @@ public class GarbageCollection {
         System.out.println("----------");
 
         Dog dog1 = new Dog();
-        dog1.setInfo("Chuck","Bulldog",'M',"Small",3,"Black");
+        dog1.setInfo("Chuck","Bulldog",'M',3,"Small","Black");
 
 
         Dog dog2 = new Dog();
-        dog2.setInfo("Kido","Shiba Inu",'M',"Medium",5,"Orange");
+        dog2.setInfo("Kido","Shiba Inu",'M',5,"Medium","Orange");
 
             // [two ways to make dog1 eligible for garbage collection]
 
