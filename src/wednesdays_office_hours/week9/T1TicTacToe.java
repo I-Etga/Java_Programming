@@ -7,7 +7,7 @@ public class T1TicTacToe {
 
         char[][] board = {
                 {'-', 'O', 'X'},
-                {'-', 'O', 'X'},
+                {'-', '-', 'X'},
                 {'X', 'O', '-'},
         };
 
@@ -15,9 +15,15 @@ public class T1TicTacToe {
 
         for (int i = 0; i < board.length; i++) {
             //check row
+            System.out.println(Arrays.toString(board[i])); // [[-, O, X]]
             String row = Arrays.toString(board[i]).replace(", ", "").replace("[", "").replace("]", "");
+            System.out.println(row); // -OX
+
             //check colm
             String colm = "" + board[0][i] + board[1][i] + board[2][i];
+            System.out.println(colm);
+
+            System.out.println("****");
 
             if (row.equals("XXX") || colm.equals("XXX")) {
                 winner = "X";
@@ -25,6 +31,7 @@ public class T1TicTacToe {
                 winner = "O";
             }
         }
+
         // check  diagonal
         String dig1 = "" + board[0][0] + board[1][1] + board[2][2];
         String dig2 = "" + board[2][0] + board[1][1] + board[0][2];

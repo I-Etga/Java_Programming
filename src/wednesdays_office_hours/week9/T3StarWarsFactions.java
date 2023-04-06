@@ -9,13 +9,13 @@ public class T3StarWarsFactions {
     public static void main(String[] args) {
 
         ArrayList<String> names = new ArrayList<>();
-        names.addAll(Arrays.asList("Jedi Yoda", "officer Versio", "officer Brunson",
+        names.addAll(Arrays.asList("Jedi Yoda", "officer Versio", "officer brunson",
                 "Trooper Needa", "Jedi Windu", "Jedi Skywalker", "Princess Leia Rebel", "Rebel Sabine",
                 "Rey Jedi", "Rook Alliance", "imperial Terex"));
 
-        ArrayList<String> jediOrder = new ArrayList<>();
-        ArrayList<String> galacticEmpire = new ArrayList<>();
-        ArrayList<String> rebelAlliance = new ArrayList<>();
+        ArrayList<String> jediOrder = new ArrayList<>(); // Yoda,
+        ArrayList<String> galacticEmpire = new ArrayList<>(); // Version , Brunson, Needa
+        ArrayList<String> rebelAlliance = new ArrayList<>(); // Rey
 
         for (String name : names) {
             name = name.toLowerCase();
@@ -24,15 +24,14 @@ public class T3StarWarsFactions {
                 jediOrder.add(StringUtility.capatilize(name.replace("jedi", "").trim()));
             } else if (name.contains("imperial") || name.contains("trooper") || name.contains("officer")) {
                 galacticEmpire.add(StringUtility.capatilize(name.replace("imperial", "").replace("trooper", "").replace("officer", "").trim()));
-            }
-            if (name.contains("rebel") || name.contains("alliance")) {
+            } else if (name.contains("rebel") || name.contains("alliance")) { //"Rook"
                 rebelAlliance.add(StringUtility.capatilize(name.replace("rebel", "").replace("alliance", "").trim()));
 
             }
         }
+
         System.out.println("jedi : " + jediOrder);
         System.out.println("Galactic Empire: " + galacticEmpire);
         System.out.println("Rebel Alliance: " + rebelAlliance);
-
     }
 }

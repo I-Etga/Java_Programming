@@ -19,7 +19,9 @@ T1TicTacToe [multidimensional array]
 
 T2HtmlGenerator [String, wrapper class, loop, array]
 
-    Create a program that will read the request for the HTML that will be generated. Each request will be made of the tags and how many times that tag should be repeated. Each separate HTML tag will be separated by a semi-colon;
+    Create a program that will read the request for the HTML that will be generated.
+    Each request will be made of the tags and how many times that tag should be repeated.
+    Each separate HTML tag will be separated by a semi-colon;
 
     Tags should be surrounded in diamond brackets and each closing tag has a / too
 
@@ -27,7 +29,7 @@ T2HtmlGenerator [String, wrapper class, loop, array]
 
     Ex:
         Input:
-            div2;li1
+            div-2;li1
 
         Output:
             <div> </div>

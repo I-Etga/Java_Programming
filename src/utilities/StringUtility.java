@@ -38,12 +38,10 @@ public class StringUtility {
         String result = "";
 
         for (String each : eachWord) {
-            result += each.substring(0,1).toUpperCase() + each.substring(1);
+            result += each.substring(0,1).toUpperCase() + each.substring(1) +" ";
         }
 
         return result.trim();
     }
-
-
 }
 
