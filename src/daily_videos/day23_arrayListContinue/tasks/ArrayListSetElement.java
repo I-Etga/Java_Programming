@@ -21,10 +21,13 @@ public class ArrayListSetElement {
         */
 
         //numbers.add(4,0); --> adds and shift the left other to left
+        //numbers.add(numbers.size() - 1,0); [1, 2, 3, 4, 0, 5]
+
         numbers.set(numbers.size() - 1, 0); // -->  change(set) the element at passed index
 
-        System.out.println(numbers);
+        //numbers.set(numbers.indexOf(3),0);  list.indexOf() ArraysList has also indexOf method
 
+        System.out.println(numbers);
     }
 }
 

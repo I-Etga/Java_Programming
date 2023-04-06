@@ -6,11 +6,13 @@ import java.util.Arrays;
 public class RemoveAll {
     public static void main(String[] args) {
 
-        ArrayList<String> students = new ArrayList<>(Arrays.asList("John", "Ahmed", "Daniel", "Ahmed", "James", "Muhammed"));
+        ArrayList<String> students = new ArrayList<>();
+        students.addAll(Arrays.asList("John", "Ahmed", "Daniel", "Ahmed", "James", "Muhammed", "Ahmed" ,"Ahmed"));
 
         students.removeAll(Arrays.asList("Ahmed")); // has to be collection !!
+        // students.remove("Ahmed"); // It removes only the first "Ahmet"
+
 
         System.out.println(students);
-
     }
 }

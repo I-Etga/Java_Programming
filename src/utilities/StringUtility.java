@@ -4,8 +4,8 @@ public class StringUtility {
 
     public static String reverse(String str) { // / java
         String reverse = ""; //avaj
-                // i = 3  2  1           i>=0
-        for (int i = str.length() - 1; i >= 0;i-- ) {
+        // i = 3  2  1           i>=0
+        for (int i = str.length() - 1; i >= 0; i--) {
             reverse += str.charAt(i);
         }
         return reverse;
@@ -32,5 +32,18 @@ public class StringUtility {
         }
         return ("Uppercase: " + upperCase + "\nLowercase: " + lowerCase + "\nDigits: " + digits + "\nSpeacial Characters: " + specialsChar);
     }
+
+    public static String capatilize(String str) {
+        String[] eachWord = str.toLowerCase().trim().split(" ");
+        String result = "";
+
+        for (String each : eachWord) {
+            result += each.substring(0,1).toUpperCase() + each.substring(1);
+        }
+
+        return result.trim();
+    }
+
+
 }
 

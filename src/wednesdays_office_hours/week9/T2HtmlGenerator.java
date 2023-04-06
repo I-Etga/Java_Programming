@@ -5,23 +5,30 @@ import java.util.Arrays;
 public class T2HtmlGenerator {
     public static void main(String[] args) {
 
-        String str = "ul1;li2;button2";
+        // assume the number can only go to 9
 
-        String [] strSplit = str.split(";"); // [ul1, li3, button2]
+        String request = "img2;div2;button3;ul1";
+        String[] eachPart = request.split(";");
+        System.out.println(Arrays.toString(eachPart));
+        String html = "";
 
-        System.out.println(Arrays.toString(strSplit));
+        for (String each : eachPart) {
 
-        for (String each : strSplit) {
-            // first, we get a substring from the last character of String,and convert it to int in order to use as a number.
-            int count = Integer.parseInt(each.substring(each.length()-1));
+            String tag = each.substring(0, each.length() - 1);
+            int num = Integer.parseInt(each.replace(tag, "")); // each.substring(each.length()-1)
+            String fullTag = "<" + tag + "> </" + tag + ">\n";
 
-            //System.out.println(count);
-            //int count = each.charAt(each.length()-1) -48; // OLD VERSION SOLUTION . it works but only with digits (0-9)
+            html += fullTag.repeat(num);
+            /*
+                instead of repeat method
+                for(int i = 0; i < num; i++){
+                    html += fullTag;
+                }
+             */
 
-            for (int i = 0 ; i < count; i++){
-                System.out.println("<" + each.substring(0,each.length()-1) + "> " + "</" +each.substring(0,each.length()-1) + ">"  );
-            }
         }
+
+        System.out.println(html);
 
     }
 }

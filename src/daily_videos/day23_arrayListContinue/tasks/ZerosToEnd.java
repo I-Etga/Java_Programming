@@ -2,17 +2,42 @@ package daily_videos.day23_arrayListContinue.tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ZerosToEnd {
+
+
     public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(1, 0, 2, 0, 3, 0, 4, 0));
+
+        int countZeros = Collections.frequency(list, 0);
+
+        list.removeAll(Arrays.asList(0));
+
+        for (int i = 0; i < countZeros; i++) {
+            list.add(0);
+        }
+
+        System.out.println(list);
+
+
+    }
+}
+    /*
+           This is my code. It's pretty long and I've used here my old methods.
+                    But notes are important. That's why it stays as command.
+
+        public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 0, 2, 0, 3, 0, 4, 0));
-/*
+
          I need a new ArrayList. So I create a new arrayList and assign the same value of original ArrayList.
          I'm not going to assign original arrayList directly to new arrayList. Because SAME OBJECT , any change affects both of them at the same time.
          So, we get wrong result ! --> [1, 2, 3, 4, 3, 0, 4, 0]
 
         ArrayList<Integer> numbersZerosToEnd = numbers; -->assign original arrayList directly to new arrayList
-        */
+
         //create new ArrayList and assign manually .(I have to define new arrayList's capacity to set value of index independent.)
         ArrayList<Integer> numbersZerosToEnd = new ArrayList<>(Arrays.asList(1, 0, 2, 0, 3, 0, 4, 0));
 
@@ -43,8 +68,5 @@ public class ZerosToEnd {
             if (!(number == 0)) {
                 numbersZerosToEnd1.set(k++, number);
             }
-
         }
-        System.out.println(numbersZerosToEnd1);
-    }
-}
+        System.out.println(numbersZerosToEnd1);*/

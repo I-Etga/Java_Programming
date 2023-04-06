@@ -1,5 +1,7 @@
 package wednesdays_office_hours.week9;
 
+import utilities.StringUtility;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -16,34 +18,21 @@ public class T3StarWarsFactions {
         ArrayList<String> rebelAlliance = new ArrayList<>();
 
         for (String name : names) {
-            String[] nameTitle = name.split(" ");
+            name = name.toLowerCase();
 
-            String title = nameTitle[0];
+            if (name.contains("jedi")) {
+                jediOrder.add(StringUtility.capatilize(name.replace("jedi", "").trim()));
+            } else if (name.contains("imperial") || name.contains("trooper") || name.contains("officer")) {
+                galacticEmpire.add(StringUtility.capatilize(name.replace("imperial", "").replace("trooper", "").replace("officer", "").trim()));
+            }
+            if (name.contains("rebel") || name.contains("alliance")) {
+                rebelAlliance.add(StringUtility.capatilize(name.replace("rebel", "").replace("alliance", "").trim()));
 
-            switch (nameTitle[0].toLowerCase()) {
-                case "jedi":
-                    if (!jediOrder.contains(title)) {
-                        jediOrder.add(title);
-                    }
-                    break;
-                case "officer":
-                case "imperial":
-                case "trooper":
-                    if (!galacticEmpire.contains(title)) {
-                        galacticEmpire.add(title);
-                    }
-                    break;
-                case "rebel":
-                case "alliance":
-                    if (!rebelAlliance.contains(title)) {
-                        rebelAlliance.add(title);
-                    }
-                    break;
             }
         }
-
-        System.out.println("jedi Order: " + jediOrder);
+        System.out.println("jedi : " + jediOrder);
         System.out.println("Galactic Empire: " + galacticEmpire);
         System.out.println("Rebel Alliance: " + rebelAlliance);
+
     }
 }
