@@ -1,6 +1,7 @@
 package daily_videos.day26_statics.studentTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StudentsGroup { //     StudentGroup HAS A Student
 
@@ -13,6 +14,10 @@ public class StudentsGroup { //     StudentGroup HAS A Student
         this.groupName = groupName;
         this.groupId = groupId;
         //students = new ArrayList<>(); // size : 0 way #2
+    }
+
+    public void addStudent(Student [] students){
+        this.students.addAll(Arrays.asList(students));
     }
 
     public void addStudent(Student student) { // takes one student object, and adds it to the arrayList of students.
