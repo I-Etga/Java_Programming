@@ -108,7 +108,7 @@ public class ArrayListMethod {
 
         System.out.println("************");
 
-        ArrayList<Integer> list1= new ArrayList<>();
+        ArrayList<Integer> list1 = new ArrayList<>();
 
         ArrayList<Integer> list2 = list1; // reference to the same object
 
@@ -129,7 +129,7 @@ public class ArrayListMethod {
         System.out.println(l1); //[10]
         System.out.println(l2); // [0]
 
-        System.out.println(l1==l2); // false
+        System.out.println(l1 == l2); // false
         System.out.println(list1.equals(l2)); // true
 
         System.out.println("*******************");
@@ -152,5 +152,6 @@ public class ArrayListMethod {
         n1.clear(); //[]
         System.out.println(n1.isEmpty()); // true
         System.out.println(n2.isEmpty()); // false
+
     }
 }

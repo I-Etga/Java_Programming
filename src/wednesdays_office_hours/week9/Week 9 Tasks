@@ -71,13 +71,19 @@ T3StarWarsFactions [ArrayList, String, Loop]
 
 T4WeatherReport [ArrayList, loop, operators]
 
-    Create a program that will define an ArrayList of recent temperatures. There is always extreme temperatures so to get a better reading of the data remove the highest 2 and lowest 2 temperatures. Then give the following information based on the temperature:
+    Create a program that will define an ArrayList of recent temperatures.
+    There is always extreme temperatures so to get a better reading of the data remove the highest 2 and lowest 2 temperatures.
+    Then give the following information based on the temperature:
 
         max temperature, min temperature, median (middle temperature), mean (average temperature)
 
-        also, give a prediction temperature range for the next  few days by using the average and both adding and subtracting 5 to create the range. The values for this predication can be whole numbers
+        also, give a prediction temperature range for the next
+            few days by using the average and both adding and subtracting 5 to create the range.
+        The values for this predication can be whole numbers
 
         we can assume the data will always be an odd number so there will be one median
+        1 2 3 4 5 6 7   int indexOfMedian = list.size/2, [only if length is even number]-->indexOfMedian + 1
+        0 1 2 3 4 5 6
 
     Ex:
         input:

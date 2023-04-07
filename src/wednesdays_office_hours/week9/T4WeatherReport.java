@@ -1,6 +1,5 @@
 package wednesdays_office_hours.week9;
 
-import utilities.MathUtil;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -13,14 +12,13 @@ public class T4WeatherReport {
 
         ArrayList<Double> temperatures = new ArrayList<>(Arrays.asList(62.1, 68.9, 55.4, 44.8, 77.3, 43.0, 53.4, 47.1, 55.8, 42.3, 48.5));
 
-        Collections.sort(temperatures);
+        Collections.sort(temperatures);//[42.3, 43.0, 44.8, 47.1, 48.5, 53.4, 55.4, 55.8, 62.1, 68.9, 77.3]]
 
-        temperatures.remove(0);
-        temperatures.remove(0);
-        temperatures.remove(temperatures.size() - 1);
-        temperatures.remove(temperatures.size() - 1);
+        temperatures.remove(0);// [43.0, 44.8, 47.1, 48.5, 53.4, 55.4, 55.8, 62.1, 68.9, 77.3]
+        temperatures.remove(0);//[44.8, 47.1, 48.5, 53.4, 55.4, 55.8, 62.1, 68.9, 77.3]
 
-        System.out.println(temperatures);
+        temperatures.remove(temperatures.size() - 1);//[44.8, 47.1, 48.5, 53.4, 55.4, 55.8, 62.1, 68.9]
+        temperatures.remove(temperatures.size() - 1);//[44.8, 47.1, 48.5, 53.4, 55.4, 55.8, 62.1]
 
         // #1 solution 1 min/max --> Collections.sort(list)
         double minTemp = temperatures.get(0); // after sort method, first element of list will be the minimum
@@ -28,14 +26,15 @@ public class T4WeatherReport {
 
         // #3 solution max/min method of Collections !!
 
-        double maxT = Collections.max(temperatures);
-        double minT = Collections.min(temperatures);
+        double maxT = Collections.max(temperatures);//[62.1]
+        double minT = Collections.min(temperatures);//[44.8]
 
         double sumOfTemperature = 0;
 
         for (Double temperature : temperatures) {
             sumOfTemperature += temperature;
         }
+
         double averageTemp = sumOfTemperature / temperatures.size();
 
         /* DO NOT FORGET !! Decimal Format returns String ! I need averageTemp in next line as double. SO I can't use df now !
@@ -43,7 +42,7 @@ public class T4WeatherReport {
                                 format method from  my custom class MathUtil class instead of Decimal format.
 
                                DF--> returns string , (custom) MathUtil.format(double) -return double */
-
+        //                  array[index]
         double medianTemp = temperatures.get(temperatures.size() / 2);
 
         String prediction = (int) (averageTemp - 5) + " - " + (int) (averageTemp + 5);
@@ -52,9 +51,11 @@ public class T4WeatherReport {
         System.out.println("maxTemperature = " + maxT);
         System.out.println("minTemperature = " + minT);
         System.out.println("medianTemp = " + medianTemp);
-        System.out.println("mean = " + MathUtil.format(averageTemp));
+        System.out.println("mean = " + df.format(averageTemp));
         System.out.println("prediction = " + prediction);
 
+        // df.format(averageTemp); returns String
+        //double a = 5.5 + 6.7 + df.format(averageTemp);
 
     }
 }
@@ -77,4 +78,5 @@ public class T4WeatherReport {
             if(temperature < minTemperature){
                 minTemperature = temperature;
             }
-        }*/
+        }
+        */
