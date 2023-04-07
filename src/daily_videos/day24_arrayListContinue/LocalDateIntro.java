@@ -1,6 +1,7 @@
 package daily_videos.day24_arrayListContinue;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class LocalDateIntro {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class LocalDateIntro {
         LocalDate birthday = LocalDate.of(2000,5,25);
 
         System.out.println(birthday);
+
 
         System.out.println(today.getYear()); // 2023 (current year)
 
