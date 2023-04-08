@@ -27,6 +27,12 @@ public class Iphone {
 
     }*/
 
+    public Iphone(String model, String color, double price) {
+        this.model = model;
+        this.color = color;
+        this.price = price;
+    }
+
     public void printPhoneInfo(){
         System.out.println("Brand: " + brand);
         System.out.println("Color: " + color);
