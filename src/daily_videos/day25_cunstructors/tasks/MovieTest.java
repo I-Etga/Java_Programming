@@ -36,17 +36,3 @@ public class MovieTest {
         System.out.println(movie2);
     }
 }
-
-/*
-
-    2. create a class called TestMovieObjects
-            1. create an object of the movie:
-                    title: Java Developer: Zero to Hero
-                    country: USA
-                    Genre: Adventure, Comedy, Thriller
-                    release date: 04/18/2021
-                    director: Kuzzat Altay
-                    Casts: Ozzy, Ali, Muhtar and 5 more students from your group
-
-        print the full info of the movie
- */
