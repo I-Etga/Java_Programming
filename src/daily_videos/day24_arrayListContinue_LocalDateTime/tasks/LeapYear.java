@@ -1,7 +1,6 @@
-package daily_videos.day24_arrayListContinue.tasks;
+package daily_videos.day24_arrayListContinue_LocalDateTime.tasks;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class LeapYear {
     public static void main(String[] args) {

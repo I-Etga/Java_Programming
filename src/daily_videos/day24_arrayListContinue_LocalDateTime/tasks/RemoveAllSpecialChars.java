@@ -1,8 +1,7 @@
-package daily_videos.day24_arrayListContinue.tasks;
+package daily_videos.day24_arrayListContinue_LocalDateTime.tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class RemoveAllSpecialChars {
     public static void main(String[] args) {

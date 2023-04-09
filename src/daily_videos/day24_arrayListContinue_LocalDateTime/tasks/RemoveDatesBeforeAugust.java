@@ -1,6 +1,4 @@
-package daily_videos.day24_arrayListContinue.tasks;
-
-import daily_videos.day05_operators.ShorthandOperators;
+package daily_videos.day24_arrayListContinue_LocalDateTime.tasks;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

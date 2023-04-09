@@ -1,7 +1,6 @@
-package daily_videos.day24_arrayListContinue;
+package daily_videos.day24_arrayListContinue_LocalDateTime;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 public class Person {
 
