@@ -78,7 +78,7 @@ DrinksVending [object types, ArrayList, constructor, Scanner, loops, methods]
 	Create a method stock() that will accept an ArrayList of Drinks to fill the allDrinks ArrayList up. If the Drink exists add to the quantity
 
 	Create a method vend(): that will accept a String for the Drink name the person wants
-		Search for the drink in the the vending machine
+		Search for the drink in the vending machine
 			-> if we have the drink return the price
 			-> if the drink is out of stock print: Sorry $name is out of stock and return -1
 			-> if the drink is not in the vending machine print: Sorry $name not offered and return -2
