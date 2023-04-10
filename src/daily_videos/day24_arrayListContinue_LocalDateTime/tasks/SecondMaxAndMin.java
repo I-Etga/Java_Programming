@@ -5,19 +5,21 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class SecondMaxAndMin {
+
+
     public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
 
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 1, -2, -2, -2, 3, 4, 5, 6, 7, 8, 8, 8, 8));
+        list.addAll(Arrays.asList(1, 1, 3, -2, -2, 4, 5, 6, 7, 8, 8, 8, 8));
 
-        // Firstly, I am going to find max and min , then I get max and min which means I'll get second max and min !!
+        //                     8 (fixed in this condition)   -2(fixed in this condition)
+        list.removeIf(p -> p == Collections.max(list) || p == Collections.min(list));
+        // removesIf holds the objects to be deleted and after holding all of them,it removes all at once and updates list at the end.
+        // removeIf updates the list at the end of the process !! That's why max and min stays the same.
 
-        list.remove(Collections.max(list));
-        list.remove(Collections.min(list));
 
-        // I've just removed the min and second. Max and min gives us now second max and second min.
-
-        System.out.println("Max =" + Collections.max(list));
-        System.out.println("Min =" +Collections.min(list));
+        System.out.println("Second maximum number is: " + Collections.max(list));
+        System.out.println("Second minimum number is: " + Collections.min(list));
 
     }
 }

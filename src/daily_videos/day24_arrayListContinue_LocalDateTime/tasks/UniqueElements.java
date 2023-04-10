@@ -7,15 +7,22 @@ import java.util.Collections;
 public class UniqueElements {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 1, 2, 3, 3, 4, 5, 5));
+        ArrayList<Integer> numbers = new ArrayList<>();// initialize
 
-        String uniques = "";
+        numbers.addAll(Arrays.asList(1, 1, 2, 3, 3, 4, 5, 5));
+
+        //                each 1 1 2 3 ...
+        numbers.removeIf(p -> Collections.frequency(numbers, p) > 1);
+
+        /* #2 old version solution
+           String uniques = "";
         for (Integer each : list) {
             int frequency = Collections.frequency(list,each);
             if(frequency == 1 && !uniques.contains(""+ each)){
                 uniques += each + " ";
             }
         }
-        System.out.println(uniques);
+         */
+        System.out.println(numbers);
     }
 }

@@ -9,8 +9,9 @@ public class RemoveAllLetters {
 
         ArrayList<Character> list = new ArrayList<>(Arrays.asList('$', 'A', 'B', '1', '2', 'C', 'D', '@', '!', '3', '4'));
 
-        // remove/-all method . Do not use loop. You get wrong result. Because size of list is dynamic !
+        // remove/-all method . Do not use in loop. You get wrong result. Because size of list is dynamic !
         //             p stands for each ( Character each : list )
+
         list.removeIf(p -> Character.isLetter(p));
 
         System.out.println(list);
@@ -18,12 +19,3 @@ public class RemoveAllLetters {
     }
 
 }
-
-/*
-3. Write a program that can remove all the letters from an arrayList of characters
-		ex:
-			list = {'$', A', 'B', '1', '2', 'C', 'D', '@', '!', '3', '4'}
-
-		output:
-			['$',  '1', '2', '@', '!', '3', '4']
- */
