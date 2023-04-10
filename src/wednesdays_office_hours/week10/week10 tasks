@@ -1,0 +1,132 @@
+Office Hours Topics:
+
+    reviewing week 9:
+    ArrayList
+    DateTime
+    Constructors
+
+----------------------------------------------------------------------------------------
+
+T1Reservation [LocalDateTime, Scanner, conditional]
+
+    Create a program that will help create a reservation for our restaurant.
+    Ask the user to enter what year, month, and day they want to create the reservation
+    Then ask what hour they want to create it for (assume the minutes are 0)
+
+    Use the given information to create a LocalDateTime object and verify if the reservation can be made or not
+
+    Here are the restrictions:
+        - We are accepting reservations for only 2023
+        ask for the year first and if it is not a valid year do not check anything else and print: Sorry we cannot make a reservation for the year $year
+
+        - Any date before the current day(when the program is run) is invalid and should print:
+        Sorry this date has already passed
+
+        - Here is some days where reservations are booked: if the day selected is one of these print Sorry this date is all booked
+            November 23
+            December 24
+
+        - check the time for the reservation, we have times open from 2 pm - 8 pm on weekends (FRI, SAT, SUN)
+            if all the checks were met print: Book for $date
+            if the other checks were met but the time given is not within the defined range print: Sorry we close at 11 on weekends
+            otherwise, print: Sorry we only have availability on weekends
+
+----------------------------------------------------------------------------------------
+
+T2Encryption [class, instance, static, loop, String]
+
+    Create a class Encryption
+
+    define these instance variables
+        message (String)
+        modify number
+        factor number
+
+    create a constructor that will initialize the message
+    create a constructor that will initialize the message, modify number, and factor number
+        call the encrypt method here
+
+    create a method encrypt (instance)
+        return: void
+        parameters: none
+
+        To encrypt every character of the message we will take the modified number and add it to ascii value of each character. Then we will multiply the result by the factor number. Separate the resulting number of each character by a space. After encrypting the message reassign the message variable to the encrypted version
+
+        Ex:
+            message = "james bond"
+            modify num: 20
+            factor num: 2
+
+            message: 252 234 258 242 270 104 236 262 260 240
+
+    create a method decrypt (static)
+        return: String
+        parameters: message, modify number, factor number
+
+        Given the modify and factor numbers decrypt the message and return the decrypted String. Do the reverse steps we did for encrypting
+
+        Ex:
+        message: 252 234 258 242 270 104 236 262 260 240
+        modify num: 20
+        factor num: 2
+
+        -> james bond
+
+----------------------------------------------------------------------------------------
+
+T3ShowTracker [classes, constructors, ArrayList]
+
+    Create a class Show
+        define these instance variables
+            name
+            number seasons
+            boolean completed
+                true - finished
+                false - ongoing
+            audio languages available (String ArrayList)
+
+    create a constructor that will initialize the name and number of seasons, completed
+    create a constructor that will initialize the name, number of seasons, completed, & all the available languages
+
+    create a toString
+    ------------------------------------------------
+
+    Create a class ShowTracker
+
+    define these instance variables:
+        username
+        password
+        number of shows watched
+        tracked shows (Show ArrayList)
+
+    create a constructor that will initialize the username and password
+    create a constructor that will initialize the username, password & number of shows watched
+    create a constructor that will initialize the username, password, number of shows watched & the list of shows
+
+    create method trackShow(Show)
+        this method will accept the name of a show. Check if the show is already tracked and if it is not add it to the list of shows
+
+    create a method filter(String)
+        return all the shows that are available in the defined language
+            ex: filter("english") -> returns all the shows that have English available
+
+    overload the method to accept a boolean argument filter(boolean)
+        if the boolean is true return the list of shows that are complete
+        if the boolean is false return the list of shows that are ongoing
+            ex: filter(true) -> return all the shows that are complete
+
+    create a toString
+
+    ------------------------------------------------
+
+    Sample data to use, or use your own
+
+    name - number of seasons - completed - available languages
+
+    the last of us - 1 - false - english, spanish
+    game of thrones - 8 - true - english, spanish, german
+    family feud - 24 - false - english
+    squid game - 1 false - korean, english, french, spanish, german
+    you knock on my door(Sen Çal Kapimi) - 2 - true - turkish
+
+----------------------------------------------------------------------------------------

@@ -1,10 +1,10 @@
-package utilities;
+package tests.staticImport;
 
 import daily_videos.day27_accessModifiers.Data; // imports all class
 
 public class Test {
 
-    public static void main(String[] args) {
+    public static void main( String[] args) {
         System.out.println(Data.d);
         System.out.println(Data.e);
         System.out.println(Data.f);
