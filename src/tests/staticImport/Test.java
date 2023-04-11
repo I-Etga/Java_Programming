@@ -1,6 +1,6 @@
 package tests.staticImport;
 
-import daily_videos.day27_accessModifiers.Data; // imports all class
+import daily_videos.day27_accessModifiers.staticContinue.Data; // imports all class
 
 public class Test {
 

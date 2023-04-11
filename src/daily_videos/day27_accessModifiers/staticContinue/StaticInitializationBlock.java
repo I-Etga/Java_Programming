@@ -1,4 +1,4 @@
-package daily_videos.day27_accessModifiers;
+package daily_videos.day27_accessModifiers.staticContinue;
 
 public class StaticInitializationBlock {
 

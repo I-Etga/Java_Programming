@@ -1,11 +1,11 @@
 package tests.staticImport;
 
-//import daily_videos.day27_accessModifiers.Data;
+//import daily_videos.day27_accessModifiers.staticContinue.Data;
 
-import static daily_videos.day27_accessModifiers.Data.d; // imports only static method d
-import static daily_videos.day27_accessModifiers.Data.method3; // imports only static method d
-import static daily_videos.day27_accessModifiers.Data.method4; // imports only static method d
-//import static daily_videos.day27_accessModifiers.Data.*; // imports all statics in the class
+import static daily_videos.day27_accessModifiers.staticContinue.Data.d; // imports only static method d
+import static daily_videos.day27_accessModifiers.staticContinue.Data.method3; // imports only static method d
+import static daily_videos.day27_accessModifiers.staticContinue.Data.method4; // imports only static method d
+//import static daily_videos.day27_accessModifiers.staticContinue.Data.*; // imports all statics in the class
 
 public class Test2 {
 
