@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.offer;
 
 public class Offer {
 

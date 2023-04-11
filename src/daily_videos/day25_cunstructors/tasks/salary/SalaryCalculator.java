@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.salary;
 
 public class SalaryCalculator {
 
@@ -7,8 +7,8 @@ public class SalaryCalculator {
 
     public SalaryCalculator(double hourlyRate, double stateTaxRate, double federalTaxRate, int weeklyHours) {
         this.hourlyRate = hourlyRate;
-        this.stateTaxRate = stateTaxRate;
-        this.federalTaxRate = federalTaxRate;
+        this.stateTaxRate = stateTaxRate/100;
+        this.federalTaxRate = federalTaxRate/100;
         this.weeklyHours = weeklyHours;
     }
 
@@ -16,11 +16,11 @@ public class SalaryCalculator {
         return weeklyHours * hourlyRate * 52;
     }
 
-    public double stateTax(int weeklyHours, double hourlyRate) {
+    public double stateTax() {
         return salary() * stateTaxRate;
     }
 
-    public double federalTax(int weeklyHours, double hourlyRate, double federalTaxRate) {
+    public double federalTax() {
         return salary() * federalTaxRate;
     }
 

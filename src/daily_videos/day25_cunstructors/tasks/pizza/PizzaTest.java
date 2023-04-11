@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.pizza;
 
 public class PizzaTest {
     public static void main(String[] args) {
@@ -9,6 +9,12 @@ public class PizzaTest {
         Pizza pizza2 = new Pizza('L', 5,5);
 
         System.out.println(pizza2);
+
+      /*    with setInfo method(without constructor) [old version]
+
+        Pizza obj3 = new Pizza();
+        obj3.setInfo('M',4,3);
+   */
     }
 }
 

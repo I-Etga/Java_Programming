@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.movie;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,13 +10,13 @@ public class Movie {
     public LocalDate releaseDate;
     public ArrayList<String> casts;
 
-    public Movie(String country, String title, String director, String genre, LocalDate releaseDate, ArrayList<String> casts) {
+    public Movie(String country, String title, String director, String genre, LocalDate releaseDate) {
         this.country = country;
         this.title = title;
         this.director = director;
         this.genre = genre;
         this.releaseDate = releaseDate;
-        this.casts = casts;
+        casts = new ArrayList<>();
     }
 
     public void addCast(String name) {
@@ -39,4 +39,3 @@ public class Movie {
                 '}';
     }
 }
-

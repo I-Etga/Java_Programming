@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.pizza;
 
 public class Pizza {
 
@@ -11,6 +11,7 @@ public class Pizza {
         this.numberOfCheeseTopping = numberOfCheeseTopping;
         this.numberOfPepperoniTopping = numberOfPepperoniTopping;
     }
+
 
     public double calcCost(){
         double price = 0;

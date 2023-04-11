@@ -8,7 +8,7 @@ public class RemoveCountryName {
         ArrayList<String> countryNames = new ArrayList<>(Arrays.asList("Germany","United States of America","Turkey","France","Liechtenstein","UK","Belgium","Spain","Sweden","Syria","Egypt"));
 
 
-        countryNames.removeIf(p-> p.length() >= 10);
+        countryNames.removeIf(each-> each.length() >= 10); // to be deleted : USA,Liechtenstein
 
         System.out.println(countryNames); // [Germany, Turkey, France, UK, Belgium, Spain, Sweden, Syria, Egypt]
     }

@@ -10,7 +10,8 @@ public class RemoveAllSpecialChars {
 
         ArrayList<Character> list = new ArrayList<>(Arrays.asList('$', 'A', 'B', '1', '2', 'C', 'D', '@', '!', '3', '4'));
 
-        list.removeIf(Character::isLetterOrDigit);
+        //list.removeIf(p-> Character.isDigit(p));
+        list.removeIf(Character::isDigit);
 
         System.out.println(list); // [A, B, 1, 2, C, D, 3, 4]
 

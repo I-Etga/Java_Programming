@@ -46,7 +46,8 @@
 
 	Note: DO NOT use any loops
 
-6. Create an ArrayList of string called country names, write a program that can remove all the country names that have length of 10 or greater
+6. Create an ArrayList of string called country names,
+write a program that can remove all the country names that have length of 10 or greater
 
 
 7. Write a program that can remove string elements from an arraylist if the first and last characters of the string are same

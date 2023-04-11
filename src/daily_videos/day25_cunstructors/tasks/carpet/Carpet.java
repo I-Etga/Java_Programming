@@ -1,4 +1,4 @@
-package daily_videos.day25_cunstructors.tasks;
+package daily_videos.day25_cunstructors.tasks.carpet;
 
 public class Carpet {
 
@@ -15,9 +15,9 @@ public class Carpet {
     public double calcCost() {
 
         double price = (width * length) * unitPrice;
-        if (isPersian)
+        if (isPersian) {
             price += 200;
-
+        }
         return price;
     }
 
