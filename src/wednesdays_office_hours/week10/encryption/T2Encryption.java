@@ -1,7 +1,5 @@
 package wednesdays_office_hours.week10.encryption;
 
-import daily_videos.day03_variables.Char;
-
 public class T2Encryption {
 
     public String message;
@@ -16,17 +14,18 @@ public class T2Encryption {
         this(message);
         this.modifyNumber = modifyNumber;
         this.factorNumber = factorNumber;
+        encrypt();
 
     }
 
-    public void encrypt() {
+    public String encrypt() {
         char[] code = message.toCharArray();
-        message = "";
+        String encrypt = "";
         for (char c : code) {
-            message += (modifyNumber + c) * factorNumber + " ";
+            encrypt += (modifyNumber + c) * factorNumber + " ";
         }
 
-        System.out.println(message);
+        return encrypt;
     }
 
     public static String decrypt(String message, int modifyNumber, int factorNumber) {
@@ -35,12 +34,12 @@ public class T2Encryption {
 
         String messageDecrypt = "";
 
-        for (String s : decrypt) {
-            int x = Integer.parseInt(s);
+        for (String each : decrypt) {
+            int x = Integer.parseInt(each);
             x /= factorNumber;
             x -= modifyNumber;
             char y = (char) x;
-            messageDecrypt += "" + y;
+            messageDecrypt += "" + y; // #2 short version (char)(Integer.parseInt(each) / factorNumber - modifyNumber
 
         }
         return messageDecrypt;
@@ -48,8 +47,6 @@ public class T2Encryption {
     public String toString() {
         return "T2Encryption{" +
                 "message='" + message + '\'' +
-                ", modifyNumber=" + modifyNumber +
-                ", factorNumber=" + factorNumber +
                 '}';
     }
 }

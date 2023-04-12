@@ -14,62 +14,62 @@ public class MyOffers {
         Offer offer6 = new Offer("France", "Bank of America", "Java Developer", 70000, false, true, true, true);
         Offer offer7 = new Offer("Belgium", "General Motors", "QA Tester", 50000, false, true, false, false);
 
-        System.out.println("*****");
+        System.out.println("*****1");
 
         ArrayList<Offer> myOffers = new ArrayList<>();
 
         myOffers.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
         System.out.println(myOffers);
 
-        System.out.println("*****");
+        System.out.println("*****2 FullTime");
 
         ArrayList<Offer> fullTimeOffers = new ArrayList<>();
-        fullTimeOffers.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        fullTimeOffers.addAll(myOffers);
 
-        fullTimeOffers.removeIf(p -> !p.isFullTime);
+        fullTimeOffers.removeIf(p -> !p.isFullTime); // it removes  offer2 offer5 and offer7
         System.out.println(fullTimeOffers);
 
-        System.out.println("*****");
+        System.out.println("*****3 has Benefit");
 
 
         ArrayList<Offer> offerWithBenefits = new ArrayList<>();
-        offerWithBenefits.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        offerWithBenefits.addAll(myOffers);
 
-        offerWithBenefits.removeIf(p -> !p.isFullTime);
+        offerWithBenefits.removeIf(p -> !p.hasBenefit);
         System.out.println(offerWithBenefits);
 
-        System.out.println("*****");
+        System.out.println("*****4 location");
 
         ArrayList<Offer> localOffers = new ArrayList<>();
-        localOffers.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        localOffers.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7, new Offer("Germany", "Apple", "Java Developer", 12000, true, true, true, true)));
 
         localOffers.removeIf(p -> !p.location.equals("Germany"));
 
         System.out.println(localOffers);
-        System.out.println("*****");
+        System.out.println("*****5 no Benefit no PTO");
 
         ArrayList<Offer> offerNoBenefitNoPTO = new ArrayList<>();
-        offerNoBenefitNoPTO.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        offerNoBenefitNoPTO.addAll(myOffers);
 
         offerNoBenefitNoPTO.removeIf(p -> !p.hasBenefit && !p.hasPTO);
         System.out.println(offerNoBenefitNoPTO);
-        System.out.println("*****");
+
+        System.out.println("*****6 Developer");
 
         ArrayList<Offer> devOffers = new ArrayList<>();
-        devOffers.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        devOffers.addAll(myOffers);
 
-        devOffers.removeIf(p -> !p.jobTitle.equals("Java Developer"));
+
+        devOffers.removeIf(p -> !p.jobTitle.contains("Developer"));
         System.out.println(devOffers);
 
 
-        System.out.println("*****");
+        System.out.println("*****7 Salary 100K");
 
         ArrayList<Offer> with100K = new ArrayList<>();
-        with100K.addAll(Arrays.asList(offer1, offer2, offer3, offer4, offer5, offer6, offer7));
+        with100K.addAll(myOffers);
 
         with100K.removeIf(p -> p.salary < 100000);
         System.out.println(with100K);
-        System.out.println(with100K);
     }
 }
-

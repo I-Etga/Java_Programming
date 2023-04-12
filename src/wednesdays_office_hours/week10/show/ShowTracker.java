@@ -12,6 +12,7 @@ public class ShowTracker {
     public ShowTracker(String username, String password) {
         this.username = username;
         this.password = password;
+        trackedShows = new ArrayList<>();
     }
 
     public ShowTracker(String username, String password, int numberOfShowsWatched) {
@@ -21,7 +22,7 @@ public class ShowTracker {
 
     public ShowTracker(String username, String password, int numberOfShowsWatched, ArrayList<Show> trackedShows) {
         this(username, password, numberOfShowsWatched);
-        this.trackedShows = new ArrayList<Show>(trackedShows);
+        this.trackedShows.addAll(trackedShows);//new ArrayList<Show>(trackedShows); [bad practice. New obj in the first constructor (line15)]
     }
 
     public void trackShow(Show show) {
@@ -37,9 +38,9 @@ public class ShowTracker {
         return filtered;
     }
 
-    public ArrayList<Show> filter(boolean a) {
+    public ArrayList<Show> filter(boolean isFinished) {
         ArrayList<Show> filtered = new ArrayList<>(trackedShows);
-        if (a) {
+        if (isFinished) {
             filtered.removeIf(p -> !p.isCompleted);
         } else {
             filtered.removeIf(p -> p.isCompleted);
@@ -50,11 +51,6 @@ public class ShowTracker {
 
 
     public String toString() {
-        return "ShowRefactor{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", numberOfShowsWatched=" + numberOfShowsWatched +
-                ", trackedShows=" + trackedShows +
-                '}';
+        return "Logged into " + username + " | Number of shows tracked: " + numberOfShowsWatched + "\nShows: " + trackedShows;
     }
 }

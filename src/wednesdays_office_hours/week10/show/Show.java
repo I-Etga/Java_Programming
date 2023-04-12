@@ -14,13 +14,12 @@ public class Show {
         this.name = name;
         this.seasons = seasons;
         this.isCompleted = isCompleted;
+        audioLanguagesAvailable = new ArrayList<>();
     }
 
     public Show(String name, int seasons, boolean isCompleted, ArrayList<String> audioLanguagesAvailable) {
-        this.name = name;
-        this.seasons = seasons;
-        this.isCompleted = isCompleted;
-        this.audioLanguagesAvailable = new ArrayList<>(audioLanguagesAvailable);
+        this(name, seasons, isCompleted);
+        this.audioLanguagesAvailable.addAll(audioLanguagesAvailable); // new ArrayList<>(audioLanguagesAvailable); (bad practice)
     }
 
     public String completed(boolean isCompleted) {

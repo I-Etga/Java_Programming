@@ -7,15 +7,16 @@ public class CydeoStudentTest {
         CydeoStudent cydeoStudent1 = new CydeoStudent("Matthew",27,'M',601,21,4,'C');
         CydeoStudent cydeoStudent2 = new CydeoStudent("Mathilda",33,'F',592,21,3,'A');
 
-        // instance methods and variables are called through object !!
+        // instance methods and variables are called through objects name !!
         cydeoStudent1.attendClass();
         cydeoStudent2.attendClass();
 
         cydeoStudent1.study();
         cydeoStudent2.study();
 
-        // static methods and variables are called through Class !!
+        // static methods and variables are called through Class name !!
         CydeoStudent.printSchoolName();
         CydeoStudent.printProgLanguage();
+
     }
 }

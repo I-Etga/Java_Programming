@@ -28,6 +28,7 @@ public class CydeoStudent {
 
     public void attendClass() {
         System.out.println(name + " is attending class.");
+
     }
 
     public static void printSchoolName() {

@@ -29,15 +29,3 @@ public class Offer {
                 '}';
     }
 }
-
-/*
-Task05:
-    Create a custom class named Offer
-            Attributes:
-                    location, companyName, jobTitle, salary, hasBenefit, hasPTO, isWFH, isFullTime
-
-                Add a constructor that can set all the fields
-
-            Actions:
-                toString(): returns the full info of the Offer Object
- */
