@@ -1,0 +1,39 @@
+package wednesdays_office_hours.week10.show;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class TestShow {
+
+    public static void main(String[] args) {
+
+        //ArrayList<String> languages = new ArrayList<>(Arrays.asList("english","spanish")); #1 way -- #2 way new ArrayList<>(Arrays.asList("english","spanish")
+        Show show1 = new Show("the last of us", 1, false, new ArrayList<>(Arrays.asList("english", "spanish")));
+        Show show2 = new Show("game of thrones", 8, true, new ArrayList<>(Arrays.asList("english", "spanish", "german")));
+        Show show3 = new Show("family feud", 24, false, new ArrayList<>(Arrays.asList("english")));
+        Show show4 = new Show("squid game", 1, false, new ArrayList<>(Arrays.asList("korean", "french", "english", "spanish")));
+        Show show5 = new Show("you knock my door", 2, true, new ArrayList<>(Arrays.asList("turkish")));
+
+        ArrayList<Show> shows = new ArrayList<>(Arrays.asList(show1, show2, show3, show4, show5));
+
+        ShowTracker showTracker1 = new ShowTracker("Cydeo School", "Wooden Spoon", 5, shows);
+
+        showTracker1.trackShow(show2); // it contains. So compiler does nothing !
+
+        Show show6 = new Show("You", 1, false, new ArrayList<>(Arrays.asList("korean", "french", "english", "spanish")));
+
+        showTracker1.trackShow(show6);
+
+        System.out.println(showTracker1); // it contained show6. So it added to showTrackers show6.
+
+
+        System.out.println(showTracker1.trackedShows);
+
+
+        System.out.println(showTracker1.filter("english")); // it shows the shows has specified language option !
+        System.out.println(showTracker1.filter(true)); // I pass true and it shows only finished shows.
+
+    }
+
+
+}

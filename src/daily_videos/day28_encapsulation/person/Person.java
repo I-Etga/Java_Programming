@@ -72,7 +72,6 @@ public class Person {
         System.out.println(name + " is sleeping");
     }
 
-    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
