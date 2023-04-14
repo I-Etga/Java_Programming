@@ -7,7 +7,7 @@ public class ShowTracker {
     public String username;
     public String password;
     public int numberOfShowsWatched;
-    public ArrayList<Show> trackedShows ;
+    public ArrayList<Show> trackedShows;
 
     public ShowTracker(String username, String password) {
         this.username = username;
@@ -50,12 +50,13 @@ public class ShowTracker {
 
         return filtered;
     }
+
     // #2 alternative of filter method (not that confusing)
     public ArrayList<Show> filterBy(boolean isFinished) {
         ArrayList<Show> result = new ArrayList<>();
 
         for (Show trackedShow : trackedShows) {
-                if (trackedShow.isCompleted == isFinished) {
+            if (trackedShow.isCompleted == isFinished) {
                 result.add(trackedShow);
             }
         }
