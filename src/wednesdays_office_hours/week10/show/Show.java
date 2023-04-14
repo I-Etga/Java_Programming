@@ -14,7 +14,7 @@ public class Show {
         this.name = name;
         this.seasons = seasons;
         this.isCompleted = isCompleted;
-        audioLanguagesAvailable = new ArrayList<>();
+        audioLanguagesAvailable = new ArrayList<>(); // best practice
     }
 
     public Show(String name, int seasons, boolean isCompleted, ArrayList<String> audioLanguagesAvailable) {
@@ -33,7 +33,7 @@ public class Show {
     }
 
     public String toString() {
-        return "Show{" +
+         return "Show{" +
                 "name='" + name + '\'' +
                 ", seasons=" + seasons +
                 ", isCompleted=" + completed(isCompleted) +

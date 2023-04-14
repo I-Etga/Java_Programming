@@ -15,6 +15,7 @@ public class TestShow {
         Show show4 = new Show("squid game", 1, false, new ArrayList<>(Arrays.asList("korean", "french", "english", "spanish")));
         Show show5 = new Show("you knock my door", 2, true, new ArrayList<>(Arrays.asList("turkish")));
 
+        //show2.name = "Kurtlar Vadisi";
         show5.audioLanguagesAvailable.add("English"); // We can add change/add/remove instances of object that way!
 
         System.out.println("-------");
@@ -31,16 +32,19 @@ public class TestShow {
 
         showTracker1.trackShow(show6);
 
-        System.out.println(showTracker1); // it contained show6. So it adds shows6 to showTrackers .
+        System.out.println(showTracker1); // it didn't contain show6. So it adds shows6 to showTrackers .
 
         System.out.println();
         System.out.println(showTracker1.trackedShows);
 
 
         System.out.println(showTracker1.filter("english")); // it shows the shows has specified language option !
-        System.out.println(showTracker1.filter(true)); // I pass true and it shows only finished shows.
+        System.out.println(showTracker1.filter(true)); // I pass true, and it shows only finished shows.[method removes not-finished/ongoing shows from list]
+
+        System.out.println(showTracker1.filterBy(true)); // I pass true, and it shows only finished shows.[method add finished shows to list]
+
+        ShowTracker showTracker4 = new ShowTracker("Sevilay", "CydeoB29", 5, shows);
+
 
     }
-
-
 }

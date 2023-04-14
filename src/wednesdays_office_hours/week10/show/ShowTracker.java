@@ -7,7 +7,7 @@ public class ShowTracker {
     public String username;
     public String password;
     public int numberOfShowsWatched;
-    public ArrayList<Show> trackedShows;
+    public ArrayList<Show> trackedShows ;
 
     public ShowTracker(String username, String password) {
         this.username = username;
@@ -33,6 +33,7 @@ public class ShowTracker {
     }
 
     public ArrayList<Show> filter(String str) {
+
         ArrayList<Show> filtered = new ArrayList<>(trackedShows);
         filtered.removeIf(p -> !p.audioLanguagesAvailable.contains(str));
         return filtered;
@@ -40,17 +41,33 @@ public class ShowTracker {
 
     public ArrayList<Show> filter(boolean isFinished) {
         ArrayList<Show> filtered = new ArrayList<>(trackedShows);
-        if (isFinished) {
-            filtered.removeIf(p -> !p.isCompleted);
-        } else {
-            filtered.removeIf(p -> p.isCompleted);
+        //  filtered.removeIf(p -> p.isCompleted != complete); #1      (true != false) true    true -> I want to remove shows ongoing
+        if (isFinished) { // finished
+            filtered.removeIf(p -> !p.isCompleted); // removes ongoing
+        } else { // ongoing
+            filtered.removeIf(p -> p.isCompleted); // removes finished
         }
+        /*
+        Show show(... , isCompleted) -> [isCompleted=true finished ---- isCompleted=false --ongoing]
+         */
 
         return filtered;
     }
+    // #2 Better alternative of filter method
+    public ArrayList<Show> filterBy(boolean isFinished) {
+        ArrayList<Show> result = new ArrayList<>();
 
+        for (Show trackedShow : trackedShows) {
+                if (trackedShow.isCompleted == isFinished) {
+                result.add(trackedShow);
+            }
+        }
+        return result;
+    }
 
     public String toString() {
         return "Logged into " + username + " | Number of shows tracked: " + numberOfShowsWatched + "\nShows: " + trackedShows;
     }
 }
+
+
