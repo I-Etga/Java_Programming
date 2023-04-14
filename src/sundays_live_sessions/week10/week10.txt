@@ -1,0 +1,114 @@
+We will start with Vending Task from last week
+
+	------------------------------------------------------------------------
+
+BestBuy [static]
+
+	Create a class BestBuy
+
+		define these instance variables:
+			address, gross income, expenses
+
+		define these static variables:
+			ceo: Corie Barry
+			hq: Richfield, Minnesota
+			revenue: 51.76 billion
+
+		create an instance method:
+			reportProfits()
+				use the income of the location and reduce the expenses. Add the result to the total revenue of all BestBuy stores
+
+		create a class to run the code and create BestBuy objects
+
+	------------------------------------------------------------------------
+
+Earth [classes, objects, static, ArrayList]
+	I want to test our understanding of these topics on a deeper level. If you have trouble getting the idea by yourself wait until the review so we can break down each part. Move to the other practices of Encapsulation and inheritance
+
+	Create these classes in order:
+
+	- Create a class Person
+
+		define these instance variables:
+			name, age
+
+	Create a class Earth
+
+		define these static variables:
+			planet = Earth
+			size = 40,075 km
+
+			continent ArrayLists that store Person objects: Define an ArrayList for each continent:
+				ArrayList<Person>
+				(you dont' need to do all of them, pick some to test the code)
+				Asia, Antarctica, North America, South America, Africa, Europe, Oceania
+
+		use a static block to create the ArrayList objects with some initial people
+
+		to test the code, print all the continents, access all the other static variables, make more Person objects and add them into a continent
+
+	------------------------------------------------------------------------
+
+AmazonAccount [Encapsulation]
+
+	Create a class AmazonAccount
+
+    instance variables:
+        - userName (String)
+        - email (String)
+        - hasPrime (boolean)
+
+    constructor:
+        - initialize the fields
+
+    encapsulate AmazonAccount
+
+    methods: toString(), getters, setters
+
+Create a class UseAmazon
+
+    create an object of the AmazonAccount and verify the constructor, getters and setters and toString are working properly
+
+	------------------------------------------------------------------------
+
+TrafficLight [Encapsulation]
+
+	Create a class Traffic Light
+
+	instance variable: color (String)
+
+	the constructor should called the setter method
+
+	encapsulate the class
+		in the setter: only set the color if it is green, red, or yellow
+
+	------------------------------------------------------------------------
+
+Books [Inheritance]
+
+	Create a class Book
+
+	instance variables:
+		- title (String)
+		- author (String)
+		- genre (String)
+		- chapters (int)
+		- number of pages (int)
+		- has a movie (boolean)
+
+		create a read method
+
+	- Create a class EBook, a sub class of Book
+		define more instance variables:
+			- size (double) (mb)
+			- on kindle (boolean)
+
+		create a open method
+
+	- Create a class AudioBook, a sub class of Book
+		define more instance variables:
+			- narrator (String)
+			- duration (double)
+
+		create a listen method
+	------------------------------------------------------------------------
