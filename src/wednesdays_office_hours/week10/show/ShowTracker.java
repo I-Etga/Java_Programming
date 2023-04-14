@@ -41,19 +41,16 @@ public class ShowTracker {
 
     public ArrayList<Show> filter(boolean isFinished) {
         ArrayList<Show> filtered = new ArrayList<>(trackedShows);
-        //  filtered.removeIf(p -> p.isCompleted != complete); #1      (true != false) true    true -> I want to remove shows ongoing
+        //  filtered.removeIf(p -> p.isCompleted != complete); #1
         if (isFinished) { // finished
             filtered.removeIf(p -> !p.isCompleted); // removes ongoing
         } else { // ongoing
             filtered.removeIf(p -> p.isCompleted); // removes finished
         }
-        /*
-        Show show(... , isCompleted) -> [isCompleted=true finished ---- isCompleted=false --ongoing]
-         */
 
         return filtered;
     }
-    // #2 Better alternative of filter method
+    // #2 alternative of filter method (not that confusing)
     public ArrayList<Show> filterBy(boolean isFinished) {
         ArrayList<Show> result = new ArrayList<>();
 
