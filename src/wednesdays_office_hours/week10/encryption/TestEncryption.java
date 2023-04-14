@@ -5,13 +5,21 @@ public class TestEncryption {
 
         T2Encryption obj1 = new T2Encryption("james bond", 20, 2);
 
-        obj1.encrypt();
-        System.out.println(obj1.encrypt());
+        obj1.encrypt(); // void prints encrypted message
+
+ /*     examples for the return method
+        //obj1.encryptReturn();
+        //String a = obj1.encryptReturn();
+        //System.out.println(a);
+        */
+
         System.out.println(T2Encryption.decrypt("252 234 258 242 270 104 236 262 260 240", 20, 2));
 
         System.out.println("*****");
+
         T2Encryption first = new T2Encryption("james bond"); // because of one parameter constructor I created an object with name !
-        // other instances I can assign one by one !
+        // other instances I can assign one by one ! modifyNumber=0 , factorNumber=0;
+
         first.modifyNumber = 20;
         first.factorNumber = 2;
         first.encrypt();

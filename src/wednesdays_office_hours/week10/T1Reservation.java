@@ -1,5 +1,6 @@
 package wednesdays_office_hours.week10;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -17,10 +18,13 @@ public class T1Reservation {
         System.out.println("Please enter the time(24h format)");
         int hour = input.nextInt();
 
+        int minute = 0;
         input.close();
 
-        LocalDateTime dateTime = LocalDateTime.of(year, month, day, hour, 0);
+        LocalDateTime dateTime = LocalDateTime.of(year, month, day, hour, 0); // we can pass minute variable as minute parameter
+
         //System.out.println(dateTime);
+
 
         if (dateTime.getYear() != 2023) {
             System.out.println("Sorry we cannot make a reservation for the year " + year);
@@ -38,11 +42,17 @@ public class T1Reservation {
         }
 
         boolean validTime = dateTime.getHour() >= 14 && dateTime.getHour() <= 20;
+        // 2023/4/13 18:00  thursday 4
         int dayInWeek = dateTime.getDayOfWeek().getValue();
         boolean onWeekend = dayInWeek == 5 || dayInWeek == 6 || dayInWeek == 7; // dateTime.getDayOfWeek().getValue() >= 5;
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM/d/yy | h:mm a"); // #1
+
+
         if (validTime && onWeekend) {
-            System.out.println("Booked for " + dateTime.format(DateTimeFormatter.ofPattern("MMM/d/yy | h:mm a")));
+            System.out.println("Booked for " + dateTime.format(DateTimeFormatter.ofPattern("MMM/d/yy | h:mm a"))); // #2 formatter
+            //System.out.println("Booked for " + dateTime.format(DateTimeFormatter.ISO_DATE_TIME)); // #3 ready pattern
+
         } else {
 
             if (!validTime) {

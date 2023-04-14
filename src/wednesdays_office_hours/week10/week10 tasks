@@ -50,7 +50,10 @@ T2Encryption [class, instance, static, loop, String]
         return: void
         parameters: none
 
-        To encrypt every character of the message we will take the modified number and add it to ascii value of each character. Then we will multiply the result by the factor number. Separate the resulting number of each character by a space. After encrypting the message reassign the message variable to the encrypted version
+        To encrypt every character of the message we will take the modified number and add it to ascii value of each character.
+        Then we will multiply the result by the factor number.
+        Separate the resulting number of each character by a space.
+        After encrypting the message reassign the message variable to the encrypted version
 
         Ex:
             message = "james bond"
