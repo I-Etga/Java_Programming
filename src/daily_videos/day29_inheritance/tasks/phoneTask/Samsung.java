@@ -1,6 +1,6 @@
 package daily_videos.day29_inheritance.tasks.phoneTask;
 
-public class Samsung extends Phone {
+public class Samsung extends Phone_superClass {
 
 
     {

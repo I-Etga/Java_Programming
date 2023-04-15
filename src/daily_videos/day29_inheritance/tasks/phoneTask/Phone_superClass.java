@@ -1,6 +1,6 @@
 package daily_videos.day29_inheritance.tasks.phoneTask;
 
-public class Phone {
+public class Phone_superClass {
     private String brand;
     private String model;
     private double size;

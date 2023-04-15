@@ -1,6 +1,6 @@
 package daily_videos.day29_inheritance.tasks.phoneTask;
 
-public class IPhone extends Phone {
+public class IPhone extends Phone_superClass {
     {
         setBrand("Apple");
     }

@@ -1,6 +1,6 @@
 package daily_videos.day29_inheritance.tasks.phoneTask;
 
-public class Nokia extends Phone {
+public class Nokia extends Phone_superClass {
 
     {
         setBrand("Nokia");

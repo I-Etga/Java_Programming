@@ -6,7 +6,8 @@ public class TestVocationsObjects {
         System.out.println("***** Tester *****");
         // I created not only constructor , but also setInfo method to see difference !!
 
-        Tester tester1 = new Tester("Rachel Green", 'F', 18, "QATest87", "QA-Tester", 90000);
+        Tester tester1 = new Tester();
+        tester1.setInfo("Rachel Green", 'F', 18, "QATest87", "QA-Tester", 90000);
 
         System.out.println(tester1);
 
@@ -18,8 +19,9 @@ public class TestVocationsObjects {
 
         System.out.println("***** Developer *****");
         Developer developer1 = new Developer();
-        developer1.setInfo("Ted Mosby", 'M', 45, "Dev1293", "Developer", 100000, "C#");
+        developer1.setInfo("Ted Mosby", 'M', 45, "Dev1293", "Developer", 100000);
         // setInfo methods checks if arguments are valid based on conditions , given in setters !
+        developer1.setProgrammingLanguage("C#");
         System.out.println(developer1);
 
         developer1.coding();
@@ -41,7 +43,7 @@ public class TestVocationsObjects {
 
         System.out.println("***** Teacher *****");
         Teacher teacher1 = new Teacher();
-        teacher1.setInfo("James Tailor", 'M', 38, "T41", "Techer", 75000);
+        teacher1.setInfo("James Tailor", 'M', 38, "T41", "Teacher", 75000);
 
         System.out.println(teacher1);
         System.out.println(teacher1.getAge());
