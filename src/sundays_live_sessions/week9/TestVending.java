@@ -31,5 +31,7 @@ public class TestVending {
 
         System.out.println(drinksVending);
 
+        System.out.println(drinksVending.vend("Cola Turka"));
+
     }
 }
