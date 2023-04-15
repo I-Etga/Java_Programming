@@ -1,4 +1,4 @@
-package daily_videos.day29_inheritance.tasks.tester;
+package daily_videos.day29_inheritance.tasks.vocationsTask;
 
 public class Tester {
 

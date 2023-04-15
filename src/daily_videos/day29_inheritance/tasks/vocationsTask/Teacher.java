@@ -1,10 +1,6 @@
-package daily_videos.day29_inheritance.tasks.developer;
+package daily_videos.day29_inheritance.tasks.vocationsTask;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class Developer {
-
+public class Teacher {
     private String name;
     private char gender;
     private int age;
@@ -12,16 +8,13 @@ public class Developer {
     private String jobTitle;
     private double salary;
 
-    private String programmingLanguage;
-
-    public void setInfo(String name, char gender, int age, String id, String jobTitle, double salary, String programmingLanguage) {
+    public void setInfo(String name, char gender, int age, String id, String jobTitle, double salary) {
         setName(name);
         setGender(gender);
         setAge(age);
         setId(id);
         setJobTitle(jobTitle);
         setSalary(salary);
-        setProgrammingLanguage(programmingLanguage);
     }
 
     public String getName() {
@@ -92,34 +85,18 @@ public class Developer {
         }
     }
 
-    public String getProgrammingLanguage() {
-        return programmingLanguage;
-    }
-
-    public void setProgrammingLanguage(String programmingLanguage) {
-        ArrayList<String> languages = new ArrayList<>(Arrays.asList("Java", "JavaScript", "Python", "Ruby", "C#", "C++", "Swift"));
-
-        if (languages.contains(programmingLanguage)) {
-            this.programmingLanguage = programmingLanguage;
-        } else {
-            System.out.println("Programming Language can be only one of them: \"Java\", \"JavaScript\", \"Python\", \"Ruby\", \"C#\", \"C++\", \"Swift\"");
-            System.exit(1);
-        }
-    }
-
-    public void coding() {
-        System.out.println(name + " is coding");
+    public void teaching() {
+        System.out.println(name + " is teaching");
     }
 
     public String toString() {
-        return "Developer{" +
+        return "Teacher{" +
                 "name='" + name + '\'' +
                 ", gender=" + gender +
                 ", age=" + age +
                 ", id='" + id + '\'' +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
-                ", programmingLanguage='" + programmingLanguage + '\'' +
                 '}';
     }
 }

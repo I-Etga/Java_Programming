@@ -44,7 +44,7 @@ public class Iphone {
         System.out.println("is faceTiming " + phoneNumber);
     }
 
-    public void text(String email) {
+    public void faceTime(String email) {
         System.out.println("is faceTiming " + email);
     }
 

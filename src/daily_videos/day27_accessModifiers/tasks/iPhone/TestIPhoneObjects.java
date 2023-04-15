@@ -7,5 +7,10 @@ public class TestIPhoneObjects {
         iphone12ProMax.color = "green"; // instances through obj name
 
         Iphone.madeIn = "Turkey"; // statics through class name
+
+        iphone12ProMax.call(653456789);
+        iphone12ProMax.text(653456789);
+        iphone12ProMax.faceTime(34356744);
+        iphone12ProMax.faceTime("IA@icloud.com");
     }
 }
