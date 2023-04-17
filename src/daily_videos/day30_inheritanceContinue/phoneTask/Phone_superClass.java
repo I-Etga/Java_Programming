@@ -1,4 +1,7 @@
-package daily_videos.day29_inheritance.tasks.phoneTask;
+package daily_videos.day30_inheritanceContinue.phoneTask;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Phone_superClass {
     private String brand;
@@ -8,11 +11,12 @@ public class Phone_superClass {
     private String color;
 
 
-    public void setInfo(String model, double size, double price, String color) {
-        setModel(model);
-        setSize(size);
-        setPrice(price);
-        setColor(color);
+    public Phone_superClass(String brand, String model, double size, double price, String color) { // Because constructors named after Class, they can not be inherited to child class !
+        this.brand = brand;
+        this.model = model;
+        this.size = size;
+        this.price = price;
+        this.color = color;
     }
 
     public String getBrand() {
@@ -20,12 +24,7 @@ public class Phone_superClass {
     }
 
     public void setBrand(String brand) {
-        if (brand == null || brand.isEmpty() || brand.isBlank()) {
-            System.out.println("Color can not be null/empty/blank");
-            System.exit(1);
-        } else {
-            this.brand = brand;
-        }
+        this.brand = brand;
     }
 
     public String getModel() {
@@ -33,12 +32,7 @@ public class Phone_superClass {
     }
 
     public void setModel(String model) {
-        if (model == null || model.isEmpty() || model.isBlank()) {
-            System.out.println("Model can not be null/empty/blank");
-            System.exit(1);
-        } else {
-            this.model = model;
-        }
+        this.model = model;
     }
 
     public double getSize() {
@@ -67,11 +61,13 @@ public class Phone_superClass {
     }
 
     public void setColor(String color) {
-        if (color == null || color.isEmpty() || color.isBlank()) {
-            System.out.println("Color can not be null/empty/blank");
-            System.exit(1);
-        } else {
+
+        String[] colors = {"Black", "White", "Silver", "Gold", "Pink"};
+        if (Arrays.asList(colors).contains(color)) {
             this.color = color;
+        } else {
+            System.err.println("Invalid color: " + color + "color of the phone can only be: " + Arrays.toString(colors));
+            System.exit(1);
         }
     }
 
@@ -80,7 +76,7 @@ public class Phone_superClass {
     }
 
     public void text(long phoneNumber) {
-        System.out.println( model + " is texting to " + phoneNumber);
+        System.out.println(model + " is texting to " + phoneNumber);
     }
 
     public String toString() {

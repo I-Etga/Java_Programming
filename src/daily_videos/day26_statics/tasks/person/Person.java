@@ -8,20 +8,22 @@ public class Person {
     public String language;
     public char gender;
 
-    public static boolean isHuman; // I can initialize it here. But, it does not work for all variables![better choose: static block]
+    public static boolean isHuman ; // I can initialize it here. But, it does not work for all variables![better choose: static block]
     public static boolean hasNose;
     public static boolean hasWings;
     public static int numberOfHead;
     public static int numberOfEyes;
+
 
     static {  // statics belong to the Class
         isHuman = true;
         hasNose = true;
         numberOfHead = 1;
         numberOfEyes = 2;
+        hasWings = false;
     }
 
-    // CONSTRUCTOR CAN NOT CALL #1 ITSELF AND MORE THAN #2 ONE CONSTRUCTOR !!
+    // CONSTRUCTOR CAN NOT CALL #1 ITSELF AND #2 MORE THAN ONE CONSTRUCTOR !!
     public Person(String name) { // Allows us to create Person object just by setting name
         this.name = name;
     }
@@ -44,14 +46,12 @@ public class Person {
     public Person(String name, String language, int age) {// Allows us to create Person object just by setting name,age,language
         this(name, language);
         this.age = age;
-
     }
 
-    public Person(String name, int age, String language, char gender) {// Allows us to create Person object just by setting name,age,language,gender
-        this(name, age, gender);
+    public Person(String name, String language,int age, char gender) {
+        this(name, language, age);
         this.gender = gender;
     }
-
 
     public void eat(String food) {
         System.out.println(name + " eats " + food);
@@ -65,10 +65,12 @@ public class Person {
         System.out.println(name + " is sleeping");
     }
 
+    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", language='" + language + '\'' +
                 ", gender=" + gender +
                 '}';
     }
