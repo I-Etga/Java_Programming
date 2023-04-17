@@ -22,9 +22,7 @@ public class Earth {
         Person person3 = new Person("Kerim",9);
         Person person4 = new Person("John",45);
         europe = new ArrayList<>(Arrays.asList(person3,person4));
-
     }
-
 
 }
 

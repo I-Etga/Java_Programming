@@ -12,5 +12,7 @@ public class TestTrafficLightsObjects {
 
         obj1.setColor("red");
         System.out.println(obj1); // TrafficLight{color='red'}
+
+        System.out.println(new TrafficLight("hello").getColor());  // creating an object without a reference and accessing the colors getter
     }
 }
