@@ -1,4 +1,4 @@
-package sundays_live_sessions.week10.earth;
+package sundays_live_sessions.week_10.earth;
 
 import java.util.Arrays;
 

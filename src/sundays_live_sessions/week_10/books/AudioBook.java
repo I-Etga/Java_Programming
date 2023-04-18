@@ -1,4 +1,4 @@
-package sundays_live_sessions.week10.books;
+package sundays_live_sessions.week_10.books;
 
 public class AudioBook extends Book {
     private String narrator;

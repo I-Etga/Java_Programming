@@ -1,4 +1,4 @@
-package sundays_live_sessions.week10.trafficLight;
+package sundays_live_sessions.week_10.trafficLight;
 
 public class TestTrafficLightsObjects {
     public static void main(String[] args) {

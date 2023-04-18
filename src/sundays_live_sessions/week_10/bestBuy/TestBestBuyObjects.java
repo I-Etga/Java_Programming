@@ -1,6 +1,4 @@
-package sundays_live_sessions.week10.bestBuy;
-
-import sundays_live_sessions.week10.bestBuy.BestBuy;
+package sundays_live_sessions.week_10.bestBuy;
 
 public class TestBestBuyObjects {
     public static void main(String[] args) {

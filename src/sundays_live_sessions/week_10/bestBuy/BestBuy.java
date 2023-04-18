@@ -1,4 +1,4 @@
-package sundays_live_sessions.week10.bestBuy;
+package sundays_live_sessions.week_10.bestBuy;
 
 public class BestBuy {
     public String address;

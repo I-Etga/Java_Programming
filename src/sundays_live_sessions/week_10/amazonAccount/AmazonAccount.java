@@ -1,4 +1,4 @@
-package sundays_live_sessions.week10.amazonAccount;
+package sundays_live_sessions.week_10.amazonAccount;
 
 public class AmazonAccount {
     private String username;
