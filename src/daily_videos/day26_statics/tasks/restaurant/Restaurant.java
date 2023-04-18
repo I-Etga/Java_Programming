@@ -9,16 +9,16 @@ public class Restaurant {
     public String location;
     public int numberOfStars;
 
-    public ArrayList<Server> servers ;
-    public ArrayList<Chef> chefs ;
+    public ArrayList<Server> servers ; // obj null
+    public ArrayList<Chef> chefs ; // obj null
 
 
     public Restaurant(String owner, String location, int numberOfStars) {
         this.owner = owner;
         this.location = location;
         this.numberOfStars = numberOfStars;
-        servers = new ArrayList<>();
-        chefs = new ArrayList<>();
+        servers = new ArrayList<>(); // I've created here an empty list
+        chefs = new ArrayList<>(); // I've created here an empty list
     }
 
     public void hireServer(Server server) {
@@ -54,3 +54,4 @@ public class Restaurant {
                 '}';
     }
 }
+

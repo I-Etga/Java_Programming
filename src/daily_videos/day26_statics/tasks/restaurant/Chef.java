@@ -42,5 +42,4 @@ public class Chef {
                 ", fullTime=" + fullTime(fullTime) +
                 '}';
     }
-
 }

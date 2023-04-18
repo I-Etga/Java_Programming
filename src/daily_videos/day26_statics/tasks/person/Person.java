@@ -12,18 +12,18 @@ public class Person {
     public static boolean hasNose;
     public static boolean hasWings;
     public static int numberOfHead;
-    public static int numberOfEyes;
+    public static int numberOfEyes ;
 
 
     static {  // statics belong to the Class
         isHuman = true;
         hasNose = true;
+        hasWings = false;
         numberOfHead = 1;
         numberOfEyes = 2;
-        hasWings = false;
     }
 
-    // CONSTRUCTOR CAN NOT CALL #1 ITSELF AND #2 MORE THAN ONE CONSTRUCTOR !!
+        // CONSTRUCTOR CAN NOT CALL #1 ITSELF AND #2 MORE THAN ONE CONSTRUCTOR !!
     public Person(String name) { // Allows us to create Person object just by setting name
         this.name = name;
     }

@@ -8,6 +8,7 @@ public class Server {
     public double hourlyRate;
     public boolean fullTime;
 
+
     public Server(String name, int employeeID, double hourlyRate, boolean fullTime) {
         this.name = name;
         this.employeeID = employeeID;
@@ -33,6 +34,7 @@ public class Server {
         }
         return message;
     }
+
     public String toString() {
         return "Server{" +
                 "name='" + name + '\'' +
@@ -41,5 +43,4 @@ public class Server {
                 ", fullTime=" + fullTime(fullTime) +
                 '}';
     }
-
 }
