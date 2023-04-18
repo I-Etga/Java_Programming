@@ -1,4 +1,4 @@
-package wednesdays_office_hours.week_9;
+package wednesdays_office_hours.week9;
 
 import java.util.Arrays;
 
