@@ -33,8 +33,19 @@ public class Circle extends Shape {
     @Override
     public void draw() {
         super.draw();
-        // code fragments that can draw a circle !!
+        // code fragments that can draw a circle !
+        System.out.println("          *         *           ");
+        System.out.println("       *                *       ");
+        System.out.println("     *                    *     ");
+        System.out.println("    *                      *    ");
+        System.out.println("    *                      *    ");
+        System.out.println("    *                      *    ");
+        System.out.println("     *                    *     ");
+        System.out.println("       *                *       ");
+        System.out.println("          *          *          ");
+
     }
+
 
     @Override
     public String toString() {

@@ -13,6 +13,7 @@ public class TestShapeObjects {
 
         Circle circle = new Circle(6);
         System.out.println(circle);
+        circle.draw();
 
     }
 }
