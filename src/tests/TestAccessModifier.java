@@ -1,6 +1,6 @@
 package tests;
 
-import daily_videos.day31_moreInheritance.ProtectedAccessModifier;
+import daily_videos.day31_InheritanceContinue.ProtectedAccessModifier;
 
 public class TestAccessModifier  extends ProtectedAccessModifier{
 

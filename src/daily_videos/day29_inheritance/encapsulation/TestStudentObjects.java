@@ -11,3 +11,15 @@ public class TestStudentObjects {
 
     }
 }
+
+/*
+access modifiers with inheritance
+
+	private: cannot be inherited [only allowed with getter and setter methods !!!]
+
+	default: can only be inherited within the same package
+
+	protected: can inherit the fields to the subclass no matter if its in the same package or not
+
+	public: can inherit anywhere in the project
+ */

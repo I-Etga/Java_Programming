@@ -57,17 +57,3 @@ public class Iphone {
                 '}';
     }
 }
-/*
-
-
-
-
-            Methods:
-                printOperatingSystem(): displays the operating system of the iphone
-                call(long phoneNumber)
-                text(long phoneNumber)
-                faceTime(long phoneNumber)
-                faceTime(String email)
-                toString()
-
- */

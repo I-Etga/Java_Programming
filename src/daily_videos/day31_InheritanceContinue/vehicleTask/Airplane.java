@@ -1,4 +1,4 @@
-package daily_videos.day31_moreInheritance.vehicleTask;
+package daily_videos.day31_InheritanceContinue.vehicleTask;
 
 public class Airplane extends Vehicle {
 

@@ -1,4 +1,4 @@
-package daily_videos.day31_moreInheritance;
+package daily_videos.day31_InheritanceContinue;
 
 
 class A{

@@ -7,6 +7,13 @@ public class Country {
 
     public String continent;
 
+    static {
+
+        planet = "Earth";
+        worldPopulation = 7.88;
+        worldCo2Level = 417.83;
+    }
+
     public Country(String name, int population, String continent) {
         this.name = name;
         this.population = population;
@@ -17,23 +24,13 @@ public class Country {
     public static double worldPopulation;
     public static double worldCo2Level;
 
-    {
-
-    }
-
-    static {
-
-        planet = "Earth";
-        worldPopulation = 7.88;
-        worldCo2Level = 417.83;
-    }
 
     @Override
     public String toString() {
         return "Country{" +
                 "name='" + name + '\'' +
-                ", population=" + population  + " billion " +
-                ", continent='" + continent  + " per million " + '\'' +
+                ", population=" + population + " billion " +
+                ", continent='" + continent + " per million " + '\'' +
                 '}';
     }
 }

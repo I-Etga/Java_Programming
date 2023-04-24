@@ -1,4 +1,4 @@
-package daily_videos.day31_moreInheritance.shape_methodOverriding;
+package daily_videos.day31_InheritanceContinue.shape_methodOverriding;
 
 public class TestShapeObjects {
     public static void main(String[] args) {

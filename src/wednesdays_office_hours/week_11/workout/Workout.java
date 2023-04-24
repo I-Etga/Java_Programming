@@ -20,18 +20,29 @@ public class Workout {
 
         if (name.isEmpty() || name.isBlank()) {
             System.out.println("Name can not be empty or blank !!");
-            System.exit(1);
+            return;
         }
 
+        boolean isValid = true;
         char[] chars = name.toCharArray();
-
         for (char ch : chars) {
             if (!(Character.isLetter(ch) || Character.isSpaceChar(ch))) {
                 System.out.println("Name can contain only letters and space !!");
-                System.exit(1);
+                isValid = false;
+                return;
             }
+
+            /*  alternative of toCharArray()
+              for(int i = 0; i < name.length(); i++){
+           if(!Character.isLetter(name.charAt(i)) && name.charAt(i) != ' '){ // checks if the character is not a letter or not a space
+               isValid = false;
+               break;
+           }
+             */
         }
-        this.name = name;
+        if (isValid) {
+            this.name = name;
+        }
     }
 
     public int getDuration() {
@@ -56,7 +67,7 @@ public class Workout {
 
         if (caloriesBurned > 0 && caloriesBurned < 1000) {
             this.caloriesBurned = caloriesBurned;
-        }else{
+        } else {
             System.out.println("Burned Calories can be between 0-1000");
             System.exit(1);
         }

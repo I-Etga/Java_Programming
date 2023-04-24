@@ -13,7 +13,7 @@ public class Sport {
         setName(name);
         setNumberOfPlayers(numberOfPlayers);
         setNumberOfReferre(numberOfReferre);
-        rules = new ArrayList<>(); // I just want to create a empty list !! I'll add Strings innit !!
+        rules = new ArrayList<>(); // I just want to create an empty list !! I'll add Strings innit !!
     }
 
     public String getName() {
@@ -61,7 +61,7 @@ public class Sport {
         rules.add(rule);
     }
 
-    public void addRules(ArrayList<String> rules) {
+    public  void addRules(ArrayList<String> rules) {
         rules.addAll(rules);
     }
 
@@ -79,14 +79,3 @@ public class Sport {
                 '}';
     }
 }
-/*
-        2. create the following sub classes of Sport:
-                1. Basketball
-                2. Baseball
-                3. Football
-                4. AmericanFootball
-
-            Add any missing variables or methods
-
-            Note: you can search them on google
- */

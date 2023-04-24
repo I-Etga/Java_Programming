@@ -1,4 +1,4 @@
-package daily_videos.day31_moreInheritance.animal_methodOverriding;
+package daily_videos.day31_InheritanceContinue.animal_methodOverriding;
 
 public class Lion extends Animal {
 
