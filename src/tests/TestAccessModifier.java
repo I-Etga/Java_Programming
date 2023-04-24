@@ -2,7 +2,7 @@ package tests;
 
 import daily_videos.day31_InheritanceContinue.ProtectedAccessModifier;
 
-public class TestAccessModifier  extends ProtectedAccessModifier{
+public class TestAccessModifier extends ProtectedAccessModifier {
 
     public static void main(String[] args) {
 

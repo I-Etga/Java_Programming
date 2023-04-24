@@ -2,6 +2,7 @@ package daily_videos.day28_encapsulation.person;
 
 public class TestPersonObjects {
     public static void main(String[] args) {
+
         Person person1 = new Person("Mohammad");
 
         Person person2 = new Person("Abidullah", 21);

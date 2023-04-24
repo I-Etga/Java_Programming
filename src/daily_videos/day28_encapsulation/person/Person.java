@@ -9,7 +9,7 @@ public class Person {
     public char gender;
 
     public static String planet;
-    public static boolean isHuman; // I can initialize it here. But, it does not work for all variables![better choose: static block]
+    public static boolean isHuman = true; // I can initialize it here. But, it does not work for all variables![better choose: static block]
     public static boolean hasNose;
     public static boolean hasWings;
     public static int numberOfWings;

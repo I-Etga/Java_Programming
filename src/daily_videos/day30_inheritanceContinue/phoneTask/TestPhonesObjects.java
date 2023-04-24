@@ -4,7 +4,7 @@ public class TestPhonesObjects {
     public static void main(String[] args) {
         System.out.println("***** Apple ******");
 
-        IPhone iPhone1 = new IPhone("14 Pro", 5.8, 1100, "White");
+        IPhone iPhone1 = new IPhone("14 Pro", 5.8, 1100, "White",true);
 
         //iPhone1.setColor(" "); --> Color can not be null/empty/blank
 
