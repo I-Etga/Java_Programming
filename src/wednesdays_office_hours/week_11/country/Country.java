@@ -7,6 +7,11 @@ public class Country {
 
     public String continent;
 
+
+    public static String planet;
+    public static double worldPopulation;
+    public static double worldCo2Level;
+
     static {
 
         planet = "Earth";
@@ -14,16 +19,18 @@ public class Country {
         worldCo2Level = 417.83;
     }
 
+
     public Country(String name, int population, String continent) {
         this.name = name;
         this.population = population;
         this.continent = continent;
     }
 
-    public static String planet;
-    public static double worldPopulation;
-    public static double worldCo2Level;
-
+    public static void countryInfo(){
+        System.out.println(planet);
+        System.out.println(worldPopulation + " billion");
+        System.out.println(worldCo2Level + " ppm");
+    }
 
     @Override
     public String toString() {

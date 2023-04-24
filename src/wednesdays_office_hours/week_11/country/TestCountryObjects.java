@@ -19,5 +19,15 @@ public class TestCountryObjects {
 
         System.out.println(germany);
         System.out.println(turkey);
+
+        System.out.println(Country.planet);
+        System.out.println(Country.worldPopulation);
+        System.out.println(Country.worldCo2Level);
+        System.out.println();
+        Country.countryInfo();
+
+        //Country.name; name is an instance variable so it cannot be accessed in a static way
+
+        Country us = new Country("US", 350, "North America");
     }
 }

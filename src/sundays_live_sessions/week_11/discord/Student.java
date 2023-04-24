@@ -12,15 +12,4 @@ public class Student extends DiscordUser {
     }
 
 }
-/*
-    Create a class Student
-
-        - Student class inherits DiscordUser class
-
-        - create constructor to call parent constructor and set up variables (role - Student, name, id)
-
-        - overload the sendMessage(String name) to accept a String for the chat name
-            print Sending message to $name
-
- */
 

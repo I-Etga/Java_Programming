@@ -2,7 +2,6 @@ package wednesdays_office_hours.week_11.foodCourse.entree;
 
 public class Taco extends Entree {
 
-
     private String typeOfMeat;
 
     public Taco(String name, double price, String typeOfMeat) {
