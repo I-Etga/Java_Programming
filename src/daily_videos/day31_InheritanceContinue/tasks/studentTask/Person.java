@@ -59,13 +59,15 @@ public class Person {
         }
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println("Person is eating");
     }
-    public void drink(){
+
+    public void drink() {
         System.out.println("Person is drinking");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("Person is sleeping");
     }
 
