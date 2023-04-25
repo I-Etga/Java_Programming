@@ -11,9 +11,9 @@ public class TestCredentialsObjects {
         System.out.println(credentials1);
 
 
-        //Credentials credentials2 = new Credentials("Cydeo College","BceA&+= ");
+        Credentials credentials2 = new Credentials("Cydeo College","BceA&+= ");
 
-        // System.out.println(credentials2); // Weak Password. Password should have at least one letter,one digits,one special character and no space!
+        System.out.println(credentials2); // Weak Password. Password should have at least one letter,one digits,one special character and no space!
 
     }
 

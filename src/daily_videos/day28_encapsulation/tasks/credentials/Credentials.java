@@ -41,12 +41,11 @@ public class Credentials {
             isStrong = true;
         }
 
-        char[] chars = password.toCharArray();
         int numberOfDigit = 0;
         int numberOfLetter = 0;
         int numberOfSpecialCharacters = 0;
 
-        for (char ch : chars) {
+        for (char ch : password.toCharArray()) {
 
             if (Character.isDigit(ch)) {
                 numberOfDigit++;
@@ -56,7 +55,7 @@ public class Credentials {
                 numberOfSpecialCharacters++;
             }
         }
-        boolean digitSpaceLetterSpecial = numberOfLetter >= 1 && numberOfDigit >= 0 && numberOfSpecialCharacters >= 0;
+        boolean digitSpaceLetterSpecial = numberOfLetter >= 1 && numberOfDigit >= 1 && numberOfSpecialCharacters >= 1;
 
         return isStrong && digitSpaceLetterSpecial;
     }
@@ -68,5 +67,48 @@ public class Credentials {
                 '}';
     }
 }
+ /*             #2 Alternative of SET method  -->public void setPassword(String password) [without boolean isStrongPassword method]
+
+        public void setPassword(String password) {
+            boolean r1 = password.length() >= 8 && !password.contains(" "); // true
+            boolean r3 = false; // has letter
+            boolean r4 = false;  // has Digit
+            boolean r5 = false; // has Special Character
+
+            for (char each : password.toCharArray()) {
+                if (Character.isLetter(each)) {
+                    r3 = true;
+                } else if (Character.isDigit(each)) {
+                    r4 = true;
+                } else {
+                    r5 = true;
+                }
+            }
+            if (r1 && r3 && r4 && r5) {
+                System.err.println("Password must be strong");
+                System.exit(1);
+            }
+            this.password = password;
+        }
+    */
+/*         #2 Alternative of isStrongPassword(String password) method
+
+        public boolean isStrongPassword(String password) {
+        boolean r1 = password.length() >= 8 && !password.contains(" "); // true
+        boolean r3 = false; // has letter
+        boolean r4 = false;  // has Digit
+        boolean r5 = false; // has Special Character
+
+        for (char each : password.toCharArray()) {
+            if (Character.isLetter(each)) {
+                r3 = true;
+            } else if (Character.isDigit(each)) {
+                r4 = true;
+            } else {
+                r5 = true;
+            }
+        }
+        return r1 && r3 && r4 && r5;
+    }*/
 
 
