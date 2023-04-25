@@ -3,7 +3,7 @@ package daily_videos.day32_finalKeyword.carTaskOverriding;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Tesla extends Car {
+public final class Tesla extends Car {
     public Tesla(String model, String color, int year, double price) {
         super(model, color, year, price);
     }

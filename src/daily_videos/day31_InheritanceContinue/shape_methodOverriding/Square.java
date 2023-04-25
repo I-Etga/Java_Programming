@@ -1,6 +1,6 @@
 package daily_videos.day31_InheritanceContinue.shape_methodOverriding;
 
-public class Square extends Shape {
+final public class Square extends Shape {
 
     private double side;
 
