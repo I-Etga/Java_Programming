@@ -1,8 +1,6 @@
 package daily_videos.day32_finalKeyword.carTaskOverriding;
 
 public class TestCarObjects {
-
-
     public static void main(String[] args) {
 
         Toyota toyota = new Toyota("Camry", "Blue", 2020, 25000);
