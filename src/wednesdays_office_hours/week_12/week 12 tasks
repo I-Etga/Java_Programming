@@ -1,0 +1,192 @@
+Office Hours Topics:
+
+    reviewing week 11:
+    inheritance
+    method overriding
+
+----------------------------------------------------------------------------------------
+
+App [inheritance, constructors]
+
+    Create an App class
+
+        - create variables:
+            name (app name), version
+
+        - create a constructor to initialize the variables
+
+        - create method:
+            download()
+                Example output: prints $name is downloading version $version
+
+    Create a class Instagram
+
+        - Instagram class inherits App class
+
+        - create a constructor to call the parent constructor and set up variables (name and version)
+
+        - create method:
+            postPicture()
+                Example output: prints Posting picture to Instagram
+
+    Create a class Youtube
+
+        - Youtube class inherits App class
+
+        - create a constructor to call the parent constructor and set up variables (name and version)
+
+        - create method:
+            watchVideo()
+                Example output: prints Watching java tutorial
+
+----------------------------------------------------------------------------------------
+
+Candy [inheritance, constructor, static]
+
+    Create a class Candy
+
+        declare these instance variables:
+            - brand (String), quantity (int), contains peanuts (boolean)
+                make brand and contains peanuts
+
+        declare a static variables:
+            - number of total candy in the world: 500,000
+            - country with largest candy consumption: United States
+
+        create a constructor to set all instance variables
+
+        override toString
+
+    Create a class Take5
+        inherits Candy class
+        make Take5
+
+        create a constructor that calls the parent constructor
+
+    Create a class Twix
+        inherits Candy class
+        make Twix
+
+        create a constructor that calls the parent constructor
+
+    Create a class HersheyBar
+        inherits Candy class
+
+        create a constructor that calls the parent constructor
+
+    Create a class HersheyKiss
+        inherits HersheyBar
+
+        create a constructor that calls the parent constructor
+
+    Create a class CandyFactory
+    create a main method
+    create the Candy objects to test all the information
+
+----------------------------------------------------------------------------------------
+
+Season [overriding, inheritance, constructors]
+
+    Create a class Season
+
+        instance variables
+            - name
+            - highest average temperature
+            - lowest average temperature
+
+        constructor:
+            - initialize all fields
+
+        methods:
+            - activity(), toString()
+            override activity in sub classes
+
+    Create a class Winter
+        child class of Season
+
+        constructor: set values to variables
+
+        methods:
+            activity(): Print Use Fireplace
+
+    Create a class Summer
+        child class of Season
+
+        constructor: set values to variables
+
+        methods:
+            activity(): Drink Lemonade
+
+    Create a class Fall
+        child class of Season
+
+        constructor: set values to variables
+
+        methods:
+            activity(): Read A Book
+
+    Create a class Spring
+        child class of Season
+
+        constructor: set values to variables
+
+        methods:
+            activity(): Go Outside
+
+    Create a class CheckSeason
+
+        create an object of Winter, Summer, Fall and Spring and verify if the constructor, toString(), and activity() are working properly for each class
+
+----------------------------------------------------------------------------------------
+
+SuperHero [inheritance, overriding, constructors, super]
+
+    Create a class SuperHero
+
+        declare these instance variables:
+            super hero name, real name, universe, powers (ArrayList of String)
+            make the universe
+
+        create a constructor to initialize all the variables
+
+        create an instance method:
+            protect() - print $super_hero protecting
+
+        override the toString method
+
+    Create a class Marvel
+        inherits SuperHero
+        make Marvel
+
+        create a constructor to initialize all the variables by calling the super class constructor
+            set universe to "Marvel"
+
+        create a method callAvengers()
+            print: Calling all avengers
+
+        override the protect method()
+            print: super_hero protecting by any means necessary
+
+    Create a class DC
+        inherits SuperHero
+        make DC
+
+        declare an instance variable: city
+
+        create a constructor to initialize all the variables by calling the super class constructor
+            set universe to "DC"
+
+        override the protect method()
+            print: super_hero protecting with honor
+
+    Create a class CheckHeros
+    create a main method
+    create Marvel and DC objects and test the variables and methods
+
+    data:
+    spider man, peter parker, Marvel, powers: Enhanced strength, agility, and spider-sense
+    iron man, tony stark, Marvel, powers: powered suit of armor, flight, enhanced strength
+    thor, thor odinson, Marvel, powers: wields hammer, controls lightning, flight
+    wonder woman, diana prince, DC, powers: Enhanced strength, speed, agility, durability
+    batman, bruce wayne, DC, powers: master detective, martial arts, technical tools
+    superman, clark kent, DC, powers: super strength, speed, invulnerability, flight

@@ -3,10 +3,10 @@ package daily_videos.day32_finalKeyword;
 import java.time.LocalDate;
 
 class CydeoStudent{
-
     final public void language(){
         System.out.println("Java programming");
     }
+
 }
 
 public class FinalKeyword extends CydeoStudent {
@@ -18,7 +18,6 @@ public class FinalKeyword extends CydeoStudent {
             System.out.println("Python Programming");
         }*/
     public static void main(String[] args) {
-
 
        final char gender = 'M';
 
