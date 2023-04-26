@@ -4,8 +4,8 @@ public class App {
     public String name;
     public double version;
 
-    public App(String name, double version) {
-        this.name = name;
+    public App( double version) {
+        this.name = getClass().getSimpleName(); // constructor does not accept that statement. So We initialize it that way.
         this.version = version;
     }
 

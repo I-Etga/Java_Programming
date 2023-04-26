@@ -1,14 +1,10 @@
 package wednesdays_office_hours.week_12.candy;
 
 public class HersheyBar extends Candy {
-    public HersheyBar(int quantity, boolean containsPeanuts) {
-        super("Hershey", quantity, containsPeanuts);
+    public HersheyBar(int quantity) {
+        super(quantity, false); // hard code false
     }
 
-    @Override
-    public String toString() {
-        return "Hershey" + "{" + getClass().getSimpleName() + ", quantity" + quantity +
-                ", containsPeanuts=" + containsPeanuts +
-                '}';
-    }
+    static String hq = "Hershey Pennsylvania";
+
 }

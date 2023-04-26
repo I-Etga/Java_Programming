@@ -3,7 +3,7 @@ package wednesdays_office_hours.week_12.app;
 public class TestAppObjects {
     public static void main(String[] args) {
 
-        App app = new App("Facebook",9.3);
+        App app = new App(9.3);
         app.download();
         System.out.println(app);
 

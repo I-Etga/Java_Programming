@@ -13,17 +13,14 @@ public class Candy {
         countryWithLargestCandyConsume = "United States of America";
     }
 
-    public Candy(String brand, int quantity, boolean containsPeanuts) {
-        this.brand = brand;
+    public Candy( int quantity, boolean containsPeanuts) {
+        this.brand = getClass().getSimpleName();
         this.quantity = quantity;
         this.containsPeanuts = containsPeanuts;
     }
 
     @Override
-    public String toString() {
-        return getClass().getSimpleName() + "{" +
-                "quantity=" + quantity +
-                ", containsPeanuts=" + containsPeanuts +
-                '}';
+    public String toString(){
+        return "I have " + quantity + " " + brand + " which " + (containsPeanuts ? "has" : "doesn't have") + " peanuts";
     }
 }

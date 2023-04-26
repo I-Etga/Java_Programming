@@ -2,7 +2,7 @@ package wednesdays_office_hours.week_12.app;
 
 public class Instgram extends App {
     public Instgram( double version) {
-        super("Instagram", version);
+        super( version); // super(getClass().getName(), version)
     }
 
     public void postPicture() {
