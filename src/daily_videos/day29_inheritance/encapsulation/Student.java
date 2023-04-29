@@ -27,7 +27,7 @@ public class Student {
     }
 
     /*
-     Getter:
+     Setter:
      -It must be public
      -Return type must be VOID !
      -parameter type must be match with the variable setter sets

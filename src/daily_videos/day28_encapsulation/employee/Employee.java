@@ -11,13 +11,15 @@ public class Employee {
     // For private instances constructor must contains set methods of that private instances !! Otherwise, we get error !
     public Employee(String name, int age, String jobTitle, double salary) {
         setName(name);
-        setAge(age);
+        // this.age = age; -> We can use this statement instead of setAge(age), if there is no additional code inside setAge method!!
+        setAge(age); // age <16
         setJobTitle(jobTitle);
         setSalary(salary);
     }
 
-    // get and set methods must be public. Otherwise, we can not access the variables.
+    // get and set methods must be PUBLIC. Otherwise, we can not access the variables.
     // That's the main goal of getter and setter (there is no point of making them private)
+    // ** We don't have to call setMethod always. Because constructor also must be public. And that allows use to access private variables in the class.
 
     public String getName() {
         if (name == null) {
@@ -28,11 +30,6 @@ public class Employee {
     }
 
     public void setName(String name) {
-
-        if (name.isEmpty() || name.isBlank()) {
-            System.out.println("Employee name can not be empty or blank");
-            System.exit(1);
-        }
         this.name = name;
     }
 
@@ -41,14 +38,8 @@ public class Employee {
     }
 
     public void setAge(int age) {
-
-        if (age < 16) {
-            System.err.println("Invalid age: " + age);
-            System.exit(1);
-        }
         this.age = age;
     }
-
     public void setJobTitle(String jobTitle) {
 
         if (jobTitle.isEmpty() || jobTitle.isBlank()) {
@@ -74,7 +65,6 @@ public class Employee {
         }
         this.salary = salary;
     }
-
 
     public String toString() {
         return "Employee{" +
