@@ -10,7 +10,7 @@ public class Person {
     private final int age; // if I initialize that every object of that class have the same age variable and I can not change it !!
     private final LocalDate dateOfBirth;
 
-    public Person(String name ,char gender, LocalDate dateOfBirth) { // without constructor final variables give error.Because final variables have to be set BEFORE the object's created.
+    public Person(String name, char gender, LocalDate dateOfBirth) { // without constructor, final variables give error.Because final variables have to be set BEFORE the object's created.
         setName(name);
         if (!(gender == 'M' || gender == 'F')) {
             System.err.println("Invalid gender. Gender can be only 'M' OR 'F' ");
@@ -27,6 +27,10 @@ public class Person {
     static {
         numberOfHead = 1;
     }
+
+
+
+    //Final variables can't have set method. Because finals are unchangeable !!
 
     public String getName() {
         return name;
@@ -66,7 +70,7 @@ public class Person {
     }
 
 
-    public final void breath(){ // to make sure that this implementation will not change for any sub class
+    public final void breath() { // to make sure that this implementation will not change for any sub class
         System.out.println(name + " is breathing");
     }
 

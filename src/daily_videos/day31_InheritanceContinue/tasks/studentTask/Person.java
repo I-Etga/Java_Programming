@@ -18,7 +18,7 @@ public class Person {
 
     public void setName(String name) {
 
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isEmpty() || name.isBlank()) {
             System.out.println("Invalid name. Name can not be null");
             System.exit(1);
         }
@@ -80,4 +80,6 @@ public class Person {
                 '}';
     }
 }
+
+
 
