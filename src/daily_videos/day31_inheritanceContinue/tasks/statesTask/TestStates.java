@@ -3,7 +3,7 @@ package daily_videos.day31_inheritanceContinue.tasks.statesTask;
 public class TestStates {
 
     public static void main(String[] args) {
-        California california = new California("California","CA","Democrat","Gavin Christopher Newsom ","Dianne Feinstein",39.24,7.25);
+        California california = new California("California","CA","Democrat","Gavin Christopher Newson ","Dianne Feinstein",39.24,7.25);
 
         Florida florida = new Florida("Florida","FL","Republican","Ron DeSantis","Rick Scott",21.78,6);
 
@@ -15,6 +15,8 @@ public class TestStates {
         System.out.println(florida);
         System.out.println(texas);
         System.out.println(virginia);
-    }
 
+        california.setPopulation(39.80);
+        System.out.println(california.getGovernor());
+    }
 }
