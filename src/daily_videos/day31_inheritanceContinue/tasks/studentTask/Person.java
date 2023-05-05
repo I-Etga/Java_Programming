@@ -19,12 +19,12 @@ public class Person {
     public void setName(String name) {
 
         if (name == null || name.isEmpty() || name.isBlank()) {
-            System.out.println("Invalid name. Name can not be null");
+            System.err.println("Invalid name. Name can not be null");
             System.exit(1);
         }
 
         for (int i = 0; i < name.length(); i++) {
-            if (!Character.isLetter(name.charAt(i)) || !Character.isSpaceChar(name.charAt(i))) {
+            if (!(Character.isLetter(name.charAt(i)) || Character.isSpaceChar(name.charAt(i)))) {
                 System.err.println("Invalid name. Name can contain only letters and space");
                 System.exit(1);
             }
@@ -73,7 +73,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
