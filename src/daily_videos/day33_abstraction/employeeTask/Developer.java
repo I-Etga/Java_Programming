@@ -21,7 +21,7 @@ public class Developer extends Employee {
 
     @Override
     public void work() {
-        System.out.println(getName() + " is coding in" + programmingLanguage);
+        System.out.println(getName() + " is coding in " + programmingLanguage);
     }
 
     @Override

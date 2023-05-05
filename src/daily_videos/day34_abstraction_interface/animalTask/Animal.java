@@ -66,6 +66,10 @@ public abstract class Animal {
 
     public abstract void sleep();
 
+    public void drink() {
+        System.out.println(name + " is drinking water");
+    }
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +
