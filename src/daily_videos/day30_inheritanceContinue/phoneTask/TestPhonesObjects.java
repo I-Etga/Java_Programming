@@ -4,7 +4,7 @@ public class TestPhonesObjects {
     public static void main(String[] args) {
         System.out.println("***** Apple ******");
 
-        IPhone iPhone1 = new IPhone("14 Pro", 5.8, 1100, "White",true);
+        IPhone iPhone1 = new IPhone("14 Pro", "Middle", "White",1100);
 
         //iPhone1.setColor(" "); --> Color can not be null/empty/blank
 
@@ -21,7 +21,7 @@ public class TestPhonesObjects {
 
         System.out.println("***** Samsung ******");
 
-        Samsung samsung1 = new Samsung("S23 Ultra", 6.9, 1300, "Black");
+        Samsung samsung1 = new Samsung("S23 Ultra", "Large", "Black", 1300);
 
         samsung1.freeze();
         samsung1.setColor("White");
@@ -33,7 +33,7 @@ public class TestPhonesObjects {
 
         System.out.println("***** Nokia ******");
 
-        Nokia nokia1 = new Nokia("3310", 3, 100, "Gray");
+        Nokia nokia1 = new Nokia("3310", "Small", "Gray",100 );
 
         nokia1.selfDefence();
 

@@ -1,17 +1,16 @@
 package daily_videos.day30_inheritanceContinue.phoneTask;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Phone_superClass {
+public class Phone {
     private String brand;
     private String model;
-    private double size;
+    private String size;
     private double price;
     private String color;
 
 
-    public Phone_superClass(String brand, String model, double size, double price, String color) { // Because constructors named after Class, they can not be inherited to child class !
+    public Phone(String brand, String model, String size, String color, double price) { // Because constructors named after Class, they can not be inherited to child class !
         this.brand = brand;
         this.model = model;
         this.size = size;
@@ -35,11 +34,11 @@ public class Phone_superClass {
         this.model = model;
     }
 
-    public double getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(double size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
