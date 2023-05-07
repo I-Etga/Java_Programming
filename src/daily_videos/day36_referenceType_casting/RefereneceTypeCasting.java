@@ -1,10 +1,11 @@
 package daily_videos.day36_referenceType_casting;
 
 import daily_videos.day29_inheritance.animalTask.*;
-import daily_videos.day29_inheritance.tasks.vocationsTask.Tester;
 import daily_videos.day30_inheritanceContinue.phoneTask.*;
 import daily_videos.day33_abstraction.employeeTask.*;
 import daily_videos.day34_abstraction_interface.carTask.*;
+import daily_videos.day35_polymorphism.transportationTask.*;
+import daily_videos.day35_polymorphism.transportationTask.Tesla;
 
 public class RefereneceTypeCasting {
 
@@ -140,6 +141,33 @@ public class RefereneceTypeCasting {
             But, If we cast it one to another, we get " ClassCastException ".
                         */
 
+        System.out.println("-------");
+
+        Electric electric = new Tesla("Model Y", "White", 2022, 90000);
+
+        electric.charge();
+
+        ((Tesla) electric).selfDrive();
+
+        ((AutoPilot) electric).selfDrive();
+
+        System.out.println("---------");
+
+
+        // object types decides which implementation will get executed.
+        Teacher employee1 = new Teacher("James", 45, 'M', "B1", "Math Teacher", 75000);
+
+        Developer employee2 = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+        Driver employee3 = new Driver("Aaron", 48, 'M', "D1", "Truck Driver", 90000);
+
+        Tester employee4 = new Tester("Emily", 35, 'F', "E1", "Manual Tester", 80000);
+
+
+        employee1.work();
+        employee2.work();
+        employee3.work();
+        employee4.work();
 
     }
 
