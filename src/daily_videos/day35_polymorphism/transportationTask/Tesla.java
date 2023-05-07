@@ -11,16 +11,16 @@ public class Tesla extends Car implements Electric, AutoPilot {
 
     @Override
     public void autoPark() {
-
+        System.out.println("Auto-parking");
     }
 
     @Override
     public void selfDrive() {
-
+        System.out.println("Self-driving");
     }
 
     @Override
     public void charge() {
-
+        System.out.println("Charging");
     }
 }
