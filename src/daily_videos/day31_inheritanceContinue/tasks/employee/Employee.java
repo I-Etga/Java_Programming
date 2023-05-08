@@ -4,6 +4,10 @@ package daily_videos.day31_inheritanceContinue.tasks.employee;
 import daily_videos.day31_inheritanceContinue.tasks.studentTask.Person;
 
 public class Employee extends Person {
+
+    private String id, jobTitle, companyName;
+    private double salary;
+
     public Employee(String name, int age, char gender, String id, String jobTitle, String companyName, double salary) {
         super(name, age, gender);
         setAge(age); // it's overridden version of setAge(). -->If I don't call it, I can't implement the new condition on setting variable !!
@@ -12,9 +16,6 @@ public class Employee extends Person {
         setCompanyName(companyName);
         setSalary(salary);
     }
-
-    private String id, jobTitle, companyName;
-    private double salary;
 
     public String getId() {
         return id;

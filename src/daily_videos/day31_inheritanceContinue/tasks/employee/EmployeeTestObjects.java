@@ -22,7 +22,7 @@ public class EmployeeTestObjects {
 
 
         Developer developer = new Developer("Monica", 26, 'F', "DEV63521", "Developer", "Rewe", 100000, "Java");
-        System.out.println(developer);
+        System.out.println(developer); // developer.toString()
 
 
         Teacher teacher = new Teacher("Muhtar", 42, 'M', "INS7309", "Instructor", "Cydeo", 150000);
