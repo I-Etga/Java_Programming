@@ -11,16 +11,19 @@ public class CarShop {
                 Autopark autopark = new Autopark();
                 AutoPilot autoPilot = new AutoPilot();
                 Fylable fylable = new Fylable();
+
                                 */
+        //Car car = new Car();  -> Abstract class can not be instantiated [no object] and can not be subclass !!
+
 
         Audi audi = new Audi("Audi", "a3", 38000, "White", LocalDate.of(2022, 1, 1));
-        audi.autoPark();
+        audi.autoPark(); // inherited from Autopark interface
         System.out.println(Audi.hasAutoPark); //variables in interface is static&final by default !!
-        audi.start();
-        audi.drive();
-        audi.stop();
+        audi.start(); // inherited from parent abstract Class named Car
+        audi.drive();// inherited from parent abstract Class named Car
+        audi.stop();// inherited from parent abstract Class named Car
         audi.setColor("Black"); // Car class has set methods for only color and price. Other variables are final!!
-        System.out.println(audi.getPrice());
+        System.out.println(audi.getPrice());// inherited from parent abstract Class named Car
 
 
         BMW bmw = new BMW("BWM", "m3", 45000, "Green", LocalDate.of(2023, 1, 1));
@@ -32,19 +35,22 @@ public class CarShop {
         bmw.setColor("Yellow");
         System.out.println(bmw.getYear());
 
-        //Car car = new Car();  -> Abstract class can not be instantiated [no object]!!
+
 
         CydeoCar cydeoCar = new CydeoCar("Cydeo", "CydeoCar", 80000, "Purple", LocalDate.of(2023, 4, 4));
-        cydeoCar.fly();
-        cydeoCar.autoPark();
-        cydeoCar.selfDrive();
+        cydeoCar.fly(); // Flyable interface
         System.out.println(CydeoCar.canFly);//variables in interface is static&final by default !!
+
+        cydeoCar.autoPark();// Autopilot -> inherited from AutoPark interface
         System.out.println(CydeoCar.hasAutoPark);//variables in interface is static&final by default !!
-        cydeoCar.start();
-        cydeoCar.drive();
-        cydeoCar.stop();
-        System.out.println(cydeoCar.getYear());
-        cydeoCar.setPrice(65000);
+
+        cydeoCar.selfDrive(); // Autopilot interface
+
+        cydeoCar.start(); // Car class [parent]
+        cydeoCar.drive();// Car class [parent]
+        cydeoCar.stop();// Car class [parent]
+        System.out.println(cydeoCar.getYear());// Car class [parent]
+        cydeoCar.setPrice(65000);// Car class [parent]
 
         Honda honda = new Honda("Honda", "Civic", 28000, "Gray", LocalDate.of(2021, 1, 1));
         honda.autoPark();
@@ -93,5 +99,10 @@ public class CarShop {
         toyota.drive();
         toyota.setColor("White");
         System.out.println(toyota.getModel());
+
+        // We don't have to extend a concrete/abstract class in order to implement an interface
+        Skoda skoda = new Skoda();
+        skoda.autoPark();
+        System.out.println(Skoda.hasAutoPark);
     }
 }

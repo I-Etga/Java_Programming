@@ -2,9 +2,9 @@ package daily_videos.day34_abstraction_interface.tasks.CarTaskAbstrct;
 
 import java.time.LocalDate;
 
-public class Audi extends Car implements Autopark {
+public class Audi extends Car implements AutoPark {
         /*
-        Audi public class and can have no abstract method !![no body method]
+        Audi is a concrete class and can have no abstract method !![no body method]
          ---> So I have to implement abstract methods if I extend an Abstract Class or implement interface !!
                     */
 
