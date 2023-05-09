@@ -29,8 +29,8 @@ warmup tasks:
 
 Exceptions Topics:
 	1. Exceptions Intro
-	2. Checkd & unchecked
-	3. Try & Cacth
+	2. Checked & unchecked
+	3. Try & Catch
 
 	4. Throws Keyword
 			try&catch vs throw
@@ -44,7 +44,7 @@ Exceptions Topics:
 
 final vs finalize vs finally:
 
-	final: keyword ==> unchangable
+	final: keyword ==> unchangeable
 
 	finalize: method ===> GC use it to collect the objects that are eligible for garbage collection
 
