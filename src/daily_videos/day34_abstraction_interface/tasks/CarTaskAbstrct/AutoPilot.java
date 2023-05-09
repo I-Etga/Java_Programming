@@ -5,5 +5,5 @@ public interface AutoPilot extends Autopark {
     //  Class extends Class/Abstract Class and Class implements interfaces !!
     // interface extends interface
 
-    void selfDrive();
+    void selfDrive(); // public & abstract by default
 }

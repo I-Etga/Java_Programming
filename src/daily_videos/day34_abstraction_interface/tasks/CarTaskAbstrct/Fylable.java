@@ -2,7 +2,7 @@ package daily_videos.day34_abstraction_interface.tasks.CarTaskAbstrct;
 
 public interface Fylable {
 
-    boolean canFly = true;
+    boolean canFly = true; // static & final by default
 
-    void fly();
+    void fly(); // public & abstract by default
 }
