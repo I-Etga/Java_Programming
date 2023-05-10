@@ -80,7 +80,6 @@ public class Warehouse {
         target1.buyItem();
         target1.returnItem();
 
-
     }
 
 }

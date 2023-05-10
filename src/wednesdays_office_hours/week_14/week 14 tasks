@@ -76,11 +76,11 @@ Movies [Abstraction, Polymorphism]
 
         create a toString that will display the information about the Cinema and which Movies are available to watch
 
-    - Create an interface HasSubcription
+    - Create an interface HasSubscription
         create an abstract method subscribe()
 
     - Create an abstract class StreamingSite
-        implement the PlayMovie & HasSubcription interfaces - don't need to implement the methods
+        implement the PlayMovie & HasSubscription interfaces - don't need to implement the methods
 
         create the following instance variables:
             url, subscription amount, movies available(int)
