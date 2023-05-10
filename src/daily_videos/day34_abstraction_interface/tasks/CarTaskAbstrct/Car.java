@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public abstract class Car {
     /*
-        meant to be super class
+        Abstract class is meant to be parent/super class. However, it can be subclass as well.
         No object can be created from that class !!
         constructor √
         abstract method √

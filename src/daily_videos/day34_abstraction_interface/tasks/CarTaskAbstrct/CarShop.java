@@ -13,7 +13,9 @@ public class CarShop {
                 Fylable fylable = new Fylable();
 
                                 */
-        //Car car = new Car();  -> Abstract class can not be instantiated [no object] and can not be subclass !!
+        //Car car = new Car();
+        // -> Abstract class can not be instantiated [no object] !!
+        // Abstract class is meant to be parent/super class.However, it can be subclass as well.
 
 
         Audi audi = new Audi("Audi", "a3", 38000, "White", LocalDate.of(2022, 1, 1));
