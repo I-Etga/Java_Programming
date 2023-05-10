@@ -49,6 +49,8 @@ public class Warehouse {
         shopping2.returnItem();
         shopping2.buyItem();
 
+        // ((Amazon)shopping).shipItem();
+
 
         System.out.println("-----");
 
