@@ -4,9 +4,10 @@ public abstract class StreamingSite implements PlayMovie, HasSubscription {
 
 
     public String url;
-    public int subscriptionAmount,moviesAvailable;
+    public double subscriptionAmount;
+    public int moviesAvailable;
 
-    public StreamingSite(String url, int subscriptionAmount, int moviesAvailable) {
+    public StreamingSite(String url, double subscriptionAmount, int moviesAvailable) {
         this.url = url;
         this.subscriptionAmount = subscriptionAmount;
         this.moviesAvailable = moviesAvailable;

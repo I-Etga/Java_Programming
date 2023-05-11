@@ -3,18 +3,17 @@ package wednesdays_office_hours.week_14.movies;
 import java.time.LocalDate;
 
 public final class Movie {
+    private String title;
+    private int rating;
+    private int minutes;
+    private int year;
 
-    public Movie(String title, int rating, int minutes, LocalDate year) {
+    public Movie(String title, int rating, int minutes, int year) {
         setTitle(title);
         setRating(rating);
         setMinutes(minutes);
         setYear(year);
     }
-
-    private String title;
-    private int rating;
-    private int minutes;
-    private LocalDate year;
 
     public String getTitle() {
         return title;
@@ -45,11 +44,11 @@ public final class Movie {
         this.minutes = minutes;
     }
 
-    public LocalDate getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(LocalDate year) {
+    public void setYear(int year) {
         this.year = year;
     }
 

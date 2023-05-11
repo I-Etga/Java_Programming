@@ -1,8 +1,8 @@
 package wednesdays_office_hours.week_14.movies;
 
 public class Hulu extends StreamingSite {
-    public Hulu(String url, int subscriptionAmount, int moviesAvailable) {
-        super(url, subscriptionAmount, moviesAvailable);
+    public Hulu( int subscriptionAmount, int moviesAvailable) {
+        super("www.hulu.com", subscriptionAmount, moviesAvailable);
     }
 
     @Override

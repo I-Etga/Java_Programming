@@ -1,8 +1,8 @@
 package wednesdays_office_hours.week_14.movies;
 
 public class Amazon extends StreamingSite{
-    public Amazon(String url, int subscriptionAmount, int moviesAvailable) {
-        super(url, subscriptionAmount, moviesAvailable);
+    public Amazon( int subscriptionAmount, int moviesAvailable) {
+        super("www.amazon.com", subscriptionAmount, moviesAvailable);
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Amazon extends StreamingSite{
 
     @Override
     public void pause() {
-
+        System.out.println("Paused with space");
     }
 }

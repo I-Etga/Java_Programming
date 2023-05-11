@@ -16,7 +16,7 @@ public final class Cinema implements PlayMovie {
 
     @Override
     public void playMovie(Movie movie) {
-        System.out.println(movie + " Starting, please grab your popcorn and turn your phones off");
+        System.out.println(movie.getTitle() + " Starting, please grab your popcorn and turn your phones off");
     }
 
     public void buyTicket(Movie movie) {
@@ -34,10 +34,6 @@ public final class Cinema implements PlayMovie {
 
     @Override
     public String toString() {
-        return "Cinema{" +
-                "location='" + location + '\'' +
-                ", numberOfTheaters=" + numberOfTheaters +
-                ", movies=" + movies +
-                '}';
+        return "Location: " + location + " has " + numberOfTheaters + " theaters\nMovies available: " + movies;
     }
 }
