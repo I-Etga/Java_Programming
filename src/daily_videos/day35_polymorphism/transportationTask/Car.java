@@ -20,4 +20,7 @@ public  class Car extends Transportation {
     public void start() {
 
     }
+
+    public void drive() {
+    }
 }

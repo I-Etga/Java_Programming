@@ -29,9 +29,9 @@ public class TestCarObjects {
 
         System.out.println("------------------------------------------------------");
 
-        // tesla.setPrice(30000);
+        //tesla.setPrice(30000);
         // tesla.setModel("Model H");
-
+        //tesla.owner = "Me"; // it's final variable. So I can't re-assign it
         System.out.println(tesla);
     }
 }

@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public abstract class Car {
     /*
-        Abstract class is meant to be parent/super class. However, it can be subclass as well.
-        No object can be created from that class !!
+        Abstract class is meant to be parent / super class. However, it can be subclass as well.
+        No object can be created from that class !! [ important difference between concrete/abstract classes]
         constructor √
-        abstract method √
+        abstract method √ [ important difference between concrete/abstract classes]
         final[Class], static, private X
                          */
 
@@ -23,7 +23,7 @@ public abstract class Car {
             #2 in constructor // line 26
             we have to choose one of the initialize ways btw !!
 
-    #3 Since final variables have no setter, I have to write my variables conditions in constructor , instead of setter methods !!
+    #3 Since final variables have no setter, I have to write my variables conditions in constructor, instead of setter methods !!
      */
 
     public Car(String make, String model, double price, String color, LocalDate year) {

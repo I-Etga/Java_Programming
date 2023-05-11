@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public final class Tesla extends Car {
+
+    public final String owner = "Elon Mask";
     public Tesla(String model, String color, int year, double price) {
         super(model, color, year, price);
     }
