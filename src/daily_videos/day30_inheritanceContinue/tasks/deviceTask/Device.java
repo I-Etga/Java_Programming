@@ -23,7 +23,7 @@ public class Device {
     }
 
     public void setBrand(String brand) {
-        if (brand.isBlank() || brand.isEmpty() || brand == null) {
+        if (brand == null || brand.isBlank() || brand.isEmpty()) {
             System.out.println("Brand can't be blank,empty or null ");
             System.exit(1);
         }
@@ -35,7 +35,7 @@ public class Device {
     }
 
     public void setModel(String model) {
-        if (model.isBlank() || model.isEmpty() || model == null) {
+        if (model == null || model.isBlank() || model.isEmpty()) {
             System.out.println("Model can not be blank,empty or null ");
             System.exit(1);
         }
