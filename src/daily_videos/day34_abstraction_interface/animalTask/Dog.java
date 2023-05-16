@@ -15,7 +15,7 @@ public class Dog extends Animal implements Playable {
 
     /*  After implements keyword, I get compiler error.
         Our Class is regular class, not abstract. In regular Classes every method MUST have body in regular class.
-        I don't want to make my Class abstract, because that would make any sense. I want to create objects.
+        I don't want to make my Class abstract, because that would make NO sense. I want to create objects.
         So I implement/override the abstract methods of interface in regular Class [there is a shortcut: generate-> implements methods]
 
     */
