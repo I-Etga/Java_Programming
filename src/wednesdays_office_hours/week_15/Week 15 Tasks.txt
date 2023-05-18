@@ -1,0 +1,53 @@
+Exceptions Practice [1hr]
+
+Create a class NonResidentException
+    make this an unchecked exception
+
+    create a constructor to accept the String argument and pass it to the super constructor
+
+ Create a class FailToCheckOutException
+    make this a checked exception
+
+    create a constructor to accept the String argument and pass it to the super constructor
+
+Create a class Library
+
+    create a method getLibraryCard(String city)
+
+        if the city is Fairfax or McLean print Library Card Created
+
+        but if it is any other city throw your NonResidentException
+            -> give a message in the constructor call
+
+    create a method borrow(boolean checkedOut)
+
+        if the given checkedOut boolean is true print "Enjoy reading"
+
+        but if the boolean is false throw your FailToCheckOutException
+
+        -> handle this exception in the runner file
+
+Create a class to run the code by calling the methods
+and seeing the result with different inputs to see
+how the exceptions were related to the execution
+
+----------------------------------------------------------------------------------------
+
+Git Practice - Branch Strategy / Team Collaboration [2hr]
+
+    I will create a new project and invite 2 students to the project. We will take turns screen-sharing and going through a workflow.
+    As we go through the flow I will guide you through the steps so others can do it and so we can see which steps you would repeat
+
+Steps to repeat:
+
+    create/update your local feature branch from local develop
+    make changes in your local feature branch
+    commit and push to your origin feature branch
+    make a PR (from origin feature to origin develop) and assign someone on the team
+
+    a team member will look at PR and discuss anything needed
+    when changes are good approve the merge
+    team updates project
+
+    when sprint ends PR origin develop to origin master
+    the team would update master branches too
