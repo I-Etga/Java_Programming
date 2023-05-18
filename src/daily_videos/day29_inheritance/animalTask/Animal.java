@@ -31,20 +31,6 @@ public class Animal { // Parent class should contain only common variables and m
 
     }
 
-
-    public void eat() {
-        System.out.println(name + " is eating");
-    }
-
-    public void drink() {
-        System.out.println(name + " is drinking water");
-    }
-
-    public void sleep() {
-        System.out.println(name + " is sleeping");
-    }
-
-
     public String getName() {
         return name;
     }
@@ -91,6 +77,18 @@ public class Animal { // Parent class should contain only common variables and m
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public void eat() {
+        System.out.println(name + " is eating");
+    }
+
+    public void drink() {
+        System.out.println(name + " is drinking water");
+    }
+
+    public void sleep() {
+        System.out.println(name + " is sleeping");
     }
 
     public String toString() {
