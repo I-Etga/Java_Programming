@@ -8,11 +8,11 @@ public class Cat extends Animal implements Playable {
 
     @Override
     public void sleep() {
-        System.out.println("Cat " + getName() + " is eating cat food");
+        System.out.println("Cat " + getName() + " is sleeping");
     }
 
     @Override
     public void play() {
-
+        System.out.println("Cat " + getName() + " is playing");
     }
 }
