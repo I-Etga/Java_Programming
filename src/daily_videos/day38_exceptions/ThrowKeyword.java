@@ -47,8 +47,12 @@ public class ThrowKeyword {
         // throw exception;
         // throw new RuntimeException();
 
+        // even it's an unchecked exception, the codes coming after that gives error.
+
         // throw new Person("Jimmy", 45, 'M');
 
 
+        // throws and throw are totally opposite keyword.
+        // throw makes exception , throws fix exception temporarily !!
     }
 }

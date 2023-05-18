@@ -7,8 +7,8 @@ public class Person {
     private final char gender;
 
     public Person(String name, int age, char gender) {
-       setName(name);
-       setAge(age);
+        setName(name);
+        setAge(age);
         if (!(gender == 'F' || gender == 'M')) {
             throw new RuntimeException("Invalid gender: " + gender); // throw runtime exception, and crash program
         }

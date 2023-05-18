@@ -1,6 +1,6 @@
 package daily_videos.day38_exceptions.shapeTask;
 
-public class Circle {
+public class  Circle {
 
     private double Radius;
 
