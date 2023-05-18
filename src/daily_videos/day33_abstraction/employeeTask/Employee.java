@@ -68,7 +68,7 @@ public abstract class Employee { // generic class. no object
 
     public abstract void work(); // uncompleted method !! [child class is responsible for completing abstract method]
 
-    // abstract medhod can NOT be static,final,private. Because they can't be overridden.
+    // abstract method can NOT be static,final,private. Because they can't be overridden.
     // abstract method must be created in an abstract class or interface !!
 
 

@@ -10,7 +10,7 @@ public class ThrowsKeyword2 {
 
         // Caller of the method will be responsible for handling the exception
         // checked exception: #1 try&catch #2 throws[only checked !!]
-        // unchecked exceptionev: #1 try/catch
+        // unchecked exception: #1 try/catch
 
         //method1();
         Library.sleep(3.5);

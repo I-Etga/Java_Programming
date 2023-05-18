@@ -27,6 +27,6 @@ public class Developer extends Employee {
     @Override
     public String toString() {// shortcut:  generate ->implement methods
         return super.toString().replace("}", "") +
-                "programming language=" + programmingLanguage + "}";
+                " programming language=" + programmingLanguage + "}";
     }
 }

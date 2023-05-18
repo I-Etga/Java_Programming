@@ -31,7 +31,7 @@ public class MultiCatchBlock {
         Only one of that catch block gets executed.
         The last one has to be handled in any case. So we use parent class of possible exceptions !!
         If one catch can't catch the exception, then it jumped to the next catch !! [same principle with if ]
-        The last catch is created just in case previous catchs can't catch the exception
+        The last catch is created just in case previous catches can't catch the exception
 
         Parent Exception can be placed before child Class !!
         For example RunTimeException is parent all those four exceptions class and placed after all of them .
