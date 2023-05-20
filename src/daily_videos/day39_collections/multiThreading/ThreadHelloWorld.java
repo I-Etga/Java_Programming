@@ -14,9 +14,9 @@ public class ThreadHelloWorld extends Thread {
     @Override
     public void run() {
         for (int i = 1; i < 6; i++) {
-            System.out.println("Hello World Thread " + threadNumber);
+            System.out.println("Hello World Thread " + threadNumber );
             try {
-                // it's an overridden method. the signature has to be the same as original methods.
+                // it's an overridden method. The signature has to be the same as original methods.
                 // That's why I can't use throws. I've used here try/catch block
                 Thread.sleep(200);
             } catch (InterruptedException e) {
