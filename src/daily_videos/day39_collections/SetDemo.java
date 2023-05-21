@@ -92,12 +92,21 @@ public class SetDemo {
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50, 5, 5, 5, 1, 1, 1, 2, 2, 2));
 
+        System.out.println(numbers); //[10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50, 5, 5, 5, 1, 1, 1, 2, 2, 2]
+
         Set<Integer> n = new TreeSet<>(numbers); // List to Set [removes duplicates and sorts (order)]
 
         System.out.println(n);
 
+        numbers = new ArrayList<>(n);// --> re-assign numbers ArrayList after removing duplicates and sorting elements !!
 
-        // numbers = new ArrayList<>(n);
+        System.out.println(numbers); // [1, 2, 5, 10, 20, 30, 40, 50] (Check out line 95 to see the change !! )
+
+        /*
+        So, if I want to remove the duplicates and sort elements of a Collection, I can use the constructor of TreeSet Class.
+        All subclasses of Collection have one default and one with collection parameter constructor !!
+        We can convert one to another through constructor !! e.g. line 97, 101 ...
+         */
 
 
     }

@@ -21,7 +21,7 @@ public class TestMultiThreads {
 */
 
         // I create a variable named ThreadNumber and a constructor with int parameter named threadNumber,
-        // I can initialize this variable through constructor.So I can see the executing flow.
+        // I can initialize this variable through constructor.So I can ≈see the executing flow.
 
 
         ThreadHelloWorld thread1 = new ThreadHelloWorld(1);
