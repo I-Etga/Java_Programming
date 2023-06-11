@@ -24,7 +24,7 @@ public class DividedBy {
 
         }
         System.out.println("divided by 15: " + dividedBy15);
-        System.out.println("divided by 5 : " + dividedBy5);
-        System.out.println("divided by 3 4: " + dividedBy3);
+        System.out.println("divided by 5: " + dividedBy5);
+        System.out.println("divided by 3: " + dividedBy3);
     }
 }
