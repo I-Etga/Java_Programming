@@ -1,5 +1,7 @@
 package daily_videos.day37_exceptions;
 
+import java.io.FileInputStream;
+
 public class ExceptionsIntro {
     public static void main(String[] args) {
 
@@ -17,10 +19,10 @@ public class ExceptionsIntro {
         //System.out.println(ch);
 
         Pizza pizza = null;
-        //  pizza.calcCost();  // unchecked exception
+        //pizza.calcCost();  // unchecked exception
 
 
-        // System.out.println( 50/0 ); ==> un-checked exception [it's about the math]
+        //System.out.println( 50/0 );// ==> un-checked exception [it's about the math]
 
         System.out.println("Hello World");
 
@@ -36,9 +38,13 @@ public class ExceptionsIntro {
 
         System.out.println("---------------------------------");
 
-        // FileInputStream file = new FileInputStream(""); //Checked Exception
+        //FileInputStream file = new FileInputStream(""); //Checked Exception
 
-        //  Thread.sleep(3000); // Checked exception
+        try {
+            Thread.sleep(3000); // Checked exception
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
     }

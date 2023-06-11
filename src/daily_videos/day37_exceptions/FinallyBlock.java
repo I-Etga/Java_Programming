@@ -5,6 +5,7 @@ public class FinallyBlock {
 
         try {
             System.out.println(9 / 0);
+            System.out.println("Try Block");
         } catch (RuntimeException e) {
             System.out.println("Runtime Exception has been caught");
             e.printStackTrace();

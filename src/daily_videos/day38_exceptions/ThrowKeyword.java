@@ -13,6 +13,8 @@ public class ThrowKeyword {
 
 
         //Using throw is better than exit method !!
+
+        // If we use throw keyword in if block, we don't have to handle it.
         if (age < 0 || age > 150) {
             if (age < 0) {
                 throw new InputMismatchException("Age of the person should not be negative: " + age);
@@ -21,7 +23,7 @@ public class ThrowKeyword {
             }
         }
 
-        if (age >= 21) {
+        if (age >= 18) {
             System.out.println("Eligible");
         } else {
             System.out.println("Not eligible");
@@ -35,7 +37,18 @@ public class ThrowKeyword {
 
 
         try {
-            throw new FileNotFoundException("");
+            /*
+            line 44 [throw line] will get executed in any case. So we get the message given as parameter !!
+             */
+            throw new InputMismatchException("Age of the person should not be negative: " + age);
+        } catch (InputMismatchException e) {
+            // Because throw keyword cause exception in any case, catch block gets executed as well.
+            e.printStackTrace();
+        }
+
+
+        try {
+            throw new FileNotFoundException();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

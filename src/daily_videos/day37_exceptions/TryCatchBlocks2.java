@@ -10,9 +10,10 @@ public class TryCatchBlocks2 {
 
         try {
             System.out.println(arr[1000]);
+            System.out.println("Try Block");
         } catch (RuntimeException e) {
             e.printStackTrace(); //displays full details of the exception after the executing of program
-            System.out.println(e.getMessage()); // it gives only the excepsion message. No details
+            System.out.println(e.getMessage()); // it gives only the exception message. No details
         }
 
         System.out.println("Program1 ended");

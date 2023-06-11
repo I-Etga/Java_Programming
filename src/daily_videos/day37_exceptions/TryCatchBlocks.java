@@ -3,7 +3,7 @@ package daily_videos.day37_exceptions;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class TryCatBlocks {
+public class TryCatchBlocks {
 
     public static void main(String[] args) {
 
@@ -16,15 +16,19 @@ public class TryCatBlocks {
 
         System.out.println("Program started "); // will be printed !!
 
+
         try { // it's not independent. We must create the catch block after that !!
             System.out.println(9 / 0); // that gives me exception, so I place that inside try block
-            System.out.println("try block"); // Aritmetic Exception
-            // if try block can handle this exception, try block gets executed.
-            // if not, catch block takes over the handling the exceptions.
+            System.out.println("try block"); // Arithmetic Exception
+           /*
+               if try block can handle this exception, try block gets executed.
+               if not, catch block takes over the handling the exceptions.
+               if we don't get any exceptions  in try block,
+                        try block gets executed.Otherwise, catch block gets executed.
+                                */
         } catch (ArithmeticException e) {
             System.out.println("Catch Block");
             // That print statements shows us which block gets executed !!
-
             // catch block can handle it, only if exception type has relationship with exception !!
         }
 
@@ -36,12 +40,12 @@ public class TryCatBlocks {
         System.out.println("Program2 started ");
 
 
-        String str = null ;
+        String str = null;
 
-        try{
+        try {
             System.out.println(str.toLowerCase()); // unchecked exception
             System.out.println("try block");
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             // (Throwable e)[parent class of Exception] ->( Exception e ) [parent class of RunTimeException]
             // -> RunTimeException e ... works as well !!
             System.out.println("catch block");
@@ -53,6 +57,7 @@ public class TryCatBlocks {
         System.out.println("- - - - ");
 
         System.out.println("Program3 started ");
+
         /*
         Checked Exception:
         If you know exact exception, you have to use the exact obj of that exception in catch !!
@@ -64,34 +69,29 @@ public class TryCatBlocks {
         try {
             Thread.sleep(3000); // checked (compile time) exception
             System.out.println("Try Block");
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             System.out.println("Catch Block");
         }
         System.out.println("Program3 ended ");
 
         System.out.println("- - - - ");
 
+
         System.out.println("Program4 started ");
-
-        try {
-            FileInputStream file = new FileInputStream("File Path");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("Program4 ended ");
-
-
-        System.out.println("- - - - ");
-
-        System.out.println("Program5 started ");
         // Checked Exceptions any idea has shortcuts. But for unchecked there is no !!
 
+
+
+        System.out.println("Program4 ended ");
+
         try {
-            Thread.sleep(3000);
+            System.out.println("Sleeping...");
+            Thread.sleep(100);
+            System.out.println("Done sleeping, no interrupt.");
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            System.out.println("I was interrupted!");
+            e.printStackTrace();
         }
-        System.out.println("Program5 ended ");
 
     }
 }

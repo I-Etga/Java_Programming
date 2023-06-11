@@ -1,5 +1,6 @@
 package daily_videos.day38_exceptions;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -51,7 +52,7 @@ public class ThrowsKeyword {
 
         System.out.println("Program3 started");
 
-        //FileInputStream file = new FileInputStream("");
+        //FileInputStream file = new FileInputStream(" ");
         Thread.sleep(5000);
 
         System.out.println("Program3 ended");
