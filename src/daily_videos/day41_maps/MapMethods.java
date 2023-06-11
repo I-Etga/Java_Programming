@@ -35,7 +35,7 @@ public class MapMethods {
 
         System.out.println(map);
 
-        map.remove("A05"); // We use key instead of index number. Because keys are unique/
+        map.remove("A05"); // We use key instead of index number. Because keys are unique.
 
         System.out.println(map);
 

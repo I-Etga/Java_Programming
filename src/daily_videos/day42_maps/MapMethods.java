@@ -17,6 +17,8 @@ public class MapMethods {
         Map<String, String> employees = new TreeMap<>();// new memory in heap
         employees.putAll(map);
 
+
+
         System.out.println(employees);
 
         System.out.println(map == employees); // false [It's about the memory allocation]

@@ -20,7 +20,7 @@ public class SetDemo {
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
-        set1.addAll(Arrays.asList(null, null, null, null, null)); // only one "null" is accepted. Because it does NOT allow duplicates.8
+        set1.addAll(Arrays.asList(null, null, null, null, null)); // only one "null" is accepted. Because it does NOT allow duplicates.
 
         System.out.println(set1); // [null, 200, 40, 10, 90, 300] ==> NO duplicates !!
 
@@ -43,14 +43,14 @@ public class SetDemo {
         // Because we can't call method through null keyword !!
 
 
-        Set<Integer> set3 = new TreeSet<>(); // Keeps sorted order, does not accept duplicate
+        Set<Integer> set3 = new TreeSet<>(); // Keeps SORTED order, does not accept duplicate
 
 
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
-        //  set3.addAll(Arrays.asList(null, null, null, null, null));
+        // set3.addAll(Arrays.asList(null, null, null, null, null));
 
         // Sorted order. It checks the values of each object.
         //We can't call method through null keyword !!

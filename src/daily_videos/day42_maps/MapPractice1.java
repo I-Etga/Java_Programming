@@ -40,7 +40,7 @@ public class MapPractice1 {
         }
         */
 
-        // shortcut: employeeValues.for + enter
+        // shortcut: employeeValues.for + enter [There is no way using for/each iteration with maps. So I get collection through map.values method]
         for (String eachValue : employeeMap.values()) {
             if (eachValue.equals("F")) {
                 countFemaleEmployees++;

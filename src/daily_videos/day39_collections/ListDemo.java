@@ -46,6 +46,7 @@ public class ListDemo {
         linkedList.add(200);
         linkedList.add(300);
 
+        System.out.println(linkedList);
         linkedList.remove(0);
 
         System.out.println(linkedList.get(0));
@@ -71,7 +72,8 @@ public class ListDemo {
 
         System.out.println(stack);
 
-        int lastElement = stack.pop(); // Pop methods returns and then removes the last element of Stack !!
+        int lastElement = stack.pop(); // Pop methods returns last element and then removes the last element of Stack !!
+        System.out.println(lastElement);
 
         System.out.println(stack);
 

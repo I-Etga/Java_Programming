@@ -98,6 +98,14 @@ public class MapPractice2 {
 
         listOfMaps.get(1).replace("age", ((Integer) listOfMaps.get(1).get("age")) + 4);
 
+
+        /*
+                        listOfMaps.get(index).get(key) --> return's reference type is OBJECT class.
+       For example:  Reference type of " listOfMaps.get(listOfMaps.size() - 1).get("salary") " and " listOfMaps.get(1).get("age") " is OBJECT.
+                          So, in this case, we have to cast it to Integer in order to increase by a number  !!
+         */
+
+
         System.out.println(listOfMaps);
 
 
